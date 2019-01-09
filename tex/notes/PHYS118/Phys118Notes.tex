@@ -10,6 +10,7 @@
 \author{Jonathan Gribbins}
 \title{PHYS 118 Notes}
 \date{}
+
 \begin{document}
 
 \maketitle
@@ -51,13 +52,13 @@ It is also important to define a \textbf{time interval}, or a change in time wit
 The \textbf{average speed} (fastness) over a time period is given by the total distance over a period of time, divided by that given time interval. Mathematically, 
 
 \begin{center}
-$average\ speed=\frac{distance\ travelled}{time\ interval\ spent\ travelling}=\frac{d}{\Delta t}$.
+$$average\ speed=\frac{distance\ travelled}{time\ interval\ spent\ travelling}=\frac{d}{\Delta t}.$$\linebreak
 \end{center}
 
 This quantity is a scalar, and as such, has no direction. In order to get a vector quantity (which is necessary for more advanced physics stuff), we use the displacement vector, $\Delta\vec{r}$ and its corresponding time interval to calculate the average $velocity$ of an object over a time interval. The formula for this is
 
 \begin{center}
-$v_{avg}=\frac{\Delta\vec{r}}{\Delta t}$.
+$$v_{avg}=\frac{\Delta\vec{r}}{\Delta t}.$$\linebreak
 \end{center}
 
 This vector is in the same direction as the displacement vector, and this direction shows how the object is moving over that time interval (on average). The length of the velocity vector is the speed at which the object is moving over the given time interval (longer $\rightarrow$ faster).
@@ -67,7 +68,7 @@ This vector is in the same direction as the displacement vector, and this direct
 \textbf{Acceleration} is the vector quantity that describes the change in the velocity of an object. As the velocity vector has two components (magnitude and direction), an acceleration vector can describe the change of one or both of these components. The \textbf{average acceleration} for a time interval is given by the ratio between the change in velocity for this time interval and the time interval. Symbolically,
 
 \begin{center}
-$\vec{a_{avg}}=\frac{\vec{\Delta v}}{\Delta t}$.
+$$\vec{a_{avg}}=\frac{\vec{\Delta v}}{\Delta t}.$$\linebreak
 \end{center}
 
 This vector points with the vector $\vec{\Delta v}$, as on average, the velocity changes in that direction over its time interval. \\
@@ -89,15 +90,99 @@ The rest of chapter 1 just details motion in one dimension, solving problems wit
 \textbf{Uniform motion} is motion with constant speed. An object has uniform motion if and only if its position-versus-time graph is a straight line. The average velocity of a particle is equal to the slope of its position-versus-time graph. Or, if the y-axis is position and the x-axis is time,
 
 \begin{center}
-$v_{avg}=\frac{\Delta x}{\Delta t}$.
+$$v_{avg}=\frac{\Delta x}{\Delta t}.$$\linebreak
 \end{center}
 
 If an object, $s$, is moving with uniform motion with starting point $s_{i}$, final point $s_{f}$, and time interval $\Delta t$, then 
 
 \begin{center}
-$v_{s}=\frac{\Delta s}{\Delta t}=\frac{s_{f}-s_{i}}{\Delta t}$, which can be rearranged to get $s_{f}=s_{i}+v_{s}\Delta t$.
-\end{center}\
+$$v_{s}=\frac{\Delta s}{\Delta t}=\frac{s_{f}-s_{i}}{\Delta t},$$ which can be rearranged to get $$s_{f}=s_{i}+v_{s}\Delta t.$$\linebreak
+\end{center}
 
-So, in words, the final position of a uniformly moving object is equal to its starting position plus the product of the time it travels and its velocity.
+So, in words, the final position of a uniformly moving object is equal to its starting position plus the product of the time it travels and its velocity. \\
+
+\textbf{Speed} is always positive (because your fastness can't be less than 0), so the speed of an object is the absolute value of the velocity of the object.
+
+\subsection[Instantaneous Velocity]{Instantaneous Velocity}
+
+The \textbf{instantaneous velocity} of an object is its velocity at a certain instant of time---that is, with an infinitesimally small time interval. As the velocity of an object is the slope of a secant line connecting two different points of time, the instantaneous velocity of an object is the tangent line to a curve at an instant. If the position of an object is given by the vector $s$ (and $s$ varies directly with $t$), then this velocity is
+
+\begin{center}
+$$\lim_{t\to0}\frac{\Delta s}{\Delta t} = \frac{ds}{dt},$$\linebreak
+\end{center}
+
+or in other words,\textbf{the velocity of a particle is the derivative of its position with respect to time.} The exact way to calculate this derivative will be left up to any calculus class.
+
+\subsection[Finding Position from Velocity]{Finding Position from Velocity}
+
+To find the position of an object based on the function of its velocity, we will use one of the facts of calculus that states that the original function of a derivative is the integral of its derivative. That isn't really a succinct way of stating that, so I'll state it symbolically:
+
+\begin{center}
+$$\int_{}^{}(df/dt)dt  = f(t)$$$$\int_{}^{}f'(t)dt = f(t)$$ or $$\int v(t)dt = s(t).$$\linebreak
+\end{center}
+
+Just like with taking the derivative, integration will be left up to a calculus class (or a different set of notes) to explain. An important thing to note with this is that \textbf{the definite integral from times $t_{i}$ to $t_{f}$ is not equal to the position at $t_{f}$, but the change in position between the two times}. To find the position at $t_{f}$ instead of the change between $t_{i}$ and $t_{f}$, we would add the initial position:
+
+\begin{center}
+$$s_{f} = s_{i} + \int_{t_{i}}^{t_{f}}v(t)dt$$\linebreak
+\end{center}
+
+\subsection[Motion with Constant Acceleration]{Motion with Constant Acceleration}
+
+If an object is moving with constant acceleration (as objects often do), the average slope of the velocity graph is equal to the acceleration at all points. The velocity graph will be a straight line with:
+
+\begin{center}
+$$a_{avg} = a = \frac{v_{f}-v_{i}}{\Delta t} = \frac{\Delta v}{\Delta t} = \frac{dv}{dt},$$\linebreak
+\end{center}
+
+pointed in the direction of vector $\Delta v$. From this equation, we can derive a couple other equations---
+
+\begin{center}
+$$v_{f} = v_{i} + a\Delta t,$$ $$v_{f}^{2} = v_{i}^{2} + 2a\Delta s$$ and $$s_{f} = \frac{1}{2}a(\Delta t)^{2} + v\Delta t + s_{i}.$$\linebreak
+\end{center}
+
+These functions follow directly from the fact that acceleration is constant and that velocity is the derivative with respect to time of position and acceleration is velocity's derivative with respect to time. I wouldn't recommend memorizing these because with a little bit of calculus, these all boil down to the fact that $a(t)$ doesn't vary with time.\\
+
+\textbf{A very important fact is that the instantaneous acceleration of an object is ALWAYS the derivative with respect to time of velocity. Constant acceleration is NOT a special case!}
+
+\subsection[Free Fall]{Free Fall}
+
+When an object is moving under the influence of only one force, gravity, it is said to be in \textbf{free fall}. In reality, free fall doesn't happen too often, but we will assume for now that air resistance is not a thing that happens (which is sort of true for heavy things). A \textit{very} important fact of free fall is that any two objects being effected by the same source of gravity will accelerate towards that source at the same rate. For Earth (where we live), gravity is a constant rate of $9.81$ $m/s^{2}$ towards the center of the Earth. We denote the \textbf{gravitational acceleration} for objects drawn to a body by the letter $g$. It is important to know that $g$ is not a vector, but $a_{free\ fall}$ is, and most of the time in free fall, $a_{free\ fall}$ has magnitude $g$.
+
+\subsection[Motion on an Inclined Plane]{Motion on an Inclined Plane}
+
+We haven't even mentioned friction yet, so this chapter will assume an object is sliding (or rolling) down a friction-free inclined plane of angle $\theta$ (the angle connecting the ground and the inclined plane). The acceleration parallel to the surface of the inclined plane is equal to 
+
+\begin{center}
+$$a_{s} = gsin\theta.$$ \linebreak
+\end{center}
+
+There is also a vector with magnitude equal to $g - a_{s}$ that runs perpendicular to the surface of the inclined plane, but this is unimportant as of right now. \\
+
+From this equation for the acceleration down a friction-free inclined plane and some elementary calculus, it is simple to find any other kinematic-y stuff dealing with inclined planes.
+
+\pagebreak
+
+\section[Vectors and Coordinate Systems]{Vectors and Coordinate Systems}
+
+This chapter is a short and more in-depth overview of vectors, scalars, and coordinate systems. It isn't really too important to read because it's stuff you generally know from existing in science classes for a while. However it is important to know what values are vectors and what values are scalars, so that will be included in this chapter.
+
+\subsection[Scalars and Vectors]{Scalars and Vectors}
+
+A \textbf{scalar} is a quantity that can be described by only one number. To denote a scalar quantity, we use symbols without little arrows above them, like $m$ for mass, $T$ for temperature, or $\rho$ for density. \\
+
+A \textbf{vector} is a quantity that has to have a magnitude and a direction for it to be describable. Vectors are usually depicted with arrows in the direction of their direction and with length equal to their magnitude. This magnitude is always a positive scalar, and can be used in scalar calculations because of this fact. \\
+
+A vector is depicted as a letter with a little arrow above it (like $\vec{r}$), and its magnitude is depicted as the same letter without the little arrow (like $r$). \\
+
+\subsection[Using Vectors]{Using Vectors}
+
+\textbf{Two vectors are equal if they have the same magnitude and direction.} That's kind of self-explanatory. \\
+
+Vectors can be added and subtracted to other vectors, or they can be multiplied or divided by scalars. To add together two vectors graphically, you would place the tail end of one vector on the tip of the other vector and draw a line connecting the tip of the connected vector to the origin (to subtract you would add but with the subtracted vector in the opposite direction). However, this isn't really an exact method. To be more precise, trigonometry is used to describe the \textbf{resultant vector.} \\
+
+For two vectors $\vec{A}$ and $\vec{B}$, the resultant vector $\vec{C} = \vec{A} + \vec{B}$ has a magnitude of $C = \sqrt{A^{2} + B^{2}}$. The direction of the resultant vector will vary based on the other vectors, but the angle between $\vec{A}$ and $\vec{B}$ is given by $\theta = tan^{-1}(\frac{B}{A})$. \\
+
+Scalar multiplication and division is very simple, and if a vector $\vec{A}$ is multiplied by scalar $k$, then the resultant vector has magnitude $kA$ and the same direction as $\vec{A}$.
 
 \end{document}
