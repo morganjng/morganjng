@@ -11,23 +11,21 @@ body{
 }
 
 p{
-    text-align: center
     font-size: 18px;
     background-color: lightcoral;
     width: 60%;
-    border-right: 3px solid lightseagreen;
-    border-bottom: 3px solid lightseagreen;
-    border-left: 3px solid lightseagreen;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+    margin: auto;
+
+    border: 3px solid lightseagreen;
+    border-radius: 15px;
 }
 
 h1{
     text-align: center;
     background-color: royalblue;
     width: 60%;
+    margin: auto;
+
     border: 3px solid lightseagreen;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
-    border-bottom-color: royalblue;
+    border-radius: 15px;
 }
