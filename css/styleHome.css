@@ -8,13 +8,10 @@ body{
 .center{
     margin: auto;
     width: 60%;
-    border: 3px black;
-    padding: 10px;
 }
 
 p{
-    padding-top: 32px;
-    text-align: center;
+    text-align: center
     font-size: 18px;
     background-color: lightcoral;
     width: 60%;
