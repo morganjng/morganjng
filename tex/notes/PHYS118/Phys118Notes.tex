@@ -1,0 +1,103 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Jonathan Gribbins}
+\title{PHYS 118 Notes}
+\date{}
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section[Concepts of Motion]{Concepts of Motion}
+
+\subsection[Motion Diagrams]{Motion Diagrams}
+
+\textbf{Motion} is the change of an object's position with time. There are many different types of motion, but two of the most important ones (in this book) are \textbf{translational motion}, where an object moves through space along a \textbf{trajectory}, and \textbf{rotational motion}, where an object changes it's orientation in space. \\
+
+To visualize the motion of an object, it is helpful to draw a motion diagram. A motion diagram is a drawing of the object through time---for example, a motion diagram for an object moving along a straight line may show the object's position at every second or $\frac{1}{2}$ second. The amount of change in the distances between the object with time can be used to tell how it is moving---it's speed, acceleration, etc.
+
+\subsection[Models and Modeling]{Models and Modeling}
+
+To simplify some of the complicated situations that are presented in physics, it is important to build \textbf{models}. Models are simplified pictures of reality that can be used to understand the ``bigger picture". There are two different types of models---\textbf{descriptive models}, which display the essentials of a phenomenon in the simplest form, and \textbf{explanatory models}, which predict how certain minutiae of the universe can effect how things act. \\
+
+A very important type of model is a \textbf{particle model}, which simplifies the shapes and physical characteristics of an object down to that of a particle (these characteristics are generally insignificant enough to disregard). The particle which represents an object should be located at it's real center of mass. \\
+
+However, some things require these minutiae, so particle models are not always useful. For example, a gear cannot be represented by a particle, so it's model must be more in-depth.
+
+\subsection[Position, Time, and Displacement]{Position, Time, and Displacement}
+
+For a motion diagram, you need to know an object's \textbf{position} (where it is) at certain \textbf{times}. To describe position, the Cartesian (xy) plane is generally used to describe how different an objects position is from a set origin (0, 0) point. To incorporate time into this plane, we can assign various points time, or t, values by marking the times (relative to a chosen starting or 0 time) when a particle is at a certain position. \\
+
+Another way to represent position is through \textbf{vectors}. Vectors are arrows pointing from the origin of a plane to the position of an object at a certain time. A vector (notated $\vec{r}$) can be in the form of an (x, y) coordinate or in the form of a (r, $\theta$) coordinate, where r is the distance from the origin and $\theta$ is the angle between the origin and the vector ``drawing". \\
+
+If a value has a magnitude (size) and a direction, then it may be described by a vector. For instance, position, velocity, and acceleration can all be described with vectors. However, if a value has no direction, it must be described by a \textbf{scalar}, which is a magnitude without a direction. A good example of a scalar quantity is mass, as it has no direction. \\
+
+The \textbf{displacement} of an object in motion is the change in its position between two different points in time. Displacement is a vector, and if the two  position vectors which provide this change are $\vec{r_{1}}$ and $\vec{r_{2}}$, then this displacement vector is notated $\Delta\vec{r}$, and it is the vector that solves the equation $\vec{r_{2}} = \vec{r_{1}} + \Delta\vec{r}$. \\
+
+It is also important to define a \textbf{time interval}, or a change in time with the motion of an object. This time interval is notated as $\Delta t$, and given a final time ($t_{f}$) and an initial time ($t_{i}$), $\Delta t=t_{f}-t_{i}$.
+
+\subsection[Velocity]{Velocity}
+
+The \textbf{average speed} (fastness) over a time period is given by the total distance over a period of time, divided by that given time interval. Mathematically, 
+
+\begin{center}
+$average\ speed=\frac{distance\ travelled}{time\ interval\ spent\ travelling}=\frac{d}{\Delta t}$.
+\end{center}
+
+This quantity is a scalar, and as such, has no direction. In order to get a vector quantity (which is necessary for more advanced physics stuff), we use the displacement vector, $\Delta\vec{r}$ and its corresponding time interval to calculate the average $velocity$ of an object over a time interval. The formula for this is
+
+\begin{center}
+$v_{avg}=\frac{\Delta\vec{r}}{\Delta t}$.
+\end{center}
+
+This vector is in the same direction as the displacement vector, and this direction shows how the object is moving over that time interval (on average). The length of the velocity vector is the speed at which the object is moving over the given time interval (longer $\rightarrow$ faster).
+
+\subsection[Linear Acceleration]{Linear Acceleration}
+
+\textbf{Acceleration} is the vector quantity that describes the change in the velocity of an object. As the velocity vector has two components (magnitude and direction), an acceleration vector can describe the change of one or both of these components. The \textbf{average acceleration} for a time interval is given by the ratio between the change in velocity for this time interval and the time interval. Symbolically,
+
+\begin{center}
+$\vec{a_{avg}}=\frac{\vec{\Delta v}}{\Delta t}$.
+\end{center}
+
+This vector points with the vector $\vec{\Delta v}$, as on average, the velocity changes in that direction over its time interval. \\
+
+A complete motion diagram utilizes all three of these vector quantities---position, velocity, and acceleration.
+
+\subsection[The Rest of Chapter 1]{The Rest of Chapter 1}
+
+The rest of chapter 1 just details motion in one dimension, solving problems with physics, units, and significant figures. These are generally self-explanatory, and any further explanation will be left up to the reader reading the book.
+
+\pagebreak
+
+\section[Kinematics in One Dimension]{Kinematics in One Dimension}
+
+\textbf{Kinematics} is the mathematical description of motion. Kinematics in \textbf{one dimension} is the description of motion along a straight line.
+
+\subsection[Uniform Motion]{Uniform Motion}
+
+\textbf{Uniform motion} is motion with constant speed. An object has uniform motion if and only if its position-versus-time graph is a straight line. The average velocity of a particle is equal to the slope of its position-versus-time graph. Or, if the y-axis is position and the x-axis is time,
+
+\begin{center}
+$v_{avg}=\frac{\Delta x}{\Delta t}$.
+\end{center}
+
+If an object, $s$, is moving with uniform motion with starting point $s_{i}$, final point $s_{f}$, and time interval $\Delta t$, then 
+
+\begin{center}
+$v_{s}=\frac{\Delta s}{\Delta t}=\frac{s_{f}-s_{i}}{\Delta t}$, which can be rearranged to get $s_{f}=s_{i}+v_{s}\Delta t$.
+\end{center}\
+
+So, in words, the final position of a uniformly moving object is equal to its starting position plus the product of the time it travels and its velocity.
+
+\end{document}
