@@ -10,5 +10,13 @@ body{
     width: 75%;
     border: 3px black;
     padding: 10px;
+}
+
+p{
+    font-size: 18px;
     background-color: lightcoral;
+}
+
+h1{
+    background-color: royalblue;
 }
