@@ -2,4 +2,12 @@ body{
 	background-image: url(/src/images/backgroundtileNOCOPYRIGHT.png);
     background-repeat: repeat;
     font-family: verdana;
+    text-align: center;
+}
+
+.center{
+    margin: auto;
+    width: 75%;
+    border: 3px black;
+    padding: 10px;
 }
