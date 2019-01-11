@@ -2,12 +2,23 @@ body{
 	background-image: url(/src/images/backgroundtileNOCOPYRIGHT.png);
     background-repeat: repeat;
     font-family: verdana;
-    text-align: center;
 }
 
 .center{
     margin: auto;
     width: 60%;
+}
+
+p.links{
+    font-size: 18px;
+    background-color: lightcoral;
+    width: 60%;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+
+    border: 3px solid lightseagreen;
+    border-radius: 15px;
 }
 
 p{
