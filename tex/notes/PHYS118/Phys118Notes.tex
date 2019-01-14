@@ -6,6 +6,9 @@
 \usepackage{xcolor}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\newcommand{\ihat}{\hat{\i}}
+\newcommand{\jhat}{\hat{\j}}
+\newcommand{\khat}{\hat{k}}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Jonathan Gribbins}
 \title{PHYS 118 Notes}
@@ -183,6 +186,66 @@ Vectors can be added and subtracted to other vectors, or they can be multiplied 
 
 For two vectors $\vec{A}$ and $\vec{B}$, the resultant vector $\vec{C} = \vec{A} + \vec{B}$ has a magnitude of $C = \sqrt{A^{2} + B^{2}}$. The direction of the resultant vector will vary based on the other vectors, but the angle between $\vec{A}$ and $\vec{B}$ is given by $\theta = tan^{-1}(\frac{B}{A})$. \\
 
-Scalar multiplication and division is very simple, and if a vector $\vec{A}$ is multiplied by scalar $k$, then the resultant vector has magnitude $kA$ and the same direction as $\vec{A}$.
+Scalar multiplication and division is very simple---if a vector $\vec{A}$ is multiplied by scalar $k$, then the resultant vector has magnitude $kA$ and the same direction as $\vec{A}$.
+
+\subsection{Coordinate Systems and Vector Components}
+
+Coordinate systems are not required to use vectors, but they come in handy to visually grasp a situation or graphically solve a problem. The most common coordinate systems used in physics are the xy (or xyz)-plane and the polar plane. The xy(z)-plane is the Cartesian plane, and the polar plane has coordinates defined by their radius and the angle between the x-axis and the line connecting the point to the origin. \\
+
+Vectors can be broken down into their \textbf{components}, which are generally scalar multiples of the unit vectors parallel to the axes of the Cartesian plane. In simpler terms, the x, y, or z coordinates of the vector's endpoint (if it is placed with its end on $(0,\ 0,\ 0)$) in vector form. The original vector is the sum of these components:
+
+\begin{center}
+	$$\vec{A} = \vec{A_{x}} + \vec{A_{y}} + \vec{A_{z}}$$ \linebreak
+\end{center}
+
+Operation upon vectors when you have their components is usually much simpler than operations upon the original vector. \\
+
+Decomposition of polar vectors is possible with some simple trig, which the reader should be able to do by now.
+
+\subsection{Unit Vector and Vector Algebra}
+
+A \textbf{unit vector} is the vector that runs parallel or along one axis and has magnitude of 1. These unit vectors are useful in notation for the components of a vector---a vector's components can be given by its magnitude in each direction times the unit vector for that direction. Therefore, if a vector $\vec{A}$ has a magnitude of $A_{x}$ is the x direction (the unit vector of which is usually denoted $\ihat$), a magnitude in the y direction (denoted $\jhat$) of $A_{y}$, and maybe a magnitude in the z direction ($\khat$) of $A_{z}$, then
+
+\begin{center}
+	$$\vec{A_{x}} = A_{x}\ihat,$$
+	$$\vec{A_{y}} = A_{y}\jhat,\ and$$
+	$$\vec{A_{z}} = A_{z}\khat.\ Therefore,$$
+	$$\vec{A} = A_{x}\ihat + A_{y}\jhat + A_{z}\khat.$$. \linebreak
+\end{center}
+
+Breaking the vectors you encounter in physics down into their component parts simplifies many of the issues that may arise in calculations, while also making vector quantities and operations feel more familiar to a student aware of the Cartesian plane.
+
+\pagebreak
+
+\section{Kinematics in Two Dimensions}
+
+\subsection{Motion in Two Dimensions}
+
+To define the motion of an object in the xy-plane (which can be done for most 2D motion), we use a vector $\vec{r}$ and its parameterization ($\vec{r} = x\ihat + y\jhat$) ot define its position, and a vector parameterization of the function for its position as $\vec{r}(t) = x(t)\ihat + y(t)\jhat$. \\
+
+As with motion in one dimension, the velocity of an object is given by the derivative with respect to time of the position, and with the basic rule of differentiation that states that the derivative of the sum of functions is equal to the sum of their derivatives. So we arrive at
+
+\begin{center}
+	$$\vec{v} = \frac{dx}{dt}\ihat + \frac{dy}{dt}\jhat = v_{x}\ihat + v_{y}\jhat.$$ \linebreak
+\end{center}
+
+Also, the total instantaneous speed at a given time is given by
+
+\begin{center}
+	$$v = \sqrt{v_{x}^{2} + v_{y}^{2}},$$ \linebreak
+\end{center}
+
+and this is tangent to the y-versus-x graph at the given time. Similarly, acceleration is given by the derivative of the velocity vector function with respect to time:
+
+\begin{center}
+	$$\vec{a} = \frac{dv_{x}}{dt}\ihat + \frac{dv_{y}}{dt}\jhat = a_{x}\ihat + a_{y}\jhat.$$ The total acceleration (tangent to the velocity graph) is
+	$$a = \sqrt{a_{x}^{2} + a_{y}^{2}}.$$ \linebreak
+\end{center}
+
+The other axioms of 1D motion holds with 2D motion, but with extra components.
+
+\subsection{Projectile Motion}
+
+A \textbf{projectile} is an object whose motion is only affected by the influence of gravity. A projectile is said to be launched at the start of its motion with a particular \textbf{launch velocity} and \textbf{launch angle}.
 
 \end{document}
