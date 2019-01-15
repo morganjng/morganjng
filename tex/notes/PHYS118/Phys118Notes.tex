@@ -188,7 +188,7 @@ For two vectors $\vec{A}$ and $\vec{B}$, the resultant vector $\vec{C} = \vec{A}
 
 Scalar multiplication and division is very simple---if a vector $\vec{A}$ is multiplied by scalar $k$, then the resultant vector has magnitude $kA$ and the same direction as $\vec{A}$.
 
-\subsection{Coordinate Systems and Vector Components}
+\subsection[Coordinate Systems and Vector Components]{Coordinate Systems and Vector Components}
 
 Coordinate systems are not required to use vectors, but they come in handy to visually grasp a situation or graphically solve a problem. The most common coordinate systems used in physics are the xy (or xyz)-plane and the polar plane. The xy(z)-plane is the Cartesian plane, and the polar plane has coordinates defined by their radius and the angle between the x-axis and the line connecting the point to the origin. \\
 
@@ -202,7 +202,7 @@ Operation upon vectors when you have their components is usually much simpler th
 
 Decomposition of polar vectors is possible with some simple trig, which the reader should be able to do by now.
 
-\subsection{Unit Vector and Vector Algebra}
+\subsection[Unit Vector and Vector Algebra]{Unit Vector and Vector Algebra}
 
 A \textbf{unit vector} is the vector that runs parallel or along one axis and has magnitude of 1. These unit vectors are useful in notation for the components of a vector---a vector's components can be given by its magnitude in each direction times the unit vector for that direction. Therefore, if a vector $\vec{A}$ has a magnitude of $A_{x}$ is the x direction (the unit vector of which is usually denoted $\ihat$), a magnitude in the y direction (denoted $\jhat$) of $A_{y}$, and maybe a magnitude in the z direction ($\khat$) of $A_{z}$, then
 
@@ -217,9 +217,9 @@ Breaking the vectors you encounter in physics down into their component parts si
 
 \pagebreak
 
-\section{Kinematics in Two Dimensions}
+\section[Kinematics in Two Dimensions]{Kinematics in Two Dimensions}
 
-\subsection{Motion in Two Dimensions}
+\subsection[Motion in Two Dimensions]{Motion in Two Dimensions}
 
 To define the motion of an object in the xy-plane (which can be done for most 2D motion), we use a vector $\vec{r}$ and its parameterization ($\vec{r} = x\ihat + y\jhat$) ot define its position, and a vector parameterization of the function for its position as $\vec{r}(t) = x(t)\ihat + y(t)\jhat$. \\
 
@@ -244,8 +244,40 @@ and this is tangent to the y-versus-x graph at the given time. Similarly, accele
 
 The other axioms of 1D motion holds with 2D motion, but with extra components.
 
-\subsection{Projectile Motion}
+\subsection[Projectile Motion]{Projectile Motion}
 
-A \textbf{projectile} is an object whose motion is only affected by the influence of gravity. A projectile is said to be launched at the start of its motion with a particular \textbf{launch velocity} and \textbf{launch angle}.
+A \textbf{projectile} is an object whose motion is only affected by the influence of gravity. A projectile is said to be launched at the start of its motion with a particular vector $\vec{v_{0}}$ comprised of \textbf{launch velocity} and \textbf{launch angle}. From this vector, its x and y components can be derived, which are
+
+\begin{center}
+	$$v_{0y} = v_{0}sin\theta$$ and
+	$$v_{0x} = v_{0}cos\theta.$$ \linebreak
+\end{center}
+
+Assuming there is no air resistance (because we don't know how to do that yet) and that the only force acting upon the particle is acceleration, the x and y components come out to be $0$ and $-g$, respectively. It is important to note that \textbf{the x and y components of this motion are independent of each other} (and so are many other things!!!). \\
+
+There are a whole lot of equations in this section that talk more about projectile motion and how it behaves, but there really is no reason to memorize them when their derivations are possible with this small amount of information (and some calculus). \\
+
+\subsection[Relative Motion]{Relative Motion}
+
+In this chapter, the motion of an object relative to another (moving or non-moving) object is introduced. We call these objects which measure the motion of others relative to themselves \textbf{reference frames}, and we usually denote these by capital letters (like reference frame $A$, or $B$, or $C$), and we denote a value of some reference frame $A$ relative to another frame $B$ by a subscript $AB$. For instance, the velocity of $A$ relative to $B$ is denoted $v_{AB}$. \\
+
+In one dimensional motion, the values for reference frames add together and ``cancel out" inside subscripts. So, if you want to find the velocity of $C$ relative to $B$ and you had the velocity of $C$ relative to $A$ and $A$ relative to $B$, you would add these values and their inner subscripts would ``cancel":
+
+\begin{center}
+	$$v_{CB} = v_{CA} + v_{AB}.$$\linebreak
+\end{center}
+
+For an example that everyone would be familiar with, if a train was moving at a velocity of $100\ km/hour$ and someone inside this train was walking forward (relative to the train) at $6\ km/hour$, then this passenger's total motion to a stationary outside observer would be $100\ km/hour + 6\ km/hour = 106\ km/hour$. \\
+
+In two dimensions, the vectors for position for different frames can be added in the same way. So (with the same reference frames):
+
+\begin{center}
+	$$\vec{r_{CB}} = \vec{r_{CA}} + \vec{r_{AB}},$$
+	and with some calculus,
+	$$\frac{d\vec{r_{CB}}}{dt} = \frac{d\vec{r_{CA}}}{dt} + \frac{d\vec{r_{AB}}}{dt} = \vec{v_{CB}} = \vec{v_{CA}} + \vec{v_{AB}};$$
+	$$\frac{d^{2}\vec{r_{CB}}}{dt^{2}} = \frac{d^{2}\vec{r_{CA}}}{dt^{2}} + \frac{d^{2}\vec{r_{AB}}}{dt^{2}} = \vec{a_{CB}} = \vec{a_{CA}} + \vec{a_{AB}}.$$\linebreak
+\end{center}
+
+This is called the \textbf{Galilean transform of motion}, and can be used to \textbf{transform} the velocity or other motion measurements of one reference frame into another reference frame (which are basically coordinate planes originated at an object, moving or stationary).
 
 \end{document}

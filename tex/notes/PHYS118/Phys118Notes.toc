@@ -19,4 +19,5 @@
 \contentsline {subsection}{\numberline {3.4}Unit Vector and Vector Algebra}{9}{subsection.3.4}% 
 \contentsline {section}{\numberline {4}Kinematics in Two Dimensions}{10}{section.4}% 
 \contentsline {subsection}{\numberline {4.1}Motion in Two Dimensions}{10}{subsection.4.1}% 
-\contentsline {subsection}{\numberline {4.2}Projectile Motion}{10}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.2}Projectile Motion}{11}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Relative Motion}{11}{subsection.4.3}% 
