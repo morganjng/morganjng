@@ -280,4 +280,135 @@ In two dimensions, the vectors for position for different frames can be added in
 
 This is called the \textbf{Galilean transform of motion}, and can be used to \textbf{transform} the velocity or other motion measurements of one reference frame into another reference frame (which are basically coordinate planes originated at an object, moving or stationary).
 
+\subsection[Uniform Circular Motion]{Uniform Circular Motion}
+
+Uniform circular motion is used to describe the movement of a particle around a circle of radius $r$. Because this motion is \textbf{uniform}, the velocity of the particle at all times will be of equal magnitude, but different direction (but always tangent to the circle). The magnitude of this particle is equal to the circumference of the circle divided by the time ($T$) that it takes to go around this circle. That is---
+
+\begin{center}
+	$$v = \frac{2\pi r}{T}.$$\linebreak
+\end{center}
+
+To describe the position of a particle moving in uniform circular motion, we use the particle's distance from the center of the circle---the radius---and the angle between the position of the particle and the center of the circle. The distance spanned by a particle over a certain angle of the circle is given by
+
+\begin{center}
+	$$s = r\theta,\ or\ \theta = \frac{s}{r}.$$\linebreak
+\end{center}
+
+The \textbf{angular velocity} of a particle in uniform circular motion is the rate at which the angular displacement of a particle is changing with time---instantaneous angular velocity is given by the derivative of angular movement with respect to time:
+
+\begin{center}
+	$$\omega = \lim_{\Delta t\to0}\frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt},$$\linebreak
+\end{center}
+
+and a particle is under uniform circular motion if and only if $\omega$ is a constant value. \\
+
+The velocity of uniform circular motion is always tangent to the circle, and as such can be called the \textit{tangential velocity} of a particle---this velocity is directly related to the radius and the angular velocity of a particle moving uniformly:
+
+\begin{center}
+	$$v_{t} = \omega r;$$\linebreak
+\end{center}
+
+also, the sign of this velocity is always positive if the motion is counter-clockwise, and always negative if the motion is clockwise. 
+
+\subsection[Centripetal Acceleration]{Centripetal Acceleration}
+
+When an object is under uniform circular motion, their velocity may not be changing in magnitude, but it is changing in direction---therefore it has non-zero acceleration. This \textbf{centripetal acceleration} pulls the velocity of the particle \textit{towards the center of its circle}. This vector has a magnitude of 
+
+\begin{center}
+	$$a_{c} = \frac{v^{2}}{r} = \omega^{2} r.$$\linebreak
+\end{center}
+
+The uniform circular motion model is especially important not only because it describes this type of notion, but also because it can be applied to describe other motion such as the rotation of an object.
+
+\subsection[Nonuniform Circular Motion]{Nonuniform Circular Motion}
+
+Circular motion with changing speed is \textbf{nonuniform circular motion}. This motion is defined by the changing angular velocity---like linear motion, where $a = dv/dt$, \textbf{angular acceleration} is given by
+
+\begin{center}
+	$$\alpha = \frac{d\omega}{dt},$$\linebreak
+\end{center}
+
+which is the rate at which the angle of a an object changes in angle units per time unit. When $a$ and $v$ point in the same direction, the object is speeding up (in regular motion)---likewise, when $\alpha$ and $\omega$ are in the same direction, the object is speeding up; when they are in opposite direction, the object is slowing down. \\
+
+The kinematics of circular motion are for all intents and purposes identical to linear motion, but with angles instead of positions. \\
+
+In addition to the \textbf{radial acceleration} which draws a circular motion particle towards the center of its path along the radius, nonuniform motion has a \textbf{tangential acceleration} which accounts for the nonuniform nature of its velocity---this runs tangent to the circle and ``pulls" the velocity to change. Since acceleration is the rate of change of velocity, tangential acceleration is the rate of change of the tangential velocity---
+
+\begin{center}
+	$$a_{t} = \frac{dv_{t}}{dt} = \frac{d(\omega r)}{dt},$$
+	and with constant radius (always true for circles!):
+	$$a_{t} = \frac{d\omega}{dt}r = \alpha r.$$\linebreak
+\end{center}
+
+\pagebreak
+
+\section[Force and Motion]{Force and Motion}
+
+\subsection[Force]{Force}
+
+\textbf{Force} is the fundamental concept of \textbf{mechanics}. A force is a \textit{push or pull} that an \textit{agent} enacts upon an object. A force \textbf{is a vector}, and there are two different types of forces---\textbf{contact forces} and \textbf{long range forces}. Contact forces occur when two objects touch, and long range forces occur without this contact. \\
+
+To draw a force acting upon an object, construct the object as a particle and place the force vector with its tail coming from the particle (with length and direction proportional to the actual force's). \\
+
+The \textbf{net force} acting upon an object is the sum of all of the forces acting upon that object. For $N$ forces,
+
+\begin{center}
+	$$\vec{F}_{net} = \sum_{i = 1}^{N} \vec{F}_{i} = \vec{F}_{1} + \vec{F}_{2} + ... + \vec{F}_{N}.$$\linebreak
+\end{center}
+
+\subsection[A Short Catalog of Forces]{A Short Catalog of Forces}
+
+\subsubsection{Gravity} 
+
+Gravity is a long range force that draws two bodies together---the larger and closer the bodies, the bigger the force. All objects in ``gravitational range" of a body is affected by gravity---whether the bodies affected are at rest or not. The vector for gravity \textbf{points towards the center of the objects exerting the gravitational force}.
+
+\subsubsection{Spring Force} 
+
+When a spring is contacting another object, it exerts spring force of that object. If the spring is compressed, it pushes against the object, and when stretched it pulls the object. The tail of a spring force vector is placed on the diagram particle irregardless of the nature of its force. Also, not all springs are the metal coils everyone is familiar with. Anything that compresses or stretches and ``springs" back into its original shape is a spring.
+
+\subsubsection{Tension Force}
+
+When a rope, spring, or something else pulls on an object, it exerts a contact force called tension ($\vec{T}$). This vector (with its tail on the particle) follows along the direction of the string, spring, etc. The use of the ball-and-spring model to describe molecular forces is an application of the tension force to understand how the universe works at a microscopic level.
+
+\subsubsection{Normal Force} 
+
+Normal force is the force exerted upon an object that is contacting another object, perpendicular to the object being contacted. This normal force is equal to the force being put upon the other object, and it is denoted by the symbol $\vec{n}$. This force is called \textit{normal} force because it is perpendicular to a surface, not because it isn't abnormal.
+
+\subsubsection{Friction} 
+
+Friction is another force exerted by a surface on an object. However, unlike normal force, this force runs parallel to the surface and opposite of the direction of the object's motion (or the direction that the object ``would" move). This force during motion is called \textit{kinetic friction}, or $\vec{f}_{k}$, and at rest is called \textit{static friction}, or $\vec{f}_{s}$. Kinetic friction fights against motion, and static friction prevents motion.
+
+\subsubsection{Drag} 
+
+When an object moves through a fluid (a gas or liquid !I think!), it experiences a \textit{resistive force} called drag. Drag, like friction, moves against the motion of the object, and the magnitude of this force is increased with a greater area covered by the object, less weight, higher speed, and other factors.
+
+\subsubsection{Thrust} 
+
+Thrust is the force that propels a body forward through the expulsion of other objects. This is the force that propels rockets and other ships during their launch. 
+
+\subsubsection{Electricity and Magnetism} 
+
+Electric and magnetic forces are long range forces, like gravity. These forces are what pull different molecules together (not little springs).
+
+\subsection[What Do Forces Do?]{What Do Forces Do?}
+
+\textbf{An object affected by a constant net force moves with a constant acceleration}. By definition, a force is something that causes an object to accelerate, or to accelerate in a different way. \textbf{The acceleration of an object is directly proportional to the force exerted on it.} Additionally, the acceleration is \textbf{inversely proportional to the mass of an object}---therefore,
+
+\begin{center}
+	$$a = \frac{F}{m}.$$\linebreak
+\end{center}
+
+The basic unit of force is the \textbf{Newton}, which is equal to $1 kg \times 1 \frac{m}{s^{2}} = 1 \frac{kg \times m}{s^{2}}$. \\
+
+Mass is the amount of matter that something contains. \textbf{Inertia} is the tendency of an object to resist change in motion, and the $m$ in the force equation ($F = ma$) is \textbf{inertial mass}, which causes this resistance to change.
+
+\subsection[Newton's Second Law]{Newton's Second Law}
+
+\textbf{Newton's second law} states that the acceleration vector $\vec{a}$ of an object undergoing a force will be pointed in the same direction of the net force vector ($\vec{F}_{net}$) divided by the mass of the object. Symbolically,
+
+\begin{center}
+	$$\vec{a} = \frac{\vec{F}_{net}}{m}.$$\linebreak
+\end{center}
+
+
 \end{document}
