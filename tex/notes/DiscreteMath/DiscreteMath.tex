@@ -1,0 +1,107 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newtheorem{theorem}{Theorem}
+\newcommand{\ihat}{\hat{\i}}
+\newcommand{\jhat}{\hat{\j}}
+\newcommand{\khat}{\hat{k}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Jonathan Gribbins}
+\title{Discrete Mathematics}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Logic \& Proofs \& Circuits}
+
+\subsection{Propositional Logic}
+
+A \textbf{proposition} is a declarative sentence that is \textbf{either} true or false, but not both. To represent \textbf{propositional variables} to denote propositions---conventionally these are $p$, $q$, $r$, $s$,... . A proposition has a \textbf{truth value} of either $T$ or $F$, based on whether it is \textit{true} or \textit{false}. \\
+
+\textbf{Propositional logic} or \textbf{propositional calculus} is the area of logic that deals with these propositions. New propositions, called \textbf{compound propositions}, are statements built out of already established statements through the use of \textit{logical operators}.
+
+\begin{theorem}
+	Let $p$ be a proposition. The negation of $p$ is $\lnot p$, and this is the statement ``it is not the case that $p$." The statement $\lnot p$ is read ``not p", and the truth value of $\lnot p$ is the opposite of $p$.
+\end{theorem}
+
+The logical operators that are used to connect two or more propositions and create a new proposition are called \textbf{connectives}. 
+
+\begin{theorem}
+	Let p and q be propositions. The \textbf{conjunction} of p and q is denoted $p\wedge q$, and is said ``p and q." This proposition is true if and only if both p and q are true, and is false otherwise..
+\end{theorem}
+
+\begin{theorem}
+	Let p and q be propositions. The \textbf{disjunction} of p and q is denoted $p\vee q$, and is said ``p or q." This proposition is false if both p and q are false, and is true otherwise.
+\end{theorem}
+
+The \textit{or} in the disjunction connective is the English \textit{inclusive or}, which means ``either or both." On the contrary, the \textit{exclusive or} is the or that mean ``either but not both." The exclusive or is given by an altogether different connective. 
+
+\begin{theorem}
+	Let p and q be propositions. The \textbf{exclusive} of p and q is denoted $p \oplus q$, and is said ``p or q, but not both." This proposition is true only if one of p or q is true. It is false if both are true or if both are false.
+\end{theorem}
+
+You can also combine propositions with \textbf{conditional statements.} These are statements that connect two different propositions and are true based on the truth of the statements.
+
+\begin{theorem}
+	Let p and q be propositions. The \textbf{conditional statement} $p \rightarrow q$  is the propositions ``if p then q," and is only false when p is true and q is false. In this statement, p is the \textbf{hypothesis} and q is the \textbf{conclusion.} This connective is also called an \textbf{implication.}
+\end{theorem}
+
+There are various ways to state this implication. Most of them are simple and are easily recognized as $p \rightarrow q$, but there are a couple notably confusing ones. For instance, ``q only if p" and "q unless $\lnot$p" both mean $p\rightarrow q$. \\
+
+In addition to the conditional statement that $p \rightarrow q$, there are three other commonplace conditional statements. These are:
+
+\begin{description}
+	\item[Contrapositive:] The contrapositive of $p \rightarrow q$ is the proposition $\lnot q \rightarrow \lnot p$. The truth value of the contrapositive is always the same as the truth value of the original implication.
+	\item[Converse:] The converse of $p \rightarrow q$ is the proposition $q \rightarrow p$. The converse has the same truth values of the inverse.
+	\item[Inverse:] The inverse of $p \rightarrow q$ is the proposition $\lnot p \rightarrow \lnot q$. The inverse the same truth values of the converse.
+\end{description}
+
+When two different statements have the same truth values, they are called \textbf{equivalent}. So the contrapositive and the implication are equivalent, and the inverse and converse are equivalent. \\
+
+Biconditional statements are statements whose truth is based upon the conditions of two propositions. 
+
+\begin{theorem}
+	The \textbf{biconditional statement} $p \iff q$ is the proposition ``p if and only if q." This statement is only true if $p \rightarrow q$ and $q \rightarrow p$ have the same truth value, otherwise it is false. Biconditional statements are also called \textbf{bi-implications}, and $p \iff q$ is sometimes also written as ``p iff q."
+\end{theorem}
+
+Truth tables are tables that display different values of propositions and how these values effect a certain propositional statement. For instance, a statement like $p \rightarrow q$ would have a truth table like 
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+	\hline
+	$p$ & $q$ & $p \rightarrow q$ \\
+	\hline
+	$T$ & $T$ & $T$ \\
+	\hline
+	$T$ & $F$ & $F$ \\
+	\hline
+	$F$ & $T$ & $T$ \\
+	\hline
+	$F$ & $F$ & $T$ \\ 
+	\hline 
+\end{tabular}
+\end{center}
+
+The resultant statement of these truth tables are generally much longer than $p \rightarrow q$, and in this case, the statement may be broken down into component parts and ``built up" from smaller statements. \\
+
+These different connectives can be combined to create longer logical expressions with different truth values. \\
+
+Truth values can also be represented with \textbf{bits}. Bits are values of 1 or 0, where 1 represents true and 0 represents false. When using bits, connectives are generally represented as AND for $\wedge$, OR for $\vee$, and XOR for $\oplus$. A \textbf{bitstring} is a string of bits (like 000101110), and these connectives can be used on bitstrings as \textbf{bitwise connectives}. These bitwise connectives take in two strings of equal length and use the operation on corresponding bits. For instance, $$101110 \oplus 111000 \rightarrow 010110.$$ 
+
+\subsection{Proofs}
+
+
+\end{document}
