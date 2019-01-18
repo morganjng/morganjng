@@ -27,7 +27,7 @@
 
 \section{Logic \& Proofs \& Circuits}
 
-\subsection{Propositional Logic}
+\subsection{Propositional Logic \& Truth Tables}
 
 A \textbf{proposition} is a declarative sentence that is \textbf{either} true or false, but not both. To represent \textbf{propositional variables} to denote propositions---conventionally these are $p$, $q$, $r$, $s$,... . A proposition has a \textbf{truth value} of either $T$ or $F$, based on whether it is \textit{true} or \textit{false}. \\
 
@@ -99,9 +99,78 @@ The resultant statement of these truth tables are generally much longer than $p 
 
 These different connectives can be combined to create longer logical expressions with different truth values. \\
 
-Truth values can also be represented with \textbf{bits}. Bits are values of 1 or 0, where 1 represents true and 0 represents false. When using bits, connectives are generally represented as AND for $\wedge$, OR for $\vee$, and XOR for $\oplus$. A \textbf{bitstring} is a string of bits (like 000101110), and these connectives can be used on bitstrings as \textbf{bitwise connectives}. These bitwise connectives take in two strings of equal length and use the operation on corresponding bits. For instance, $$101110 \oplus 111000 \rightarrow 010110.$$ 
+Truth values can also be represented with \textbf{bits}. Bits are values of 1 or 0, where 1 represents true and 0 represents false. When using bits, connectives are generally represented as AND for $\wedge$, OR for $\vee$, and XOR for $\oplus$. A \textbf{bitstring} is a string of bits (like 000101110), and these connectives can be used on bitstrings as \textbf{bitwise connectives}. These bitwise connectives take in two strings of equal length and use the operation on corresponding bits. For instance, $$101110 \oplus\ (XOR)\ 111000 \rightarrow 010110.$$ 
 
-\subsection{Proofs}
+\subsection{Introduction to Proofs}
 
+A \textbf{proof} is an argument that serves to establish the truth of a mathematical or logical statement. A proof utilizes the hypothesis of the proof in conjunction with assumed axioms and other proved statements to complete this argument. In \textit{formal proofs}, every single step used to argue this truth is explicitly stated, but in \textit{informal proofs,} which are generally used in explanations for people, simple steps may be implicit and in-between steps. \\
+
+There are many different terms used in proofs and when dealing with proofs:
+
+\begin{description}
+	\item[Theorem] A theorem is a statement that has been proven to be true. In mathematics, this word is generally saved for really important stuff---``theorems" that are not very important are usually called propositions.
+	\item[Proof] A proof is an argument that establishes a proposition to be true.
+	\item[Axiom] An axiom is a statement that is assumed to be true and is used in proofs. Also called a postulate.
+	\item[Lemma] A lemma is a theorem or proposition that is useful in the proofs of other theorems.
+	\item[Corollary] A corollary is a theorem that can be established directly from a theorem that has been proved.
+	\item[Conjecture] A conjecture is a statement that has been proposed to be true but hasn't been proven yet.
+\end{description}
+
+There are two common types of theorems---universal theorems and existence theorems. Universal theorems (with universal qualifier $\forall$) state that for all elements in a domain some proposition holds true. Existence theorems (with existence qualifier $\exists$) state that some element in a domain exists such that a proposition holds true. \\
+
+A universal theorem is usually in the form $\forall x(P(x) \rightarrow Q(x))$. These theorems are usually proved by assuming some element $c$ in the domain in question, and showing that $P(c) \rightarrow Q(c)$ holds true for this arbitrary case. 
+
+\subsubsection{Direct Proofs}
+
+\textbf{Direct proofs} are proofs that begin by assuming that p is true, and then attempting to show that q holds true because of that. These proofs are generally self-evident if they end up working out.
+
+\subsubsection{Proof by Contrapositive}
+
+\textbf{Indirect proofs} are proofs that do not begin with the assumption that p is true. An important type of indirect proof is the \textbf{proof by contrapositive}. This type of proofs begins by assuming that $\lnot q$ is true, and trying to find that $\lnot p$ is always true as a result---this works because the contrapositive of $p \rightarrow q$ is $\lnot q \rightarrow \lnot p$, and these two statements are \textit{logically equivalent}. \\
+
+It is important to note that proving a proposition $p \rightarrow q$ true is trivial if we can prove $p$ is false because when $p$ is false, $p \rightarrow q$ is always true. his type of proof is called \textbf{vacuous.} If a proposition $p \rightarrow q$ is proven by showing that $q$ is true, this proof is called \textbf{trivial}.
+
+\subsubsection{Proof by Contradiction}
+
+If we want to prove that a statement p is true and we find a contradiction q that is proven false that is implied by $\lnot p \rightarrow q$, then $\lnot p$ must be false---therefore p must be true. This type of proof is called \textbf{proof by contradiction,} and is started by assuming that either q and $\lnot p$ or $\lnot q$ and p are both true (but not both assumptions), and using this assumption to lead to a contradiction.
+
+\subsubsection{Proofs of Equivalence}
+
+A \textbf{proof of equivalence} is a proof of a biconditional statement. This type of proof is based on the logical fact that $$(p \iff q) \iff (p \rightarrow q)\wedge(q \rightarrow p).$$ That is---p if and only if q if and only if p implies q and q implies p. If the statement $p \iff q \iff r$ is true, the truth or falsity of one statement (p, q, or r) guarantees identical truth or falsity of the other statements (this works form more than three propositions too!).
+
+\subsubsection{Counterexamples}
+
+To disprove a universal proposition like $\forall x(P(x))$, it takes only one example $c$ for which $P(c)$ is not true. Additionally, for existence proofs like $\exists x(P(x))$, it takes only one example $c$ for which $P(c)$ holds true to prove the statement.
+
+\subsubsection{Mistakes in Proofs}
+
+It is very easy to make mistakes in proofs. However, if in a proof there is some mistake in the axiomatic or logical foundation, the proof becomes incorrect, and the results are no longer correct. 
+
+\pagebreak
+
+\section{Vocabulary}
+	
+\begin{description}
+	\item[Proposition] A declarative statement that is either true or false, but not both.
+	\item[Propositional variables] Letters used to represent a proposition
+	\item[Truth value] The truth (T) or falsehood (F) of a proposition
+	\item[Propositional calculus/logic] Area of logic that deals with propositions
+	\item[Compound propositions] Propositions built out of other propositions with logical operators
+	\item[Connectives] Logical operators that connect two or more propositions and create a new proposition
+	\item[Conjunction] Connective that combines two propositions and is true if and only if both propositions are true
+	\item[Disjunction] Connective that combines two propositions and is false if both propositions are false, and true otherwise
+	\item[Exclusive] Connective that combines two propositions and is true only if one of the two propositions is true, but not both
+	\item[Conditional statements] Statements that connect two different propositions and whose truth value is based on the truth of the statements
+	\item[Implication] A conditional statement stating ``if p then q" that is only false if p is true and q is false
+	\item[Contrapositive] A conditional statement rearranging $p \rightarrow q$ and stating ``if not p then not q" that is only false if q is false and p is true
+	\item[Converse] A conditional statement rearranging $p \rightarrow q$ and stating ``if q then p" that is only false if q is true and p is false
+	\item[Inverse] A conditional statement rearranging $p \rightarrow q$ and stating ``if not p then not q" that is only false if q is true and p is false
+	\item[Logically equivalent] Two statements are logically equivalent if all of their truth values are the same
+	\item[Biconditional statement] A conditional statement stating ``p if and only if q" that is only true if $p \rightarrow q$ and $q \rightarrow p$ have the same truth value
+	\item[Bit] A value of 1 or 0, where 1 denotes truth and 0 denotes falsehood
+	\item[Bitstring] A string of bits
+	\item[Bitwise connectives] Connectives operating upon corresponding bits in two bitstrings
+	\item[Proof] An argument establishing the truth of a mathematical or logical statement
+\end{description}
 
 \end{document}
