@@ -25,7 +25,7 @@
 
 \pagebreak
 
-\section{Logic \& Proofs \& Circuits}
+\section{Logic \& Proofs}
 
 \subsection{Propositional Logic \& Truth Tables}
 
@@ -132,7 +132,7 @@ It is important to note that proving a proposition $p \rightarrow q$ true is tri
 
 \subsubsection{Proof by Contradiction}
 
-If we want to prove that a statement p is true and we find a contradiction q that is proven false that is implied by $\lnot p \rightarrow q$, then $\lnot p$ must be false---therefore p must be true. This type of proof is called \textbf{proof by contradiction,} and is started by assuming that either q and $\lnot p$ or $\lnot q$ and p are both true (but not both assumptions), and using this assumption to lead to a contradiction.
+If we want to prove that a statement p is true and we find a contradiction q that is proven false that is implied by $\lnot p \rightarrow q$, then $\lnot p$ must be false---therefore p must be true. This type of proof is called \textbf{proof by contradiction,} and is started by assuming that q and $\lnot p$ are true, and using this assumption to lead to a contradiction.
 
 \subsubsection{Proofs of Equivalence}
 
@@ -144,7 +144,23 @@ To disprove a universal proposition like $\forall x(P(x))$, it takes only one ex
 
 \subsubsection{Mistakes in Proofs}
 
-It is very easy to make mistakes in proofs. However, if in a proof there is some mistake in the axiomatic or logical foundation, the proof becomes incorrect, and the results are no longer correct. 
+It is very easy to make mistakes in proofs. However, if in a proof there is some mistake in the axiomatic or logical foundation, the proof becomes incorrect, and the results are no longer correct.
+
+\subsubsection{Exhaustive Proofs/Proof by Cases}
+
+If a proposition has the form $\left(p_{1} \vee p_{2} \vee p_{3} \vee ... \right) \rightarrow q$, then the proof may be broken up into separate proofs for each separate part of the proposition. You would have to prove $p_{n} \rightarrow q$ for each $n$, and this type of proof is called an \textbf{exhaustive proof} or \textbf{proof by cases.} Common cases for integers are things like proving for zero, proving for odds, evens, positives, negatives, etc. 
+
+\subsection{Existence Proofs}
+
+Proofs that assert that $\exists x P(x)$ (there is some x such that P(x) holds true) are called \textbf{existence proofs}. A \textbf{constructive} existence proof is one where some $a$ is found such that $P(a)$ is true. A \textbf{nonconstructive} existence proof is one where this $a$ is not found, but it is proved that one must exist. Nonconstructive proofs generally follow the same pathways to proving that universality proofs follow.
+
+\subsubsection{Uniqueness Proofs}
+
+Sometimes proofs assert that there exists an element that holds a certain property, and also that this is the one \textbf{unique} element that holds this property. These proofs are called \textbf{uniqueness proofs}, and they assert that a) \textit{an element $a$ exists such that $P(a)$ is true} and b) \textit{no other element $x$ exists such that $P(x)$ holds true}. Symbolically, a uniqueness proof for $P(x)$ is the proposition that $$\exists a \left(P(a)\right) \wedge \left(\forall b \neq a \rightarrow \lnot P(b)\right).$$
+
+
+
+
 
 \pagebreak
 
