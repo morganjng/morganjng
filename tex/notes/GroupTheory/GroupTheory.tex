@@ -1,0 +1,71 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\newtheorem{theorem}{Theorem}
+\newcommand{\ihat}{\hat{\i}}
+\newcommand{\jhat}{\hat{\j}}
+\newcommand{\khat}{\hat{k}}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Jonathan Gribbins}
+\title{Group Theory}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\pagebreak
+
+\section{Introduction to Groups}
+
+\subsection{Basic Axioms}
+
+A group is one of the fundamental algebraic objects studied in abstract algebra. Groups are sets coupled with a binary operation in the ordered pair $(G, \star)$, where $\star$ is a \textbf{binary operation}---
+
+\begin{description}
+	\item[(1)] A \textit{binary operation} is a function on a set $G$ mapping $G \times G$ to $G$: $\star: G \times G \rightarrow G$. This operation upon an ordered pair in $G$ is denoted $\star (a, b)$ for $a, b \in G$.
+	\item[(2)] A binary operation is \textit{associative} if for all $a, b, c \in G$, $a \star (b \star c) = (a \star b) \star c$.
+	\item[(3)] Two elements $a, b \in G$ \textit{commute} if $a \star b = b \star a$. A binary operation is \textit{commutative} if $\forall a, b \in G, a \star b = b \star a$.
+\end{description}
+
+A \textbf{group} is an ordered pair of a set and a binary operation upon this set $(G, \star)$ such that three axioms are fulfilled:
+
+\begin{description}
+	\item[(1)] $G$ is \textbf{associative}, so for all $a, b, c \in G$, $a \star (b \star c) = (a \star b) \star c$.
+	\item[(2)] There is some element $e \in G$ such that for all elements $a \in G$, $a \star e = a$.
+	\item[(3)] For all $a \in G$, there is some element $a^{-1} \in G$ such that $a \star a^{-1} = e$.
+\end{description}
+
+A group $G$ is called \textbf{abelian} or \textbf{commutative} if for all $a, b \in G$, $a \star b = b \star a$. \\
+
+It can be shown that for any group $G$ under binary operation $\star$, 
+
+\begin{description}
+	\item[(1)] The identity ($e$) of $G$ is unique.
+	\item[(2)] For each $a \in G$, $a^{-1}$ is unique.
+	\item[(3)] $(a^{-1})^{-1} = a$ for all $a \in G$.
+	\item[(4)] $(a \star b)^{-1} = (b)^{-1} \star (a)^{-1}$.
+	\item[(5)] For any $a_{1}, a_{2}, a_{3}, ... a_{n} \in G$, the value of $a_{1} \star a_{2} \star a_{3} \star ... \star a_{n}$ does not vary based on parentheses or brackets.
+\end{description}
+
+Because of \textbf{(5)}, for any element $a \in G$, the product of $n \in Z^{+}$ $a$s ($a \star a \star a ... (n times)$) can be denoted $a^{n}$. Additionally, if we let $a$ be the inverse $x^{-1}$ of an element $x \in G$, we would denote the nth product of $x^{-1}$ as $x^{-n}$. The identity of a group $G$ can be denoted $a^{0}$ for all $a \in G$. 
+
+\begin{description}
+	\item[\boldmath Order of an element $x \in G$:] The order of an element $x \in G$ is the \textit{smallest positive integer} $n$ such that $x^{n} = 1$ (where is the identity of $G$). This integer is also denoted $|x|$. If there is no integer $n$ such that $x^{n} = 1$, $x$ is said to be of infinite order.
+\end{description}
+
+\begin{description}
+	\item[\boldmath Cayley table of group $G$] The \textit{Cayley, multiplication, or group table} of a finite group $G = \{g_{1}, g_{2}, g_{3}, ... g_{n}\}$ is an $n \times n$ table where the entry at location $(i, j)$ in the table is equal to $g_{i}g_{j}$.
+\end{description}
+
+
+\end{document}
