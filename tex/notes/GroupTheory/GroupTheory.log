@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.10)  22 JAN 2019 11:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.10)  30 JAN 2019 11:31
 entering extended mode
 **./GroupTheory.tex
 (GroupTheory.tex
@@ -391,24 +391,69 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--49
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
 [2]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
+Underfull \hbox (badness 10000) in paragraph at lines 74--75
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--77
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--79
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
+
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
+[4]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 106.
  (GroupTheory.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 71.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 71.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `GroupTheory.out' has not changed.
-(rerunfilecheck)             Checksum: A3F5311A76A0BC0B1A549DEF1CEA3E89;120.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
+(rerunfilecheck)             Checksum: 1E88DEB23D1FF2DD8B646725328C198A;250.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 6865 strings out of 492946
- 97195 string characters out of 3135518
+ 6871 strings out of 492946
+ 97267 string characters out of 3135518
  202766 words of memory out of 3000000
- 10684 multiletter control sequences out of 15000+200000
+ 10686 multiletter control sequences out of 15000+200000
  15212 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,6n,35p,385b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,6n,35p,709b,325s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/P
 rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiK
@@ -419,9 +464,9 @@ c/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
 s/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on GroupTheory.pdf (2 pages, 116796 bytes).
+Output written on GroupTheory.pdf (4 pages, 137101 bytes).
 PDF statistics:
- 71 PDF objects out of 1000 (max. 8388607)
- 6 named destinations out of 1000 (max. 500000)
- 17 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 91 PDF objects out of 1000 (max. 8388607)
+ 10 named destinations out of 1000 (max. 500000)
+ 33 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -12,6 +12,7 @@
 \newcommand{\ihat}{\hat{\i}}
 \newcommand{\jhat}{\hat{\j}}
 \newcommand{\khat}{\hat{k}}
+\newcommand{\rhat}{\hat{r}}
 \usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \author{Jonathan Gribbins}
 \title{Electricity \& Magnetism Notes}
@@ -59,6 +60,8 @@ When doing his research of electrostatics, Coulomb went without a unit of measur
 
 The idea for fields to describe long-range forces like gravity and electromagnetism came from physicists wondering about how objects interacted with these long-range forces based on time---should a particle instantly react to a shift in a particle light years away? To describe this, Michael Faraday proposed the field. A \textbf{field}, in physics, is a function that assigns a vector to every point in space. So, an object's field affects every point at space, and other objects react to how the field affects their position. The alteration of space because of mass is called a \textit{gravitational field}, and the alteration because of electricity and charge is called an \textbf{electric field}. \\
 
-\textbf{The electric field is the agent that exerts an electric force on and from a charged particle}. \textit{Charged particles interact via the electrical field}. The electric field at a point $(x, y, z)$ 
+\textbf{The electric field is the agent that exerts an electric force on and from a charged particle}. \textit{Charged particles interact via the electrical field}. The electric field at a point $(x, y, z)$  for a particle of charge $q$ is $$\vec{E}(x, y, z) = \frac{\vec{F}_{on\ q} at (x, y,z)}{q}.$$ In other words, the \textbf{electric field strength} is the vector that describes the overall electric force on a particle regardless of charge. To get the force from the strength of an electric field, you would calculate $$\vec{F}_{on\ q} = q\vec{E}(x, y, z).$$ \\
+
+Through the use of the force equation, the electromagnetic field emitted by charge $q$ (with $Q$ being the charge of any other particle) can be given by the vector field $$\vec{E} = \frac{\vec{F}_{on\ q}}{Q} = \left(\frac{1}{4\pi\epsilon_{0}}\frac{q}{r^{2}}, towards\ q\ if\ q < 0,\ away\ from\ q\ if\ q > 0\right).$$ Another way of representing this field is through the usage of \textit{unit vectors}. Unit vectors are vectors of length one pointed in a certain direction. For usage with $\vec{E}$, we define the unit vector $\rhat$, which has magnitude of one and points outward from the charge generating $\vec{E}$. With this, $\vec{E}$ becomes $$\vec{E} = \frac{1}{4\pi\epsilon_{0}}\frac{q}{r^{2}} \rhat.$$ When a charged particle being influenced by the field of charge $Q$ is charged in the same way as $q$, then $\vec{F}$ points outward from the charged particle, and when they are differently charged, $\vec{F}$ points towards the charged particle.
 
 \end{document}
