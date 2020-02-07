@@ -1,0 +1,58 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\title{Complex Variables}
+\author{Morgan Gribbins}
+\lhead{Page \thepage\ of TOTAL}
+\begin{document}
+	
+\maketitle
+\tableofcontents
+\pagebreak
+
+\section{The Complex Plane}
+
+\subsection{The Complex Numbers and the Complex Plane}
+
+The complex plane is how we visualize the separate real and imaginary components of the complex variable \( z \). A \textbf{complex number} is an expression of the form \[z = x + iy,\] where \( x \) and \( y \) are real numbers and \( i \) satisfies the rule \[(i)^{2} = (i)(i) = -1.\] The number \(x\) is called the \textbf{real part} of \(z\) and is written \[x = \text{Re } z.\] The number \(y\), despite the fact that it is also a real number, is called the \textbf{imaginary part} of \(z\) and is written \[z = \text{Im } z.\] The \textbf{modulus}, or \textbf{absolute value} of \(z\) is defined by \[|z| = \sqrt{x^{2} + y^{2}},\ z = x+ iy.\] A complex number \(z = x + iy\) corresponds to the point \(P(x,y)\) in the \(xy\)-plane. The modulus of \(z\), then, is just the distance from the point \(P(x,y)\) to the origin, which is \(0\). These three inequalities hold true: \[|x| \leq |z|,\ |y| \leq |z|,\ |z| \leq |x| + |y|.\] The \textbf{complex conjugate} of \(z = x + iy\) is given by \[\bar{z} = x - iy.\] Addition, subtraction, multiplication, and division of complex numbers follow the ordinary rules of arithmetic. For \[z = x + iy\ \text{and}\ w = s + it\] we have \[z + w = (x + s) + i(y + t),\] \[z - w = (x - s) + i(y - t),\] \[zw = (xs - yt) + i(xt + ys),\ \text{and}\] \[\frac{z}{w} = \frac{\bar{w}z}{\bar{w}w} = \frac{(xs + yt) + i(ys - xt)}{s^{2} + t^{2}}.\] We can also represent complex numbers in the complex plane via polar coordinates---\[x = r \text{cos }\theta\ \text{and}\ y = r \text{ sin }\theta.\] Since \(r = |z|\) by definition of the modulus of a complex number, so \[z = |z|(\text{cos }\theta + i \text{ sin }\theta).\] This is called the \textbf{polar representation} of \(z\). For two complex numbers, \[z = |z|(\text{cos }\theta + i\text{ sin }\theta)\ \text{and}\ w = |w|(\text{cos }\phi + i\text{ sin }\phi),\] we have \[zw = |z||w|(\text{cos }(\theta + \phi) + i\text{ sin }(\theta + \phi))\ \text{and}\] \[\frac{z}{w} = \left( \frac{|z|}{|w|}\right) (\text{cos }(\theta - \phi) + i\text{ sin }(\theta - \phi)).\] From this, we have \textbf{De Moivre's Theorem:} \[(\text{cos }\theta + i\text{ sin }\theta)^{n} = \text{cos }n\theta + i\text{ sin }n\theta.\] We define an \textbf{argument} of the nonzero complex number \(z\) to be any angle \(\theta\) for which \[z = |z|(\text{cos }\theta + i\text{ sin }\theta),\] whether or not it lies in the range \([0, 2\pi)\); we write \(\theta = \text{arg } z\). We define \(\textbf{Arg } z\) to be the number \(\theta_{0} \in [-\pi, \pi)\) such that \[z = |z|(\text{cos }\theta_{0} + i\text{ sin }\theta_{0}).\] We then have \[\textbf{Arg } (zw) = \textbf{Arg } z + \textbf{Arg } w\ (\text{mod } 2\pi).\] In summary, the \(xy\)-plane is a natural interpretation of a complex variable, and the rules of the \(xy\)-plane can be made to fit this depiction. We then call this plane the \textbf{complex plane}, the \(x\)-axis the \textbf{real axis}, and the \(y\)-axis the \textbf{imaginary axis}.
+
+\subsection{Complex Roots and Circles in the Complex Plane}
+
+
+Complex roots follow directly from rules established in the previous section. A complex number \(z\) that satisfies the equation \(z^{n} = w\) (with \(z = (|z|, \theta)\) and \(w = (|w|, \phi)\)) is called the \textbf{\textit{n}th root of \textit{w}}. This \(n\)th root of \(w\) follows these equations: \[|z|^{n} = |w|,\ \text{cos } n\theta = \text{cos } \phi,\ \text{sin } n\theta = \text{sin } \phi.\] A circle around a point \(p\) of radius \(r\) is given by the equation \[|z - p| = r,\] as this is the set of points \(r\) distance from \(p\).
+
+\subsection{Subsets of the Plane}
+
+The set consisting of all points \(z\) satisfying \(|z - z_{0}| < R\) is called the \textbf{open disc} of radius \(R\) centered at \(z_{0}\). A point \(w_{0}\) in a set \(D\) in the complex plane is called an \textbf{interior point} of \(D\) if there is some open disc centered at \(w_{0}\) that lies entirely within \(D\). A set \(D\) is called \textbf{open} if all of its points are interior points. A point \(p\) is a \textbf{boundary point} of a set \(S\) if every open disc centered at \(p\) containing both points of \(S\) and not of (S). The set of all boundary points of a set \(S\) is called the \textbf{boundary} of \(S\). A set \(C\) is \textbf{closed} if it contains its boundary. \\
+
+\textbf{Theorem: } A set \(D\) is open if and only if it contains no point of its boundary. A set \(C\) is closed if and only if its complement \(D = \{z: z \notin C\}\) is open. \\
+
+A \textbf{polygonal curve} is the union of a finite number of directed line segments \(\textbf{P}_{1}, \textbf{P}_{2}, ..., \textbf{P}_{n}\), where the terminal point of one is the initial point of the next (excluding the last). An open set \(D\) is \textbf{connected} if each pair \(p, q\) of points in \(D\) may be joined by a polygonal curve lying entirely in \(D\). An open connected set is called a \textbf{domain}. A set \(S\) is \textbf{convex} if the line segment \textbf{pq} joining each \(p,q\) in \(S\) also lies in \(S\). An \textbf{open half-plane} is the set of points strictly to one side of a straight line. A \textbf{closed half-plane} is an open half-plane, with the inclusion of the defining straight line.
+
+\subsection{Functions ad Limits}
+
+A \textbf{function} of the complex variable \(z\) is a rule that assigns a complex number to each \(z\) within some specified set \(D\); \(D\) is called the \textbf{domain of definition} of the function. The collection of all possible values of the function is called the \textbf{range} of the function. We frequently write \(w = f(z)\) to distinguish the dependent and independent variables. \\
+
+Let \(\{z_{n}\}_{n=1}^{\infty}\) be a sequence of complex numbers. We say that \(\{z_{n}\}\) has the complex number \(A\) as a \textbf{limit}, or that \(\{z_{n}\}\) \textbf{converges} to \(A\), and we write \[\lim_{n \to \infty} z_{n} = A,\ \text{or}\ z_{n} \to A\] if, given any positive number \(\epsilon\), there is an integer \(N\) such that \[|z_{n} - A| < \epsilon,\ \text{for all } n \geq N.\] A sequence that does not converge, for any reason whatsoever, is called \textbf{divergent}. Additionally, for \(z_{n} = x_{n} + iy_{n}\) and \(A = s + it\), then \(z_{n} \to A\) if and only if \(x_{n} \to s\) and \(y_{n} \to t\). Additionally, if \(z_{n} \to A\), then \(|z_{n}| \to |A|\), and for two convergent series \(z_{n} \to A\) and \(w_{n} \to B \neq 0\), \(\forall \alpha,\beta \in \mathbb{C},\ \alpha z_{n} + \beta w_{n} \to \alpha A + \beta B,\ \alpha z_{n} w_{n} \to \alpha AB,\ \alpha z_{n}/\beta w_{n} \to \alpha A / \beta B\). \\
+
+We say that a function \(f\) defined on a subset \(S \subseteq \mathbb{C}\) has a \textbf{limit} \(L\) at the point \(z_{0} \in S\) or in the boundary of \(S\), and we write \[\lim_{z \to z_{0}} f(z) = L\ \text{or}\ f(z) \to L\ \text{as}\ z \to z_{0}\] if, given \(\epsilon > 0\), there is a \(\delta > 0\) such that \[|f(z) - L| < \epsilon\ \text{whenever}\ z \in S\ \text{and}\ |z - z_{0}| < \delta.\] We say that a function \(f\) has a \textbf{limit L at} \(\infty\), and we write \[\lim_{z \to \infty} f(z) = L\] if, given \(\epsilon > 0\), there is a large number \(M\) such that \[|f(z) - L| < \epsilon\ \text{whenever}\ z \geq M.\] Note that this only requires that \(|z|\) be large; there is no restriction on arg \(z\). The arithmetic rules with constants and limits of sequences hold with limits of functions. \\
+
+Suppose again that \(f\) is a function defined on a subset \(S\) on the complex plane. If \(z_{0} \in S\), then \(f\) is \textbf{continuous} at \(z_{0}\) if \[\lim_{z \to z_{0}} f(z) = f(z_{0}).\] That is, \(f\) is continuous at \(z_{0}\) if the values of \(f(z)\) get arbitrarily close to the value \(f(z_{0})\), so long as \(z\) is in \(S\) and \(z\) is sufficiently close to \(z_{0}\). If it happens that \(f\) is continuous at all points on \(S\), we say \(f\) is \textbf{continuous on \textit{S}}. The function \(f\) is continuous at \(\infty\) if \(f(\infty)\) is defined and \(\lim_{z \to \infty} f(z) = f(\infty)\). \\
+
+The sum of an \textbf{infinite series of complex numbers} is 
+practically the same as the sum of an infinite series of real numbers. We define the \textbf{\textit{n}th partial sum by} \[s_{n} = \sum\limits_{j = 1}^{n} = z_{1} + ... + z_{n},\ n = 1,2,... .\]  If the sequence \(\{s_{n}\}\) has a limit \(s\), then we say that the infinite series \(\sum\limits_{j = 1}^{\infty} z_{j}\) \textbf{converges} and has sum s; this is written \[\sum\limits_{j = 1}^{\infty} z_{j} = s.\] If this does not have a limit, we say that this series \textbf{diverges}. As with sequences, the real and imaginary parts of the sum must converge to the real and imaginary parts of the limits of the sum.
+
+\subsection{The Exponential, Logarithm, and Trigonometric Function}
+
+The exponential function is one of the most important functions in complex analysis. Its definition is this: \[e^{x + iy} = e^{x}(\text{cos }y + i\text{ sin }y).\] The form \(\text{exp}(z)\) is sometimes used, especially if \(z\) is particularly complicated. For any two complex numbers, \(z\) and \(w\), we have \[e^{z + w} = e^{z}e^{w}.\] Additionally, \[|e^{z}| = e^{\text{Re } z},\ \text{and}\ \textbf{Arg } e^{z} = \text{Im } z.\] \\
+
+The inverse of the exponential function is the logarithm function. For a nonzero complex number \(z\), we define \textbf{log} \(z\) to be any complex number \(w\) with \(e^{w} = z\). \[\text{log } z = \text{ln } |z|;;;; + i \text{ arg } z.\]
+
+\end{document}
