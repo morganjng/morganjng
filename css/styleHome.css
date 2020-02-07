@@ -45,23 +45,25 @@ h1.header{
 
 a.nounderline:link{
     color: black;
-    background-color: lightgrey;
+    background-color: lightblue;
     border-radius: 15px;
     text-decoration: none;
     padding: 5px;
+    border: 3px solid lightseagreen;
 }
 
 a.nounderline:visited{
     color: black;
-    background-color: lightgrey;
+    background-color: lightblue;
     border-radius: 15px;
     text-decoration: none;
     padding: 5px;
+    border: 3px solid lightseagreen;
 }
 
 a.nounderline:hover{
     color: black;
-    background-color: lightgrey;
+    background-color: lightblue;
     border-radius: 15px;
     text-decoration: none;
     padding: 2px;
