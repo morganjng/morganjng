@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.11.12)  7 FEB 2020 18:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.11.12)  7 FEB 2020 16:15
 entering extended mode
-**./notes.tex
-(notes.tex
+**./HW5.tex
+(HW5.tex
 LaTeX2e <2017-04-15>
 Babel <3.15> and hyphenation patterns for 75 language(s) loaded.
 ("F:\Program Files (x86)\MiKTeK\tex\latex\base\article.cls"
@@ -431,9 +431,6 @@ File: pdftex.def 2017/12/07 v1.0i Graphics/color driver for pdftex
 \Gin@req@height=\dimen112
 \Gin@req@width=\dimen113
 )
-(C:\Users\Jonathan\AppData\Roaming\MiKTeX\2.9\tex\latex\lastpage\lastpage.sty
-Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
-)
 ("F:\Program Files (x86)\MiKTeK\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -473,21 +470,21 @@ s
 \f@nch@O@erf=\skip52
 \f@nch@O@olf=\skip53
 \f@nch@O@orf=\skip54
-) (notes.aux)
-\openout1 = `notes.aux'.
+) (HW5.aux)
+\openout1 = `HW5.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
-LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
 
 ("F:\Program Files (x86)\MiKTeK\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -550,10 +547,6 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-Package lastpage Info: Please have a look at the pageslts package at
-(lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 16.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -588,43 +581,47 @@ Package lastpage Info: Please have a look at the pageslts package at
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 18.
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
 ("F:\Program Files (x86)\MiKTeK\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 18.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 ("F:\Program Files (x86)\MiKTeK\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (notes.toc)
-\tf@toc=\write3
-\openout3 = `notes.toc'.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
 
 
-[1
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
-{C:/Users/Jonathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+ []
 
-Package Fancyhdr Warning: \headheight is too small (12.0pt): 
-Make it at least 14.49998pt.
-We now make it that large for the rest of the document.
-This may cause the page layout to be inconsistent, however.
 
-[2]
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
 
  []
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
 
- []
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
-
-Overfull \hbox (2.27693pt too wide) in paragraph at lines 39--40
-[]\OT1/cmr/m/n/12 A \OT1/cmr/bx/n/12 polyg-o-nal curve \OT1/cmr/m/n/12 is the u
-nion of a fi-nite num-ber of di-rected line seg-ments $[][]\OML/cmm/m/it/12 ; [
-][]; :::; [][]$\OT1/cmr/m/n/12 ,
  []
 
 
@@ -637,89 +634,76 @@ Underfull \hbox (badness 10000) in paragraph at lines 45--46
 
  []
 
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
 
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 58--59
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 60--61
+Underfull \hbox (badness 10000) in paragraph at lines 61--62
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 62--63
+Underfull \hbox (badness 10000) in paragraph at lines 65--66
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 68--69
+Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-[6]
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+[1
 
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 72--73
-
- []
-
-[8]
-Overfull \hbox (2.9844pt too wide) in paragraph at lines 78--78
-[]\OT1/cmr/bx/n/14.4 Analytic and Har-monic Func-tions; the Cauchy-Riemann Equa
--
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 81--82
+{C:/Users/Jonathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 71--72
 
  []
 
 
-AED: lastpage setting LastPage
-[9] (notes.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 75--76
+
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[2] (HW5.aux) ) 
 Here is how much of TeX's memory you used:
- 3303 strings out of 493312
- 42792 string characters out of 3138025
- 115517 words of memory out of 3000000
- 6787 multiletter control sequences out of 15000+200000
- 13383 words of font info for 51 fonts, out of 3000000 for 9000
+ 3252 strings out of 493312
+ 41828 string characters out of 3138025
+ 108703 words of memory out of 3000000
+ 6746 multiletter control sequences out of 15000+200000
+ 11490 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,43p,3006b,201s stack positions out of 5000i,500n,10000p,200000b,50000s
-<F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/
-cmbx12.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmbxti
-10.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmex10.pfb
-><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi12.pfb><F:/P
-rogram Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi6.pfb><F:/Program 
-Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/Program Files (
-x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Program Files (x86)/Mi
-KTeK/fonts/type1/public/amsfonts/cm/cmr17.pfb><F:/Program Files (x86)/MiKTeK/fo
-nts/type1/public/amsfonts/cm/cmr6.pfb><F:/Program Files (x86)/MiKTeK/fonts/type
-1/public/amsfonts/cm/cmr8.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfo
-nts/cm/cmsy8.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/sym
-bols/msbm10.pfb>
-Output written on notes.pdf (9 pages, 168157 bytes).
+ 41i,10n,43p,272b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
+<F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi6.pfb><F:/
+Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/Program
+ Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Program Files 
+(x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr17.pfb><F:/Program Files (x86)/M
+iKTeK/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/Program Files (x86)/MiKTeK/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><F:/Program Files (x86)/MiKTeK/fonts/ty
+pe1/public/amsfonts/cm/cmsy8.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/pub
+lic/amsfonts/symbols/msbm10.pfb>
+Output written on HW5.pdf (2 pages, 96852 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
+ 49 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

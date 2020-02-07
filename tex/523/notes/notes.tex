@@ -4,13 +4,15 @@
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
+\usepackage{lastpage}
 \usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \fancyhf{}
 \title{Complex Functions}
 \author{Morgan Gribbins}
-\lhead{Page \thepage\ of TOTAL}
+\date{}
+\lhead{Page \thepage\ of \pageref{LastPage}}
 \begin{document}
 	
 \maketitle
@@ -51,8 +53,38 @@ practically the same as the sum of an infinite series of real numbers. We define
 
 \subsection{The Exponential, Logarithm, and Trigonometric Function}
 
-The exponential function is one of the most important functions in complex analysis. Its definition is this: \[e^{x + iy} = e^{x}(\text{cos }y + i\text{ sin }y).\] The form \(\text{exp}(z)\) is sometimes used, especially if \(z\) is particularly complicated. For any two complex numbers, \(z\) and \(w\), we have \[e^{z + w} = e^{z}e^{w}.\] Additionally, \[|e^{z}| = e^{\text{Re } z},\ \text{and}\ \textbf{Arg } e^{z} = \text{Im } z.\] \\
+The exponential function is one of the most important functions in complex analysis. Its definition is this: \[e^{x + iy} = e^{x}(\text{cos }y + i\text{ sin }y).\] The form \(\text{exp}(z)\) is sometimes used, especially if \(z\) is particularly complicated. For any two complex numbers, \(z\) and \(w\), we have \[e^{z + w} = e^{z}e^{w}.\] Additionally, \[|e^{z}| = e^{\text{Re } z},\ \text{and}\ \textbf{arg } e^{z} = \text{Im } z.\] \\
 
-The inverse of the exponential function is the logarithm function. For a nonzero complex number \(z\), we define \textbf{log} \(z\) to be any complex number \(w\) with \(e^{w} = z\). \[\text{log } z = \text{ln } |z|;;;; + i \text{ arg } z.\]
+The inverse of the exponential function is the logarithm function. For a nonzero complex number \(z\), we define \textbf{log} \(z\) to be any complex number \(w\) with \(e^{w} = z\). This is given by \[\text{log } z = \text{ln } |z| + i \text{ arg } z.\] This provides a set of answers, due to the argument of a complex number being a set of numbers varying by \(2\pi\). To avoid the ambiguity of mod \(2\pi\), we define \textbf{Log \(z\)} as \[\text{Log } z = \text{ln } |z| + i \textbf{ Arg } z.\] The definition of log \(z\) allows us to complete the discussion of roots for complex powers. For a nonzero complex number \(a\), we define \(a^{z}\) by the rule \[a^{z} = e^{z\text{ log }a}.\] \\
+
+The trigonometric functions of \(z\) are defined in terms of the exponential function. We begin with the cosine and sine of \(z\): \[\text{cos } z = \frac{1}{2}(e^{iz} + e^{-iz})\] \[\text{sin } z = \frac{1}{2i}(e^{iz}-e^{-iz}).\] The other four trigonometric functions are defined in terms of sin \(z\) and cos \(z\): \[\text{tan } z= \frac{\text{sin } z}{\text{cos } z},\ \text{cot }z = \frac{\text{cos }z}{\text{sin }z},\ \text{sec }z = \frac{1}{\text{cos }z},\ \text{csc }z = \frac{1}{\text{sin }z}.\] The rules of these trigonometric functions over the reals hold for the complex definitions. \\
+
+The inverse trigonometric functions are defined in this way: \\ 
+
+Let \(w = \text{sin } z = \frac{1}{2i}(e^{iz} - e^{-iz}),\) so \(e^{2iz} - 2iwe^{iz} - 1 = 0,\) which is a quadratic of the variable \(e^{iz}\). By the quadratic equation, we have \(e^{iz} = iw + \sqrt{1-w^{2}},\) or \(z = -i\text{log}(iw + \sqrt{1-w^{2}}),\)---uniquely, we can have \[\text{Arcsin } z = -i\text{Log}(iz + \sqrt{1-z^{2}})\] and \[\text{Arccos } z = -i\text{Log}(z + \sqrt{z^{2} - 1})\] and \[\text{Arctan }z = \frac{i}{2}\text{Log}(\frac{1-iz}{1+iz}),\] with proper logarithms and roots.  
+
+\subsection{Line Integrals and Green's Theorem}
+
+A \textbf{curve} \(\gamma\) is a continuous complex-valued function \(\gamma(t)\) defined for \(t\) is some interval \([a,b]\) in the real axis. The curve \(\gamma\) is \textbf{simple} if \(\gamma(t_{1}) \neq \gamma(t_{2})\) whenever \(a \leq t_{1} < t_{2} < b\), and it is \textbf{closed} if \(\gamma(a) = \gamma(b)\). The \textbf{Jordan Curve Theorem} asserts that the complement of the range of a curve that is both simple and closed consists of two disjoint open connected sets, one bounded and the other unbounded. The bounded piece is the \textbf{inside} of the curve and the outside is the \textbf{outside}. Suppose \(\gamma\) is a curve; separating the complex number \(\gamma(t)\) into its real and imaginary parts and write \(\gamma(t) = x(t) + iy(t), t\in [a,b]\) These two functions may or may not be differentiable. If they are differentiable at some \(t_{0}\), we say \(\gamma(t)\) differentiable at \(t_{0}\), and we can say \(\gamma'(t_{0}) = x'(t_{0}) + iy'(t_{0})\).  A curve \(\gamma\) is \textbf{smooth} if \(\gamma'(t)\) exists and is continuous on \([a,b]\), with the derivatives at \(a\) and \(b\) being taken from the right and left, respectively. A curve is \textbf{piecewise smooth} if it is composed of a finite number of smooth curves, the end of one coinciding with the beginning of the next. Each curve \(\gamma\) is \textbf{oriented} by increasing \(t\). The \textbf{reverse orientation} of \(\gamma\) begins at the end of \(\gamma\) and ends at the beginning of \(\gamma\)---this is denoted by \(-\gamma\) and is parametrized by \(-\gamma(t) = \gamma(a + b - t),\ a \leq t \leq b\). \\
+
+Suppose \(g(t) = x(t) + iy(t)\) is a continuous complex function on \([a,b]\). We define the \textbf{integral of g over [a,b]} by \[\int_{a}^{b} g(t)dt = \int_{a}^{b} x(t)dt + i\int_{a}^{b} y(t)dt.\] Suppose that \(\gamma\) is a smooth curve and \(u\) is a continuous function on the range of \(\gamma\). We define the \textbf{line integral of \(u\) along \(\gamma\)} by \[\int_{\gamma} u(z)dz = \int_{a}^{b} u(\gamma(t))\gamma'(t)dt.\] Line integrals have the same properties that definite integrals on the real numbers have. We define the line integral on a piecewise smooth curve \(\gamma = \gamma_{1}+\gamma_{2}+...+\gamma_{n}\) of the same function to be \[\int_{\gamma} u(z)dz = \sum_{j=i}^{n} \int_{\gamma_{j}} u(z)dz,\] with the integral inside the sum being computed in the same way as previously demonstrated. The length of a curve \(\gamma\) is given by \[\text{length }(\gamma) = \int_{a}^{b} |\gamma'(t)|dt.\] From this, we have the inequality \[\left|\int_{\gamma} u(z)dz\right| \leq \left(\max_{z \in \gamma}|u(z)|\right) \text{length }(\gamma).\] \\
+
+Let \(\Omega\) be a domain bounded by a boundary \(\Gamma = \gamma_{1}+...+\gamma_{n}\). The line integral over the boundary is given by \[\int_{\Gamma} f(z)dz = \sum_{j=1}^{n} \int_{\gamma_{j}} f(z)dz.\] Green's Theorem relates this line integral to the integral of a related function over \(\Omega\). Ve assume that there is an open set containing both \(\Omega\) and \(\Gamma\) where \(f\) has continuous partial derivatives with respect to \(x\) and \(y\). That is, if \(f = u(x,y) + iv(x,y)\) then \[\frac{\partial f}{\partial x} = \frac{\partial u}{\partial x} + i\frac{\partial v}{\partial x},\ \frac{\partial f}{\partial y} = \frac{\partial u}{\partial y} + i\frac{\partial v}{\partial y},\] where all of these are continuous on the open set. Green's Theorem states \[\int_{\Gamma} f(z)dz = i\int \int_{\Omega} \left( \frac{\partial f}{\partial x} + \frac{\partial f}{\partial y}\right)dxdy.\] \\
+
+\pagebreak
+
+\section{Basic Properties of Analytic Functions}
+
+\subsection{Analytic and Harmonic Functions; the Cauchy-Riemann Equations}
+
+
+A function \(f\) defined for \(z\) in a domain \(D\) is \textbf{differentiable} at a point \(z_{0}\) in \(D\) if \[\lim_{z \to z_{0}} \frac{f(z)-f(z_{0}}{z-z_{0}} = \lim_{h \to 0} \frac{f(z_{0}+h) - f(z_{0}}{h}\] exists; the limit, if it exists, is denoted by \(f'(z_{0})\). If \(f\) is differentiable at each point of the domain \(D\), then \(f\) is called \textbf{analytic} in \(D\). A function analytic on the whole complex plane is called \textbf{entire}. The properties of differentiation established in real calculus hold here. \\
+
+The \textbf{Cauchy-Riemann equations} state that if \(f = u + iv\) is analytic on a domain \(D\), then throughout \(D\), \[\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}\ \text{ and }\ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}.\] \textbf{Laplace's equation} is \[\Delta u = \frac{\partial^{2} u}{\partial x^{2}}\ + \frac{\partial^{2} u}{\partial y^{2}} = 0.\] If a function satisfies this equation on \(D\), then it is called \textbf{harmonic} on \(D\)---the real and imaginary parts of an analytic function are always harmonic. A function \(x\), which for a harmonic function \(y\) satisfies \(x-y = C\) is called a \textbf{harmonic conjugate} of \(y\). Additionally, if a function is analytic on a disc centered around some point, then said function is differentiable at that point.
+
+
+
+
+
 
 \end{document}
