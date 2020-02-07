@@ -66,6 +66,6 @@ a.nounderline:hover{
     background-color: lightblue;
     border-radius: 15px;
     text-decoration: none;
-    padding: 2px;
+    padding: 5px;
     border: 3px solid lightseagreen;
 }
