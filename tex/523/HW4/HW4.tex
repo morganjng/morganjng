@@ -41,7 +41,7 @@ For each function \(f\) listed in Exercises \textbf{(8)} and \textbf{(10)}, find
 
 \textbf{(14)} Let \(P(z) = A(z - z_{1})...(z-z_{n})\), where \(A\) and \(z_{1},...z_{n}\) are complex numbers and \(A \neq 0\). Show that \[\frac{P'(z)}{P(z)} = \sum_{j=1}^{n}\frac{1}{z-z_{j}},\ z \neq z_{1},...,z_{n}.\] \\
 
-
+Since \(P(z)\) and \(P'(z)\) have a common term \(A \neq 0\), we can disregard that term completely. We then have, by way of the product rule (and the fact that \((z-z_{j})' = 1\)), \(P'(z)/A = \sum_{j=1}^{n} \prod_{k \neq j} (z-z_{k})\), and \(P(z)/A = \prod_{k=1}^{n} (z-z_{k})\), so \[(P'(z)/A)/(P(z)/A) = \frac{P'(z)}{P(z)} = \sum_{j=1}^{n} \frac{1}{z-z_{j}},\] as the \(P'(z)\) terms exclude the \(j\)th term. \\
 
 \textbf{(16)} Find the derivative of the \textbf{linear fractional transformation} \(T(z) = (az+b)/(cz+d), ad \neq bc.\) In what way does the condition \(ad - bc \neq 0\) enter? Conclude that \(T'(z)\) is never zero, \(z \neq -d/c\). \\
 
@@ -55,11 +55,11 @@ If \(h(z) = \bar{z}\), where \(h(z) = u(x,y) + iv(x,y)\) were analytic, we would
 
 \textbf{(20a)} \(u = x^{2} - y^{2}\) \\
 
-\(u_{x} = 2x,\ u_{y} = -2y,\) so \(v_{y} = 2x,\ v_{x} = 2y\). Therefore, \(v = 2xy\). \\
+\[u_{x} = 2x,\ u_{y} = -2y, \text{ so } v_{y} = 2x,\ v_{x} = 2y. \text{ Therefore, } v = 2xy+C.\] \\
 
 \textbf{(20b)} \(u = \frac{x}{x^{2} + y^{2}}\) \\
 	
-
+\[u_{x} = \frac{y^{2}-x^{2}}{(x^{2}+y^{2})^{2})},\ u_{y} = -\frac{2xy}{(x^{2} + y^{2})^{2}}, \text{ so } v_{y} = \frac{y^{2}-x^{2}}{(x^{2}+y^{2})^{2})},\ v_{x} = \frac{2xy}{(x^{2} + y^{2})^{2}}.\]\[ \text{Therefore, } v = -\frac{y}{x^{2}+y^{2}} + C.\] \\
 	
 \section*{Section 2.2} 
 
@@ -67,11 +67,11 @@ In exercises \textbf{(2)} and \textbf{(4)}, use Theorem 2 or Example 4 to find t
 
 \textbf{(2)} \(\sum_{k=0}^{\infty}\frac{(k!)^{2}}{(2k)!}(z-2)^{k}\) \\
 
-\[\frac{1}{R} = \lim_{k \to \infty} \left| \frac{a_{k+1}}{a_{k}} \right| = \lim_{k \to \infty} \left| \frac{((k+1)!)^{2}/(2k+2)!}{(k!)^{2}/((2k)!)} \right|\] \[ = \lim_{k \to \infty} \left| \frac{(k+1)^{2}}{(2k+2)(2k+1)} \right| = \lim_{k \to \infty} \left| \frac{k^{2}+2k+1}{4k^{2}+6k+2} \right| = \frac{1}{4} \implies R = 4.\]
+\[\frac{1}{R} = \lim_{k \to \infty} \left| \frac{a_{k+1}}{a_{k}} \right| = \lim_{k \to \infty} \left| \frac{((k+1)!)^{2}/(2k+2)!}{(k!)^{2}/((2k)!)} \right|\] \[ = \lim_{k \to \infty} \left| \frac{(k+1)^{2}}{(2k+2)(2k+1)} \right| = \lim_{k \to \infty} \left| \frac{k^{2}+2k+1}{4k^{2}+6k+2} \right| = \frac{1}{4} \implies R = 4.\] \\
 
 \textbf{(4)} \(\sum_{k=0}^{\infty}(-1)^{k}z^{2k}\) \\
 
-Letting \(w = z^{2}\), we have \(\sum_{k=0}^{\infty} (-1)^{k}z^{2k} = \sum_{k=0}^{\infty}(-1)^{k}w^{k}\), so we can say \[\frac{1}{R} = \lim_{n\to \infty} \left| \frac{(-1)^{k+1}}{(-1)^{k}} \right| = 1 \implies R = 1.\]
+Letting \(w = z^{2}\), we have \(\sum_{k=0}^{\infty} (-1)^{k}z^{2k} = \sum_{k=0}^{\infty}(-1)^{k}w^{k}\), so we can say \[\frac{1}{R} = \lim_{n\to \infty} \left| \frac{(-1)^{k+1}}{(-1)^{k}} \right| = 1 \implies R = 1.\] \\
 
 In exercises \textbf{(8)} and \textbf{(10)}, find the power series about the origin for the given function.
 
@@ -81,31 +81,31 @@ In exercises \textbf{(8)} and \textbf{(10)}, find the power series about the ori
 
 \textbf{(10)} \(\frac{1+z}{1-z},\ |z|<1\) \\
 
-
+\[\frac{1}{1-z} = 1 + z + z^{2} + ... = \sum_{n=0}^{\infty} z^{n} \text{ so } \frac{1+z}{1-z} = 1 + \sum_{n=1}^{\infty} 2z^{n}.\] \\
 
 In exercises \textbf{(14)}, \textbf{(16)}, and \textbf{(18)}, find a ``closed form" (that is, a simple expression) for each of the given power series. 
 
 \textbf{(14)} \(\sum_{n=0}^{\infty} \frac{z^{2n}}{n!}\) \\
 
-
+Since \(e^{2} = \sum \frac{z^{n}}{n!}\), then \[e^{z^{2}} = \sum_{n=0}^{\infty} \frac{z^{2n}}{n!}.\]
 
 \textbf{(16)} \(\sum_{n=1}^{\infty} n(z-1)^{n-1} \) \\
 
-
+Note that \[\sum_{n=1}^{\infty} n(z-1)^{n-1} = \left(\sum_{n=0}^{\infty} (z-1)^{n} \right)',\] where the second function is the power series of \(\frac{1}{z-2}\), so \[\sum_{n=1}^{\infty} n(z-1)^{n-1} = \left(\frac{1}{2-z}\right)' = \frac{1}{(2-z)^{2}}.\]
 
 \textbf{(18)} \(\sum_{n = 2}^{\infty} n(n-1)z^{n} \) \\
 
-
+This sum is the second derivative of the sum \(\sum_{n=0}^{\infty} z^{n}\) multiplied by \(z^{2}\). This original sum is \(\frac{1}{1-z}\), so \[\sum_{n = 2}^{\infty} n(n-1)z^{n} = z^{2}(\left( \frac{1}{1-z} \right)'' = \frac{2z^{2}}{(1-z)^{3}}. \]
 
 \textbf{(22)} \\
 
 \textbf{(22a)} If \(f(z) = \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n}\) has radius of convergence \(R > 0 \) and if \(f(z) = 0\) for all \(z, |z-z_{0}| < r \leq R \), show that \(a_{0} = a_{1} = ... = 0\). \\
 
-
+Given an arbitrary \(z \neq z_{0}\) in the radius of convergence with \(|z - z_{0}| < r \leq R\) (for some \(r\)), we have \(f(z) = \sum a_{n} (z-z_{0})^{n} = 0\). We can say that \(z-z_{0} = \epsilon\), so we have \(\sum a_{n} \epsilon^{n} = 0\). If \(\epsilon > 0\), then we have \(\sum a_{n} \epsilon^{n} = a_{0} + a_{1} \epsilon + a_{2} \epsilon^{2} + ...\), which cannot be zero when any of these terms are nonzero, so they must all be \(0\) for \(f(z) = 0\) to hold. If \(\epsilon < 0\), let \(\delta = -\epsilon\), so we have \(\sum a_{n} (-\delta)^{n} = a_{0} - a_{1} \delta + a_{2} \delta^{2} = 0\), which implies that the even and odd sums of this are equivalent, i.e. \(\sum_{n}^{\infty} a_{2n} \epsilon^{2n} = \sum_{n}^{\infty} a_{2n+1} \epsilon^{2n+1}\), which cannot be true for non-uniform zero \(a_{n}\). \\
 
 \textbf{(22b)} If \(F(z) = \sum_{n=0}^{\infty} a_{n}(z - z_{0})^{n}\) and \(G(z) = \sum_{n=0}^{\infty} b_{n}(z-z_{0})^{n}\) are equal on some disc \(|z - z_{0}|< r\), show that \(a_{n} = b_{n}\) for all \(n\). \\
 
-
+For the sake of contradiction, assume that \(F(z) = G(z)\) and \(a_{n} \neq b_{n}\) for all \(n\). Letting \(A\) be the nonempty set of \(n \in \mathbb{N}\) such that \(a_{n} \neq b_{n}\). We then have \(F(z) - G(z) = 0\), which is a separate sum \(0 = \sum_{n \in A} (a_{n} - b_{n})(z-z_{0})^{n}\), with \(a_{n}-b_{n} \neq 0\), \(z - z_{0} \neq 0\), which cannot be true due to the same logic in \textbf{(22a)}. \\
 
 
 
