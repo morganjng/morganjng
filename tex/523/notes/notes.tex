@@ -77,12 +77,13 @@ Let \(\Omega\) be a domain bounded by a boundary \(\Gamma = \gamma_{1}+...+\gamm
 
 \subsection{Analytic and Harmonic Functions; the Cauchy-Riemann Equations}
 
-
 A function \(f\) defined for \(z\) in a domain \(D\) is \textbf{differentiable} at a point \(z_{0}\) in \(D\) if \[\lim_{z \to z_{0}} \frac{f(z)-f(z_{0}}{z-z_{0}} = \lim_{h \to 0} \frac{f(z_{0}+h) - f(z_{0}}{h}\] exists; the limit, if it exists, is denoted by \(f'(z_{0})\). If \(f\) is differentiable at each point of the domain \(D\), then \(f\) is called \textbf{analytic} in \(D\). A function analytic on the whole complex plane is called \textbf{entire}. The properties of differentiation established in real calculus hold here. \\
 
 The \textbf{Cauchy-Riemann equations} state that if \(f = u + iv\) is analytic on a domain \(D\), then throughout \(D\), \[\frac{\partial u}{\partial x} = \frac{\partial v}{\partial y}\ \text{ and }\ \frac{\partial u}{\partial y} = -\frac{\partial v}{\partial x}.\] \textbf{Laplace's equation} is \[\Delta u = \frac{\partial^{2} u}{\partial x^{2}}\ + \frac{\partial^{2} u}{\partial y^{2}} = 0.\] If a function satisfies this equation on \(D\), then it is called \textbf{harmonic} on \(D\)---the real and imaginary parts of an analytic function are always harmonic. A function \(x\), which for a harmonic function \(y\) satisfies \(x-y = C\) is called a \textbf{harmonic conjugate} of \(y\). Additionally, if a function is analytic on a disc centered around some point, then said function is differentiable at that point.
 
+\subsection{Power Series}
 
+A \textbf{power series} in \(z\) is an infinite series of the form \[\sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n},\] where \(a_{0}, a_{1},...\) are complex numbers, called the \textbf{coefficients} of the series; \(z_{0}\) is fixed and is called the \textbf{center} of the series. If for some \(z_{1} \neq z_{1}\) has \[\sum_{n=0}^{\infty} a_{n}(z_{1}-z_{0})^{n}\] converges,  then all \(z\) that satisfies \(|z-z_{0}| < |z_{1}-z_{0}|\) have \[\sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n}\] absolutely convergent. For some power series \(\sum a_{n}(z-z_{0})^{n}\), there is a unique number \(R\) such that \[|z-z_{0}| < R \implies \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n} \text{ converges }\] and \[|z-z_{0}| > R \implies \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n} \text{ diverges.}\] The number \(R\) is called the \textbf{radius of convergence} for said power series. The derivative of a power series \(f(z) = \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n}\) is given by \[f'(z) = \sum_{n=1}^{\infty} na_{n}(z-z_{0})^{n-1},\] and this is defined for  (and analytic) inside of the disc of convergence. 
 
 
 

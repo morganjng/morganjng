@@ -6,12 +6,13 @@
 \usepackage{graphicx}
 \usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
 \usepackage{fancyhdr}
+\usepackage{lastpage}
 \pagestyle{fancy}
 \title{Math 523 HW 4}
 \author{Morgan Gribbins}
 \date{}
 \fancyhf{}
-\lhead{Page \thepage\ of TOTAL}
+\lhead{Page \thepage\ of \pageref{LastPage}}
 \begin{document}
 	
 \maketitle
@@ -22,22 +23,21 @@ Use the rules for differentiation to find the derivatives of \textbf{(2)} and \t
 
 \textbf{(2)} \(z^{2} + 10z\) \\
 
-
+\[(z^{2} + 10z)' = \lim_{h \to 0} \frac{(z+h)^{2} + 10(z+h) - z^{2} - 10z}{h} = \lim_{h \to 0} \frac{z^{2} +2zh + h^{2} + 10z + 10 h - z^{2} - 10 z}{h} \] \[= \lim_{h \to 0} \frac{2zh + h^{2} + 10h}{h} = \lim_{h \to 0} 2z + h + 10 = 2z + 10.\] \\
 
 \textbf{(4)} \([\text{cos } (z^{2})]^{3}\) \\
 
-
+Note that \[[\text{cos }(z^{2})]^{3} = \frac{1}{8} \left(e^{iz^{2}} + e^{-iz^{2}}\right)^{3},\] so \[\left\{[\text{cos }(z^{2})]^{3}\right\}' = \left\{\frac{1}{8} \left(e^{iz^{2}} + e^{-iz^{2}}\right)^{3}\right\}'\] \[\implies \left\{[\text{cos }(z^{2})]^{3}\right\}' = \frac{3}{8}\left(e^{iz^{2}} + e^{-iz^{2}}\right)^{2}\times \left(2zie^{iz^{2}} - 2zie^{-iz^{2}}\right)\] \[ \implies \left\{[\text{cos }(z^{2})]^{3}\right\}' = \frac{3zi}{4} \times 4[\text{cos }(z^{2})]^{2} \times 2i\text{sin }(z^{2}) \] \[ \implies \left\{[\text{cos }(z^{2})]^{3}\right\}' = -6z\text{cos}^{2}\text{ } (z^{2}) \text{ sin }(z^{2}). \] \\
 
 For each function \(f\) listed in Exercises \textbf{(8)} and \textbf{(10)}, find an analytic function \(F\) with \(F' = f\).
 
 \textbf{(8)} \(f(z) = z - 2\) \\
 
-
+\(F(z) = \frac{1}{2}z^{2} -2 z\) is analytic with \(F' = f\). \\
 
 \textbf{(10)} \(f(z) = \text{sin } z \text{ cos } z \) \\
 
-
-
+\(F(z) = \frac{1}{2}\left(\text{sin } z\right)^{2}\) is analytic with \(F' = f\). \\
 
 \textbf{(14)} Let \(P(z) = A(z - z_{1})...(z-z_{n})\), where \(A\) and \(z_{1},...z_{n}\) are complex numbers and \(A \neq 0\). Show that \[\frac{P'(z)}{P(z)} = \sum_{j=1}^{n}\frac{1}{z-z_{j}},\ z \neq z_{1},...,z_{n}.\] \\
 
@@ -45,21 +45,21 @@ For each function \(f\) listed in Exercises \textbf{(8)} and \textbf{(10)}, find
 
 \textbf{(16)} Find the derivative of the \textbf{linear fractional transformation} \(T(z) = (az+b)/(cz+d), ad \neq bc.\) In what way does the condition \(ad - bc \neq 0\) enter? Conclude that \(T'(z)\) is never zero, \(z \neq -d/c\). \\
 
-
+\[T'(z) = \left( \frac{az+b}{cz+d} \right)' = \lim_{h \to 0} \frac{\frac{a(z+h) + b}{c(z+h) + d} - \frac{az+b}{cz+d}}{h} = \lim_{h \to 0} \frac{\frac{az+ah + b}{cz+ch + d} - \frac{az+b}{cz+d}}{h}\] \[= \lim_{h \to 0} \frac{\frac{(az+ah + b)(cz+d)-(az+b)(cz+ch+d)}{(cz+ch + d)(cz+d)}}{h} = \lim_{h \to 0} \frac{\frac{(acz^{2}+aczh + bcz + adz + adh + bd )-(acz^{2} + aczh + adz + bcz + bch + bd )}{(cz+ch + d)(cz+d)}}{h}\] \[= \lim_{h \to 0} \frac{\frac{adh-bch}{(cz+ch + d)(cz+d)}}{h} = \lim_{h \to 0} \frac{ad - bc}{(cz + ch + d)(cz+d)} = \frac{ad-bc}{(cz+d)^{2}}.\] The condition \(ad-bc \neq 0\) enters when taking the limit as \(h \to 0\)---if \(ad-bc = 0\), then there would be additional \(h\) in the denominator of the limit, and the limit would not converge. Therefore, \(T'(z)\) can never be zero, and \(z \neq -d/c\), as that would cause \(T'(z)\) to not converge to a limit. \\
 
 \textbf{(18)} Show that \(h(z) = \bar{z}\) is not analytic on any domain. (\textbf{Hint:} check the Cauchy-Riemann equations.) \\
 
-
+If \(h(z) = \bar{z}\), where \(h(z) = u(x,y) + iv(x,y)\) were analytic, we would have \(u_{x} = v_{y}\) and \(u_{y} = -v_{x}\). We also have \(h(z) = x - iy\), so \(u_{x} = 1 \neq v_{y}\), as \(v_{y} = -1\). Therefore, \(h(z) = \bar{z}\) cannot be analytic. \\
 
 \textbf{(20)} Let \(f = u + iv\) be analytic. In each of the following, find \(v\) given \(u\). \\
 
 \textbf{(20a)} \(u = x^{2} - y^{2}\) \\
 
-
+\(u_{x} = 2x,\ u_{y} = -2y,\) so \(v_{y} = 2x,\ v_{x} = 2y\). Therefore, \(v = 2xy\). \\
 
 \textbf{(20b)} \(u = \frac{x}{x^{2} + y^{2}}\) \\
 	
-	
+
 	
 \section*{Section 2.2} 
 
