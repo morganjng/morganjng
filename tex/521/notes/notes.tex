@@ -23,8 +23,43 @@
 
 \subsection{The Axiom of Completeness}
 
+The \textbf{axiom of completeness} states that \textit{every nonempty set of real numbers that is bounded above has a least upper bound}. \\
 
+A set \(A \subseteq \mathbb{R}\) is \textbf{bounded above} if there exists a number \(b \in \mathbb{R}\) such that \(\forall a \in A,\ a \leq b\). The number \(b\) is called an \textbf{upper bound} for \(A\). Similarly, the set \(A\) is \textbf{bounded below} if there exists a \textbf{lower bound} \(l \in \mathbb{R}\) satisfying \(\forall a \in A,\ l \leq a\). \\
 
+A real number \(s\) is the \textbf{least upper bound} for a set \(A \subseteq \mathbb{R}\) if it meets the following two criteria:
+
+\begin{enumerate}
+	\item \(s\) is an upper bound for \(A\);
+	\item if \(b\) is any upper bound for \(A\), then \(s \leq b\).
+\end{enumerate}
+
+The least upper bound is also called the \textbf{supremum} of the set \(A\), and is called \(s = \sup A\). The \textbf{greatest lower bound} is defined similarly, and is called the infimum, with \(l = \inf A\). Both suprema and infima are unique. A real number \(a_{0}\) is a \textbf{maximum} on a set \(A\) if \(a_{0}\) is an element of \(A\) and \(a_{0} = \sup A\). A \textbf{minimum}  is an element of \(A\) that is also the infimum of \(A\).  \\
+
+Assuming \(s \in \mathbb{R}\) is an upper bound for a set \(A \subseteq \mathbb{R}\), then \(s = \sup A \iff \forall \epsilon > 0,\ \exists a \in A, \text{ such that } s-\epsilon < a\).
+
+\subsection{Consequences of Completeness}
+
+The \textbf{Archimedean property} states that:
+
+\begin{enumerate}
+	\item Given any number \(x \in \mathbb{R}\), there exists an \(n \in \mathbb{N}\) such that \(n > x\).
+	\item Given any real number \(y > 0\), there exists an \(n \in \mathbb{N}\) such that \(1/n < y\).
+\end{enumerate}
+
+Additionally, for every two real number \(a\) and \(b\) with \(a < b\), there exists some \(q \in b\mathbb{Q}\) (or in the set of irrational numbers) such that \(a < r < b\).
+
+\subsection{Cardinality}
+
+A function \(f : A \to B\) is \textbf{one-to-one} (injective) if \(a_{1} \neq a_{2}\) in \(A\) implies that \(f(a_{1}) \neq f(a_{2})\) in \(B\). The function \(f\) is \textbf{onto} (surjective) if, given any \(b \in B\), there exist an \(a \in A\) such that \(f(a) = b\). If \(f\) is both onto and one-to-one, then it is called \textbf{bijective}. \\
+
+The set \(A\) \textbf{has the same cardinality} as \(B\) if there exists a bijection \(f : A \to B\). In this case, we write \(A \sim B\). A set \(A\) is \textbf{countable} if \(\mathbb{N} \sim A\). An infinite set that is not countable is called an \textbf{uncountable} set. \(\mathbb{Q}\) is countable and \(\mathbb{R}\) is uncountable. Additionally, subsets of countable sets are countable and countable unions of countable sets are countable.
+
+\pagebreak
+
+\section{Sequences and Series}
+
+\subsection{The Limit of a Sequence}
 
 
 
