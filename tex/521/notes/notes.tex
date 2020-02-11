@@ -61,6 +61,33 @@ The set \(A\) \textbf{has the same cardinality} as \(B\) if there exists a bijec
 
 \subsection{The Limit of a Sequence}
 
+A \textbf{sequence} is a function whose domain is \(\mathbb{N}\). A sequence \((a_{n})\) \textbf{converges} to a real number \(a\) if, for every positive number \(\epsilon\), there exists an \(N \in \mathbb{N}\) such that whenever \(n \geq N\) it follows that \(|a_{n}-a| < \epsilon.\) This is notated as \(\lim a_{n} = a\). \\
 
+Given a real number \(a \in \mathbb{R}\) and a positive number \(\epsilon > 0\), the set \[V_{\epsilon}(a) = \{x \in \mathbb{R} : |x-a| < \epsilon\}\] is called the \textbf{\(\epsilon\)-neighborhood of \(a\)}. \\
+
+The limit of a sequence, when it exists, must be unique. \\
+
+A sequence that does not converge is said to \textbf{diverge}. 
+
+\subsection{The Algebraic and Order Limit Theorems}
+
+A sequence \((x_{n})\) is \textbf{bounded} if there exists a number \(M > 0\) such that \(|x_{n}| \leq M\) for all \(n \in \mathbb{N}\). Every convergent sequence is bounded. \\
+
+The Algebraic Limit Theorem states that for two convergent sequences with \(\lim a_{n} = a\) and \(\lim b_{n} = b\), 
+
+\begin{enumerate}
+	\item \(\lim ca_{n} = ca, \text{ for all } c \in \mathbb{R};\)
+	\item \(\lim a_{n} + b_{n} = a + b;\)
+	\item \(\lim a_{n}b_{n} = ab;\)
+	\item \(\lim a_{n}/b_{n} = a/b, \text{ provided } b \neq 0.\)
+\end{enumerate}
+
+The Order Limit Theorem states that for two convergent sequences with \(\lim a_{n} = a\) and \(\lim b_{n} = b\),
+
+\begin{enumerate}
+	\item If \(a_{n} \geq 0\) for all \(n \in \mathbb{N}\), then \(a \geq 0\).
+	\item If \(a_{n} \leq b_{n}\) for all \(n \in \mathbb{N}\), then \(a \leq b\).
+	\item If there exists \(c \in \mathbb{R}\) for which \(c \leq b_{n}\) for all \(n \in \mathbb{N}\), then \(c \leq b\). Similarly, if \(a_{n}\leq c\) for all \(n \in \mathbb{N}\), then \(a \leq c\).
+\end{enumerate}
 
 \end{document}

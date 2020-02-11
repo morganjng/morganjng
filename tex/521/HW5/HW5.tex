@@ -20,21 +20,21 @@
 
 \textbf{2.3.1.a.} If \((x_{n}) \to 0\), show that \( ( \sqrt{x_{n}} ) \to 0\). \\
 
-
+Given arbitrary \(\epsilon > 0\), there exists some \(N_{\epsilon} \in \mathbb{N}\) such that all \(n \geq N_{\epsilon}\) satisfy \[|x_{n}| < \epsilon.\] Using \(\epsilon^{2}\) instead of \(\epsilon\), we have \[|x_{n} | < \epsilon^{2}.\] This implies \[|\sqrt{x_{n}}||\sqrt{x_{n}}| < \epsilon^{2} \implies |\sqrt{x_{n}}|^{2} < \epsilon^{2} \implies  |\sqrt{x_{n}}| < \epsilon.\] Therefore \((\sqrt{x_{n}})\to 0\). \\
 
 \textbf{2.3.1.b.} If \((x_{n}) \to x\), show that \((\sqrt{x_{n}}) \to \sqrt{x}\). \\
 
-
+Given arbitrary \(\epsilon > 0\), there exists some \(N_{\epsilon} \in \mathbb{N}\) such that all \(n \geq N_{\epsilon}\) satisfy \[|x_{n} - x| < \epsilon.\] Choosing \(\epsilon^{2}\) instead of \(\epsilon\), we have \[|x_{n} - x| < \epsilon^{2} \implies |\sqrt{x_{n}}-\sqrt{x}||\sqrt{x_{n}} + \sqrt{x}| < \epsilon^{2},\] and since \[|\sqrt{x_{n}} - \sqrt{x}| \leq |\sqrt{x_{n}} + \sqrt{x}|, \text{ then } |\sqrt{x_{n}} - \sqrt{x}|^{2} \leq |x_{n} - x| < \epsilon^{2}\] \[\implies |\sqrt{x_{n}} - \sqrt{x}|^{2} < \epsilon^{2} \implies |\sqrt{x_{n}} - \sqrt{x}| < \epsilon,\] so this sequence converges to \(\sqrt{x}\). \\
 
 \textbf{Exercise 2.3.2.} Using only Definition 2.2.3 (no Algebraic Limit Theorem), prove that if \((x_{n}) \to 2, \) then \\
 
 \textbf{2.3.2.a.} \((\frac{2x_{n}-1}{3}) \to 1\); \\
 
-
+Due to the convergence of \((x_{n})\), we have for any arbitrary \(\epsilon > 0\), there exists \(N \in \mathbb{N}\) such that all \(n \geq N\) implies that \[|x_{n} - 2| < \epsilon.\] Choosing \(3\epsilon/2\) instead of \(\epsilon\), we have \[|x_{n} - 2| < 3\epsilon/2 \implies \left|\frac{2}{3}\right||x_{n} - 2| < \epsilon \implies \left|\frac{2}{3}x_{n} - \frac{4}{3}\right| < \epsilon \implies \left|\frac{2x_{n}-4}{3}\right| < \epsilon\] \[\implies \left|\frac{2x_{n}-1}{3} -1\right| < \epsilon,\] so \(\left(\frac{2x_{n}-1}{3} \right)\) converges to 1. \\
 
 \textbf{2.3.2.b.} \((1/x_{n}) \to 1/2\). \\
 
-
+Due to the convergence of \((x_{n})\), we have for any arbitrary \(\epsilon > 0\), there exists \(N \in \mathbb{N}\) such that all \(n \geq N\) implies that \[|x_{n} - 2| < \epsilon.\]
 
 \textbf{Exercise 2.3.3 (Squeeze Theorem).} Show that if \(x_{n} \leq y_{n} \leq z_{n} \) for all \(n \in \mathbb{N}\), and if \(\text{lim } x_{n} = \text{lim }z_{n} = l\), then \(\text{lim } y_{n} = l\) as well. \\
 
@@ -44,7 +44,7 @@
 
 \textbf{2.3.7.a.} sequences \((x_{n})\) and \((y_{n})\), which both diverge, but whose sum \((x_{n} + y_{n})\) converges; \\
 
-
+The sequences \((x_{n}) = ((-1)^{n})\) and \((y_{n}) = ((-1)^{n+1})\) both diverge, yet their sum \(((-1)^{n} + (-1)^{n+1}) = (0) \to 0\). \\
 
 \textbf{2.3.7.b.} sequences \((x_{n})\) and \((y_{n})\), where \((x_{n})\) converges, \((y_{n})\) diverges, and \((x_{n} + y_{n})\) converges; \\
 
@@ -52,7 +52,7 @@
 
 \textbf{2.3.7.c.} a convergent sequence \((b_{n})\) with \(b_{n} \neq 0\) for all \(n\) such that \((1/b_{n})\) diverges; \\
 
-
+This is impossible by the Algebraic Limit Theorem---the uniform sequence of 1 converges to 1 and the sequence \((b_{n})\) converges to some \(b \in \mathbb{R}\), so \((1/b_{n})\) must converge to \(1/b\), and as such cannot diverge. \\
 
 \textbf{2.3.7.d.} an unbounded sequence \((a_{n})\) and a convergent sequence \((b_{n})\) with \((a_{n} - b_{n})\) bounded; \\
 
@@ -60,7 +60,7 @@
 
 \textbf{2.3.7.e.} two sequences \((a_{n})\) and \((b_{n})\), where \((a_{n}b_{n})\) and \((a_{n})\) converge but \((b_{n})\) does not. \\
 
-
+If \((a_{n})\) is uniformly \(0\) and \((b_{n})\) any divergent series, we have \((a_{n}b_{n})\) uniformly zero, which converges. \\
 
 \textbf{Exercise 2.3.9.} \\
 
