@@ -23,23 +23,55 @@ The cyclic group of order \(49\) is the only group with such properties. The onl
 
 \textbf{(2)} Let \(G\) be an abelian group with \(|G|= 35,\) and suppose that every element \(g \in G \) satisfies the equality \(g^{35}=e\).  Prove that \(G\) is cyclic.  (hint: I claim the result follows once you have your hands on an element of order 5 and an element of order 7.  Think of the possible of orders of elements in the group, and deduce that you must have elements as above.  Finally, at some point you might use the fact that neither 4 nor 6 divide 34.) \\
 
-
+Letting \(g \in G\), \(a = g^{5}\), and \(b = g^{7}\), we have \(|a| = 7\) and \(|b| = 5\), which is possible as the group must have elements with orders which divide its order. We then have \(\left<ab\right> = \left<g^{12/\gcd(5,7)}\right> = \left<g^{12}\right>\). As \(4\) and \(6\) both do not divide \(35\), \(\left<g^{4}\right> = \left<g^{6}\right> = \left<g^{12}\right>\), and because of this greatest common divisor of 1, they have order 35 and generate \(G\). \\
 
 \textbf{(3)} Let \(G\) be a group.\\
 
 \textbf{(3a)} Let \(H \leq G\) and \(K \leq G\) be subgroups. Show that \(H \cap K \subseteq G\) is a subgroup of \(G\). \\
 
+In order to prove that \(H \cap K\) is a subgroup of \(G\), we must prove that 
 
+\begin{enumerate}
+	\item \(H \cap K\) is closed.
+	\item \(H \cap K\) contains the identity.
+	\item \(a \in H \cap K \implies a^{-1} \in H \cap K\). 
+\end{enumerate}
+
+We are going to do this \begin{Huge}\(\longrightarrow\)\end{Huge}
+
+\begin{enumerate}
+	\item To prove that \(H \cap K\) is closed, we must take some arbitrary \(a,b\in H \cap K\) and show that \(ab \in H \cap K\). For \(a,b \in H \cap K\), they must both be in both \(H\) and \(K\)---because these are closed by definition of subgroups, \(ab \in H\) and \(ab \in K\), so \(ab \in H \cap K\). Therefore, \(H \cap K\) is closed.
+	\item To prove \(H \cap K\) has the identity, observe that both \(H\) and \(K\) contain the identity, so their intersection must also contain the identity.
+	\item To prove \(a \in H \cap K \implies a^{-1} \in H \cap K\), take some element \(a \in H \cap K\). This means \(a \in H \implies a^{-1} \in H\) and \(a \in K \implies a^{-1} \in H\), so \(a^{-1} \in H \cap K\).
+\end{enumerate}
+
+Therefore, this intersection must be a subgroup of \(G\). \\
 
 \textbf{(3b)} Let \(a,b \in G\) such that \(|a|\) and \(|b|\) are finite and relatively prime. Show that \(\left<a\right> \cap \left<b\right> = \left\{e\right\}.\) \\
 
-
+We will prove this point by contradiction. Assume that \(|a|\) and \(|b|\) are relatively prime and that \(\left<a\right> \cap \left<b\right> \neq \{e\}\). We will show that this second assumption implies that \(\left<a\right> \cap \left<b\right>\) is not a subgroup, which raises a contradiction (by (3b)). If \(\left<a\right> \cap \left<b\right>\neq \{e\}\), then there must be some element shared between \(\left<a\right>\) and \(\left<b\right>\)---i.e. for some \(m,n \in \mathbb{N}\), \(a^{m} = b^{n}\). Therefore, there must be some \(a^{k} \in \left<a\right>\) such that \(a^{k} = b\), which implies that \(\left<a\right> = \left<b\right> = \left<a\right> \cap \left<b\right>\). This raises a contradiction however---\(|a|\neq|b|\), but we now have \(|\left<a\right>| = |a| = |\left<b\right> | = |b|\), so our initial assumption must be false---i.e. \(\left<a\right> \cap \left<b\right>\) must be equal to \(\{e\}\). \\
 
 \textbf{(4)} Let \(G = \mathbb{Z}/30\). \\
 
 \textbf{(4a)} How many distinct subgroups of \(G\) are there? \\
 
+\(\mathbb{Z}/30\) has 8 subgroups: \\
 
+The subgroup of order 1: \(\{0\} = \left<0\right>\); \\
+
+The subgroup of order 2: \(\{0, 15\} = \left< 15\right>\); \\
+
+The subgroup of order 3: \(\{0,10,20\} = \left<10\right>\); \\
+
+The subgroup of order 5: \(\{0,6,12,18,24\} = \left<6\right>\); \\
+
+The subgroup of order 6: \(\{0,5,10,15,20,25\} = \left<5\right>\); \\
+
+The subgroup of order 10: \(\{0,3,6,9,12,15,18,21,24,27\} = \left< 3 \right>\); \\
+
+The subgroup of order 15: \(\{0,2,4,6,8,10,12,14,16,18,20,22,24,26,28\} = \left< 2 \right >\); \\
+
+The subgroup of order 30: \(\mathbb{Z}/30\). \\
 
 \textbf{(4b)} Draw the lattice of subgroups of \(G\). \\
 
