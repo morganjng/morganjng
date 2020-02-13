@@ -23,7 +23,13 @@ The cyclic group of order \(49\) is the only group with such properties. The onl
 
 \textbf{(2)} Let \(G\) be an abelian group with \(|G|= 35,\) and suppose that every element \(g \in G \) satisfies the equality \(g^{35}=e\).  Prove that \(G\) is cyclic.  (hint: I claim the result follows once you have your hands on an element of order 5 and an element of order 7.  Think of the possible of orders of elements in the group, and deduce that you must have elements as above.  Finally, at some point you might use the fact that neither 4 nor 6 divide 34.) \\
 
-Letting \(g \in G\), \(a = g^{5}\), and \(b = g^{7}\), we have \(|a| = 7\) and \(|b| = 5\), which is possible as the group must have elements with orders which divide its order. We then have \(\left<ab\right> = \left<g^{12/\gcd(5,7)}\right> = \left<g^{12}\right>\). As \(4\) and \(6\) both do not divide \(35\), \(\left<g^{4}\right> = \left<g^{6}\right> = \left<g^{12}\right>\), and because of this greatest common divisor of 1, they have order 35 and generate \(G\). \\
+Any element in \(G\) must have order \(1\), \(5\), \(7\), or \(35\), as each element raised to the \(35\)th power is the identity. Now, we want some element \(a \in G\) such that \(|a| = 5\) and \(b \in G\) such that \(|b| = 7\). \\
+
+Assume that there is no such \(a\) in \(G\). This means that the elements of \(G\) all have order \(7\) or order \(35\), and if any element has order \(35\), then it generates \(G\) and as such \(G\) is cyclic. Therefore, there must be \(34\) elements of \(G\) that are order \(7\). However, the amount of elements of order \(7\) in \(G\) must be a multiple of \(\phi(7)= 6,\) but \(6\) does not divide \(34\). We can then say that \(a \in G\) and \(|a| = 5\). \\
+
+By the same argument, assume there is no such necessary \(b\in G\) such that \(|b| = 7\). We then have \(34\) elements of order \(5\) in \(G\), but \(\phi(5) = 4\) does not divide \(34\). This means that we can have \(b \in G\) with \(|b|= 5\). \\
+
+From these two elements, we can show that \(|ab| = 35\) and a such generates \(G\). We have \((ab)^{35} = e\), by hypothesis. We now must show that the order of \(ab\) cannot be \(5\), \(7\), or \(1\). Because \(G\) is abelian, we have \[(ab) \neq e \implies |ab| \neq 1\]\[(ab)^{5} = a^{5}b^{5} = eb^{5} \neq e \implies |ab| \neq 5\]\[(ab)^{7} = a^{7}b^{7} = a^{7}e \neq e \implies |ab| \neq 7,\] and so the smallest positive number \(k\) such that \((ab)^{k} = e\) must be 35, and so \(ab\) generates \(G\) and \(G\) is cyclic. \\
 
 \textbf{(3)} Let \(G\) be a group.\\
 
