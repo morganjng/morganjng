@@ -85,7 +85,21 @@ The \textbf{Cauchy-Riemann equations} state that if \(f = u + iv\) is analytic o
 
 A \textbf{power series} in \(z\) is an infinite series of the form \[\sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n},\] where \(a_{0}, a_{1},...\) are complex numbers, called the \textbf{coefficients} of the series; \(z_{0}\) is fixed and is called the \textbf{center} of the series. If for some \(z_{1} \neq z_{1}\) has \[\sum_{n=0}^{\infty} a_{n}(z_{1}-z_{0})^{n}\] converges,  then all \(z\) that satisfies \(|z-z_{0}| < |z_{1}-z_{0}|\) have \[\sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n}\] absolutely convergent. For some power series \(\sum a_{n}(z-z_{0})^{n}\), there is a unique number \(R\) such that \[|z-z_{0}| < R \implies \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n} \text{ converges }\] and \[|z-z_{0}| > R \implies \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n} \text{ diverges.}\] The number \(R\) is called the \textbf{radius of convergence} for said power series. The derivative of a power series \(f(z) = \sum_{n=0}^{\infty} a_{n}(z-z_{0})^{n}\) is given by \[f'(z) = \sum_{n=1}^{\infty} na_{n}(z-z_{0})^{n-1},\] and this is defined for  (and analytic) inside of the disc of convergence. 
 
+\subsection{Cauchy's Theorem and Cauchy's Formula}
 
+\textbf{Cauchy's theorem:} Suppose that \(f\) is analytic on a domain \(D\). Let \(\gamma\) be a piecewise smooth simple closed curve in \(D\) whose interior \(\Omega\) also lies in \(D\). Then \[\int_{\gamma} f(z)dz = 0.\] \\
+	
+A curve is \textbf{simply-connected} if, whenever \(\gamma\) is a simple closed curve in \(D\), the inside of \(\gamma\) is also a subset of \(D\). This, in clear terms, means there are no ``holes" in \(D\). \\
+
+A number of results of this theorem follow. \\
+
+Let \(D\) be a simply-connected domain and \(\Gamma\) a closed curve in \(D\) that is composed of a finite number of horizontal and vertical line segments. If \(f\) is analytic in \(D\), then \[\int_{\Gamma} f(z)dz = 0.\] \\
+
+If \(f\) is analytic in a simply-connected domain \(D\), then there is an analytic function \(F\) on \(D\) with \(F' = f\) throughout \(D\). \\
+
+Let \(f\) be analytic on a simply-connected domain \(D\), and let \(\gamma\) be a piecewise smooth closed curve in \(D\). Then \[\int_{\gamma} f(z)dz = 0.\] \\
+
+\textbf{Cauchy's formula:} Suppose that \(f\) is analytic on a domain \(D\) and that \(\gamma\) is a piecewise smooth, positively oriented simple closed curve in \(D\) whose inside \(\Omega\) also lies in \(D\). Then \[f(z) = \frac{1}{2\pi i}\int_{\gamma} \frac{f(\zeta)}{\zeta - z}d\zeta, \text{ for all } z \in \Omega.\]
 
 
 \end{document}
