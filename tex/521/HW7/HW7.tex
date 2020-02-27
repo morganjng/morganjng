@@ -1,0 +1,89 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\title{Math 521 HW 7}
+\author{Morgan Gribbins}
+\date{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Page \thepage\ of \pageref{LastPage}}
+\begin{document}
+	
+\maketitle
+
+\textbf{Exercise 2.4.7.} Let \((a_{n})\) be a bounded sequence. \\
+
+\textbf{2.4.7.a.} Prove that the sequence defined by \(y_{n} = \sup \{a_{k} : k \geq n\}\). \\
+
+Each \(y_{n}\) has the property that \(y_{n} \geq a_{k}\) for \(k \geq n\). Additionally, for all \(k \in \mathbb{N}\), \(|a_{n}| \leq M\) for some \(M\). All \(|y_{n}|\) are then less than or equal to \(M\), so this sequence is also bounded. For this sequence to converge by the Monotonous Convergence Theorem, it must then be monotonous. We would like to show that \(y_{n} \geq y_{n+1}\) i.e. \(\sup \{a_{k} : k \geq n\} \geq \sup \{a_{k} : k \geq n+1\}\). \(y_{n}\) is greater than all \(a_{k},\ k \geq n\), and \(y_{n+1}\) is greater than all \(a_{k},\ k \geq n+1\), yet \(y_{n}\) is greater than or equal to all elements that \(y_{n+1}\) is greater than or equal to, so \(y_{n} \geq y_{n+1}\). Because this sequence is bounded and monotone, \(\lim y_{n}\) exists. \\
+
+\textbf{2.4.7.b.} The limit superior of \((a_{n})\), or \(\lim\sup a_{n}\) is defined by \[\lim\sup a_{n} = \lim y_{n},\] where \(y_{n}\) is the sequence from part (a) of this exercise. Provide a reasonable definition for \(\lim\inf a_{n}\) and briefly explain why it always exists for any bounded sequence. \\
+
+Define \(x_{n} = \inf\{a_{k} : k \geq n\}\). The limit inferior of \((a_{n})\) is then defined by \[\lim\inf a_{n} = \lim x_{n}.\]
+
+For a bounded sequence, \(x_{n}\) is then also bounded as every \(|x_{n}| \leq |a_{k}| \leq M\) (for some \(M\)) for all \(n\) and \(k \geq n\). This sequence is also increasing (and necessarily convergent) as \(\forall n\in \mathbb{N}\), \(x_{n} \leq x_{n+1}\), as \(x_{n} = \inf\{a_{k} : k \geq n\} \leq \inf\{a_{k} : k \geq n+1\} = x_{n+1}\). Therefore this sequence is convergent. \\
+
+\textbf{2.4.7.c.} Prove that \(\lim\inf a_{n} \leq \lim\sup a_{n}\), for every bounded sequence, and give an example of a sequence for which the inequality is strict. \\
+
+For a bounded set, the limit superior and limit inferior both converge. To prove that the limit inferior is less than or equal to the limit superior, we will take an arbitrary \(n\) and compare \(y_{n} = \sup\{a_{k} : k \geq n\) and \(x_{n} = \inf\{a_{k} : k \geq n\}\). As \(y_{n} \geq a_{k} \geq x_{n}\) for all \(k \geq n\), then for all \(n\), \(y_{n} \geq x_{n}\), so by the Order Limit Theorem, \(\lim\inf a_{n} \leq \lim\sup a_{n}\). \\
+
+This inequality is strict in the case where \(a_{n} = (-1)^{n}\), as \(\lim\inf a_{n} = -1 < \lim\sup a_{n} = 1\). \\
+
+\textbf{2.4.7.d.} Show that \(\lim\inf a_{n} = \lim\sup a_{n}\) if and only if \(\lim a_{n}\) exists. In this case, all three share the same value. \\
+
+Proof of \((\implies)\). Assume that \(\lim a_{n} = a\) exists. This implies that \(a_{n}\) is bounded, and as such, \(\lim\inf a_{n} = b\) and \(\lim\sup a_{n} = c\) exist. Due to the convergence of \(\lim a_{n}\), we have given \(\epsilon > 0\), there exists \(n \in \mathbb{N}\) such that \(k \geq n\) implies \[|a_{k} - a| < \epsilon.\] As \(\inf\{a_{n} : n \geq k\} \leq a_{k}\), we have \[|\inf\{a_{n}:  n \geq k\} - a| < \epsilon,\] so \(\lim\inf a_{n} = \lim a_{n}\). Using the earlier inequality, we have \[|a_{k} - a| = |a_{k} - \sup\{a_{n} : n \geq k\} + \sup\{a_{n} : n \geq k\} - a |\] \[\leq |a_{k} - \sup\{a_{n} : n \geq k\}| + |\sup\{a_{n} : n \geq k\} - a|.\] As a result of being a supremum, we have \(\exists s \in \mathbb{R}\) such that \(\sup\{a_{n} : n \geq k \} - s < a_{k} \implies \sup\{a_{n} : n \geq k\} - a_{k} < s\), so this expression is less that \(s + |\sup\{a_{n} : n\geq k\} - a| < \epsilon\), so this converges for correct choice of \(\epsilon\), so \(\lim\sup a_{n} = \lim a_{n} = \lim\inf a_{n}\). \\
+
+
+Proof of \((\impliedby)\). Assume that \(\lim\inf a_{n} = \lim\sup a_{n}\). As \(x_{n} \leq a_{n} \leq y_{n}\) for all \(n\), and \(\lim x_{n} = \lim y_{n}\), \(\lim a_{n}\) exists and is equal to the other two limits by the squeeze theorem. \\
+
+
+\textbf{Exercise 2.4.8.} For each series, find an explicit formula for the sequence of partial sums and determine if the series converges. \\
+
+\textbf{2.4.8.b.} \(\sum_{n=1}^{\infty} 1/n(n+1)\). \\
+
+\[s_{k} = \sum_{n=1}^{k} 1/n(n+1) \implies s_{1} = 1/2, s_{2} = 2/3, s_{3} = 3/4, ..., s_{k} = k/k+1.\] The sequence \(k/k+1\) is increasing and bounded, so this series converges. \\
+
+\textbf{2.4.8.c.} \(\sum_{n=1}^{\infty} \log\left(\frac{n+1}{n}\right)\). \\
+
+\[s_{k} = \sum_{n+1}^{k} \log\left(\frac{n+1}{n}\right) \implies s_{1} = \log 2, s_{2} = \log 3, s_{3} = \log 4, ..., s_{k} = \log k+1.\] This sequence is unbounded, so it is not convergent. The series does not converge. \\
+
+\textbf{Exercise 2.5.1.} Give an example of each of the following, or argue that such a request is impossible. \\
+
+\textbf{2.5.1.a.} A sequence that has a subsequence that is bounded but contains no subsequence that converges. \\
+
+This is not possible, as the Bolzano-Weierstrass Theorem states that all bounded sequences have a convergent subsequence. This bounded subsequence thus has a convergent subsequence. This convergent subsequence must be a subsequence of the original sequence, so the original sequence must have a convergent subsequence. \\
+
+\textbf{2.5.1.b.} A sequence that does not contain 0 or 1 as a term but contains subsequences converging to each of these values. \\
+
+The subsequence \(a_{n} = 1/(n+1) \text{ (if n odd), } 1+1/n \) (if \(n\) even) has subsequences converging to both of these values (the even and odd subsequences) but contains neither. \\
+
+\textbf{2.5.1.c.} A sequence that contains subsequences converging to every point in the infinite set \(\{1,1/2,1/3,1/4,1/5,...\}\). \\
+
+The sequence \(a_{n} = \{1, 1/2, 1, 1/2, 1/3, 1, 1/2, 1/3, 1/4, 1, ...\}\) contains convergent subsequences to each of these elements. \\
+
+\textbf{2.5.1.d.} A sequence that contains subsequences converging to every point in the infinite set \(\{1,1/2,1/3,1/4,1/5,...\}\), and no subsequences converging to points outside of this set. \\
+
+This is not possible, as a set with a sequence converging to \(1/n\) for all \(n\) must also converge to \(0\), which is not in said set. \\
+
+\textbf{Exercise 2.5.6.} Use a similar strategy to the one in Example 2.5.3 to show that \(\lim b^{1/n}\) exists for all \(b \geq 0\) and find the value of the limit. \\
+
+We will break this into two cases, \(b < 1\) and \(b > 1\). \\
+
+Sidenote: \(b=0\) implies that all \(b^{1/n} = 0^{1/n} = 0\), so this converges to \(0\). \\
+
+Case 1, \(b < 1\). \(b \leq b^{1/2} \leq b^{1/3} \leq ... \leq 1\), so this sequence is bounded and increasing, and as such, convergent. We will say that \(\lim b^{1/n} = l\). The limit of the subsequence \(b^{1/2n} = l\), as subsequences of convergent sequences converge to the same limit. By the Algebraic Limit Theorem, we also have \(\lim b^{1/2n} = l = \sqrt{l}\), so \(l = 0\) or \(l = 1\). However, as it is increasing it cannot converge to 0. Therefore, \(\lim b^{1/n} = 1\). \\
+
+Case 2, \(b > 1\). \(b \geq b^{1/2} \geq b^{1/3} \geq ... \geq 1\), so this sequence is bounded and decreasing, and as such, convergent. We will say that \(\lim b^{1/n} = l\). The limit of the subsequence \(b^{1/2n} = l\), as subsequences of convergent sequences converge to the same limit. By the Algebraic Limit Theorem, we also have \(\lim b^{1/2n} = l = \sqrt{l}\), so \(l = 0\) or \(l = 1\). However, as it is bounded below by 1, it cannot converge to 0. Therefore, \(\lim b^{1/n} = 1\). \\
+
+\textbf{HW7.1:} Let \(a_{n}\) be bounded and let \[S = \{s \in \mathbb{R} : \exists \text{ a subsequence } (a_{n_{k}}) \text{ converging to } s\}.\] This is called the set of subsequential limits. Bolzano-Weierstrass Theorem implies that there is at least one convergent subsequence, so \(S \neq \emptyset\). Show \(S\) is bounded and \(\lim\sup a_{n} = \sup(S)\). \\
+
+Because \((a_{n})\) is a bounded sequence, there exists some \(M \in \mathbb{R}\) such that \(|a_{n}| \leq M\) for all \(n\). If \(S\) is unbounded, then there is some \((a_{n_{k}})\) such that it converges to a limit greater than all \(m \in \mathbb{R}\), and as such cannot converge to some \(s\). Therefore, \(S\) must be bounded. Take some arbitrary subsequence \((a_{n_{k}})\). \(\lim\sup a_{n}\) is then the limit of the sequence \(y_{n} = \sup\{a_{k} : k \geq n\}\). Each individual \(y_{n}\), (as \(n \leq n_{k}\), as shown in lecture) is greater than or equal to all \(a_{n_{k}}\), so by the Order Limit Theorem, \(\lim\sup a_{n} \geq \lim a_{n_{k}}\) for arbitrary \((a_{n_{k}})\), so \(\lim\sup a_{n} = \sup(S)\).
+
+
+\end{document}
