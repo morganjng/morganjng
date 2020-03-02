@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.11.12)  1 MAR 2020 16:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.11.12)  2 MAR 2020 00:36
 entering extended mode
 **./HW7.tex
 (HW7.tex
@@ -658,8 +658,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
+[1
+
+{C:/Users/Jonathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
@@ -668,15 +680,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 49--50
 
  []
 
-[1
 
-{C:/Users/Jonathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 51--52
 
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--58
 
  []
 
@@ -697,11 +717,11 @@ This may cause the page layout to be inconsistent, however.
 Here is how much of TeX's memory you used:
  3292 strings out of 493312
  42598 string characters out of 3138025
- 111513 words of memory out of 3000000
+ 112513 words of memory out of 3000000
  6782 multiletter control sequences out of 15000+200000
  12096 words of font info for 47 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,11n,43p,434b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 41i,11n,43p,511b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
 <F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cm
 bx12.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmex10.p
 fb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi12.pfb><F:
@@ -714,7 +734,7 @@ pe1/public/amsfonts/cm/cmr8.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/ams
 fonts/cm/cmsy8.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on HW7.pdf (2 pages, 111358 bytes).
+Output written on HW7.pdf (2 pages, 116583 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
