@@ -1,0 +1,83 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\title{Math 521 HW 8}
+\author{Morgan Gribbins}
+\date{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Page \thepage\ of \pageref{LastPage}}
+\begin{document}
+	
+\maketitle
+
+\textbf{Exercise 2.5.7.} Extend the result proved in Example 2.5.3 to the case \(|b| < 1\); that is, show \(\lim(b^{n})=0\) if and only if \(-1 < b < 1\). \\
+
+Proof of \((\implies)\) by contrapositive. Assume that \(|b| \geq 1\). This gives us 4 different cases. \\
+
+Take the case \(b=1\). This means that \(b^{n} = 1\) for all \(n\), so \(\lim(b^{n}) = 1 \neq 0.\) \\
+
+Take the case \(b>1\). This implies that the sequence \(b^{n}\) is unbounded, so this sequence is divergent. \\
+
+Take the case \(b=-1\). This means that \(b^{n} = (-1)^{n}\), which alternates between \(-1\) and \(1\) and is divergent. \\
+
+Take the case \(b<-1\). This implies that the sequence \(b^{n}\) is unbounded, so this sequence is divergent. \\
+
+Therefore, \(|b|\geq 1 \implies \lim(b^{n}) \neq 0\). \\
+
+Proof of \((\impliedby)\). Assume that \(-1 < b < 1\). This implies that for all \(n\), \(-1 < b^{n} < 1\), so this sequence is bounded. Additionally, we have \(|b^{n}| \geq |b^{n+1}|\), as \(|b| < 1\). Given \(\epsilon > 0\), let \(N \in \mathbb{N}\) such that \(b^{N} < \epsilon\). We then have, for \(n \geq N\), \[|b^{n}| < \epsilon,\] so this sequence converges to 0. \\
+
+\textbf{Exercise 2.5.9.} Let \((a_{n})\) be a bounded sequence, and define the set \[S = \{x \in \mathbb{R} : x < a_{n} \text{ for infinitely many terms } a_{n}\}.\] Show that there exists as subsequence \((a_{n_{k}})\) converging to \(s = \sup S\).\\
+
+As \(S\) is nonempty and bounded above (as \(a_{n}\) is bounded), we can say \(s = \sup S\). Let \(\epsilon_{k} = 1/k\). By definition of a supremum, there must exists some \(b_{k} \in S\) such that \(b_{k} > s - 1/k\). As there are an infinite amount of \(a_{n}\) greater than \(b_{k}\) and \(s\), there must be some \(a_{n_{k}}\) between \(s - 1/k\) and \(s\), so there exists an increasing (\(1/k\) decreasing) bounded sequence with all \(a_{n_{k}} < s\), so there exists a subsequence \((a_{n_{k}})\) converging to \(s\). \\
+
+\textbf{Exercise 2.6.2.} Give an example of each of the following, or argue that such a request is impossible. \\
+
+\textbf{(a) A Cauchy sequence that is not monotone.} \\
+
+A Cauchy sequence that is not monotone is \((-1)^{n}/n\), which varies by \((2n+1)/(n^{2}+n)\), which goes to zero (so its Cauchy), but it is not monotone. \\
+
+\textbf{(b) A Cauchy sequence with an unbounded subsequence.} \\
+
+This is not possible. A Cauchy sequence is necessarily bounded, so all of its subsequences are bounded. \\
+
+\textbf{(c) A divergent monotone sequence with a Cauchy subsequence.} \\
+
+This is not possible. A divergent monotone sequence must be unbounded, so a subsequence of this sequence must be unbounded. As this is monotone and unbounded, all subsequences are unbounded and not Cauchy. \\
+
+\textbf{(d) An unbounded sequence containing a subsequence that is Cauchy.} \\
+
+The sequence \(a_{n} = (1,0,-1,0,2,0,-2,...)\) has Cauchy subsequence uniformly composed of 0s, but is unbounded. \\
+
+\textbf{Exercise 2.6.3.} If \((x_{n})\) and \((y_{n})\) are Cauchy sequences, then one easy way to prove that \((x_{n}+y_{n})\) is Cauchy is to use the Cauchy Criterion. By Theorem 2.6.4, \((x_{n})\) and \((y_{n})\) must be convergent, and the Algebraic Limit Theorem then implies that \((x_{n} + y_{n})\) is convergent and hence Cauchy. \\
+
+\textbf{(a)} Give a direct argument that \((x_{n} + y_{n})\) is a Cauchy sequence that does not use the Cauchy Criterion or the Algebraic Limit Theorem. \\
+
+As \(x_{n}\) and \(y_{n}\) Cauchy, given \(\epsilon/2 > 0\), there exists \(N,M \in \mathbb{N}\) such that \(b \geq a \geq N\) and \(d \geq c \geq M\) implies \[|x_{a}-x_{b}| < \epsilon/2\]\[|y_{c} - y_{d}| < \epsilon/2.\] Adding these gives us \[|x_{a} - x_{b}| + |y_{c} - y_{d}| < \epsilon/2+\epsilon/2\] \[\implies |x_{a} - x_{b} + y_{c} - y_{d}| = |(x_{a} + y_{c}) - (x_{b} + y_{d})|  < \epsilon,\] so for \(m \geq n \geq \max(N,M)\), we have \[|(x_{n} + y_{n}) - (x_{m} - y_{m})| < \epsilon,\] which means that this sequence is Cauchy. \\
+
+\textbf{(b)} Do the same for the product \((x_{n}y_{n})\). \\
+
+As \(x_{n}\) and \(y_{n}\) Cauchy, given \(\sqrt{\epsilon} > 0\), there exists \(N,M \in \mathbb{N}\) such that \(b \geq a \geq N\) and \(d \geq c \geq M\) implies \[|x_{a}-x_{b}| < \sqrt{\epsilon}\]\[|y_{c} - y_{d}| < \sqrt{\epsilon}.\] This implies that \[|x_{a}-x_{b}||y_{c}-y_{d}| < \epsilon \implies  |y_{c}(x_{a} - x_{b}) - y_{d}(x_{a} - x_{b})| < \epsilon,\] which implies that for some \(m \geq n \geq \max(N,M)\), \[|(x_{n}y_{n}) - (x_{m}y_{m})| < \epsilon,\] so the sequence is Cauchy. \\
+
+\textbf{Exercise 2.6.4.} Let \((a_{n})\) and \((b_{n})\) be Cauchy sequences. Decide whether each of the following sequences is a Cauchy sequence, justifying each conclusion. \\
+
+\textbf{(a)} \(c_{n} = |a_{n} - b_{n}| \) \\
+
+This sequence is Cauchy. The sequence \(a_{n}-b_{n}\) is Cauchy, which implies \(||a_{n} - b_{n}| - |a_{m} - b_{m}|| \geq |(a_{n} - b_{n}) - (a_{m} - b_{m})| < \epsilon\), so \(c_{n}\) is Cauchy. \\
+
+\textbf{(b)}  \(c_{n} = (-1)^{n}a_{n}\) \\
+
+This sequence is not necessarily Cauchy. The sequence \(a_{n} = 1\) results in a non-Cauchy \(c_{n}\), for instance. \\
+
+\textbf{(c)} \(c_{n} = [[a_{n}]]\), where \([[x]]\) refers to the greatest integer less than or equal to x. \\
+
+This sequence is not necessarily Cauchy. The sequence \(a_{n} = 1 + (-1)^{n}/n\) is Cauchy, but \([[a_{n}]]\) alternates between \(0\) and \(1\), based on the value of \(n\). \\
+
+
+\end{document}
