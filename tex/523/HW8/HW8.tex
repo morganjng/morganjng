@@ -1,0 +1,69 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\title{Math 523 HW8}
+\author{Morgan Gribbins}
+\date{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Page \thepage\ of \pageref{LastPage}}
+\begin{document}
+	
+\maketitle
+
+Use the method of Examples 1 and 2 to compute these integrals. \\
+
+\textbf{1.} \(\int_{-\infty}^{\infty} \frac{x^{4}}{1+x^{8}}dx\) \\
+
+Let \(f= z^{4}/(1+z^{8})\). This function has isolated singularities where \(z^{8} = -1\), i.e. at \(z = e^{i(\pi/8+k\pi/4)}\), with integer \(k\). The singularities that lie in the domain \(U\) are the points \(e^{i\pi/8},\ e^{3i\pi/8},\ e^{5i\pi/8},\ e^{7i\pi/8}\). By the Residue Theorem, this integral is equal to the sum of these residues multiplied by \(2\pi i\). \\
+
+By theorem, the residue at \(z_{0}\) of a rational function \(F/G\) is equal to \(F(z_{0})/G'(z_{0})\), so by letting \(F=z^{4}\) and \(G=1+z^{8}\), we may calculate our residues.\\
+\begin{itemize}
+	\item Res\((f; e^{i\pi/8}) = 1/8e^{3i\pi/8}\) \\
+	\item Res\((f; e^{3i\pi/8}) = 1/8e^{9i\pi/8}\) \\
+	\item Res\((f; e^{5i\pi/8}) = 1/8e^{15i\pi/8}\) \\
+	\item Res\((f; e^{7i\pi/8}) = 1/8e^{21i\pi/8}\) \\
+\end{itemize}
+Summing and multiplying these gives us \[\int_{-\infty}^{\infty} \frac{x^{4}}{1+x^{8}}dx = \frac{i\pi}{4}(e^{-3i\pi/8}+e^{-9i\pi/8}+e^{-15i\pi/8}+e^{-21i\pi/8}).\]
+
+\textbf{2.} \(\int_{-\infty}^{\infty}\frac{x^{2}}{x^{4}-4x^{2}+5}dx\)\\
+
+Let \(f(z) = \frac{z^{2}}{z^{4}-4z^{2}+5}\). This function has isolated singularities at \(z= \pm \sqrt{2+i}\) and \(z=\pm\sqrt{2-i}\). The singularities that lie in \(U\) are \(-\sqrt{2-i}\) and \(\sqrt{2+i}\). \\
+
+By theorem, the residue at \(z_{0}\) of a rational function \(F/G\) is equal to \(F(z_{0})/G'(z_{0})\), so by letting \(F=z^{2}\) and \(G=z^{4}-4z^{2}+5\), we may calculate our residues. This formula shows that Res\((f, \sqrt{2+i}) = \frac{\sqrt{2+i}}{4i}\) and Res\((f, -\sqrt{2-i}) = \frac{\sqrt{2-i}}{4i}\). Summing and multiplying (by 2 \(\pi i\)) these values gives us
+
+\[\int_{-\infty}^{\infty} \frac{x^{2}}{x^{4}-4x^{2}+5} = 2i\pi\left(\frac{\sqrt{2+i}+\sqrt{2-i}}{4i}\right).\]
+
+\textbf{3.} \(\int_{-\infty}^{\infty} \frac{dx}{(x^{2}+a^{2})(x^{2}+b^{2})}, \text{ }a,b > 0\)\\
+
+Let \(f(z) = 1/(z^{2}+a^{2})(z^{2}+b^{2})\). This function has isolated singularities at \(z = \pm bi\) and \(z = \pm ai\). As \(a,b\) are positive, \(ai\) and \(bi\) lie in \(U\). \\
+
+By theorem, the residue at \(z_{0}\) of a rational function \(F/G\) is equal to \(F(z_{0})/G'(z_{0})\), so by letting \(F=1\) and \(G=(z^{2}+a^{2})(z^{2}+b^{2})\), we may calculate our residues. This formula gives us Res\((f, ai) = \frac{1}{2ai}\frac{1}{b^{2}-a^{2}}\) and Res\((f, bi) = \frac{1}{2bi}\frac{1}{a^{2}-b^{2}}\). Summing and multiplying (by 2\(\pi i\)) these values gives us
+
+\[\int_{-\infty}^{\infty} \frac{dx}{(x^{2}+a^{2})(x^{2}+b^{2})} = \frac{\pi}{ab(a+b)}.\]
+
+Use the method of Example 7 to compute these integrals. \\
+
+\textbf{9.} \(\int_{0}^{2\pi} \frac{d\theta}{(2-\sin\theta)^{2}}\)\\
+
+
+
+\textbf{10.} \(\int_{0}^{2\pi} \frac{d\theta}{(1+\beta\cos\theta)^{2}}, \text{ }-1<\beta<1\) \\
+
+
+
+\textbf{12.} \(\int_{0}^{2\pi} \sin^{2k}\theta d\theta\) \\
+
+
+
+
+
+
+
+\end{document}
