@@ -1,0 +1,96 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\title{Math 521 HW 10}
+\author{Morgan Gribbins}
+\date{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Page \thepage\ of \pageref{LastPage}}
+\begin{document}
+	
+\maketitle
+
+\textbf{Exercise 3.2.5.} Prove Theorem 3.2.8. \\
+
+\textit{A set} \(F \subseteq \mathbb{R}\) \textit{is closed if and only if every Cauchy sequence contained in} \(F\) \textit{has a limit that is also an element of} \(F\). \\
+
+Proof of (\(\implies\) closed) by contrapositive. Assume that some set \(F \subseteq \mathbb{R}\) is not closed. This implies that there is some \(x\in \mathbb{R}\) that is a limit point of \(F\), not contained in \(F\). As \(x\) is a limit point of \(F\), there is some Cauchy (implied by convergence) sequence entirely in \(F\), that has a limit outside of \(F\). Therefore, \(F\) not closed implies that not every Cauchy sequence contained in \(F\) has a limit that is also contained in \(F\). \\
+
+Proof of (\(\impliedby\) closed). Assume that  some set \(F \subseteq \mathbb{R}\) is closed. Let \((a_{n})\) be a Cauchy sequence fully contained in \(F\). This implies that \((a_{n})\) is convergent, by theorem. Therefore, by the definition of a closed set, \((a_{n})\) converges to some \(x \in F\), which proves that \(F\) being closed implies that all Cauchy sequences contained in \(F\) has a limit contained in \(F\). \\
+
+\textbf{Exercise 3.2.8.} Assume \(A\) is an open set and \(B\) is a closed set. Determine if the following sets are definitely open, definitely closed, both, or neither. \\
+
+\textbf{3.2.8.a.} \(\overline{A\cup B}\) \\
+
+This is definitely closed, as the closure of any set is closed. \\
+
+\textbf{3.2.8.b.} \(A\setminus B = \{x \in A \text{ and } x \notin B\}\). \\
+
+This is definitely open, as it is the intersection of two open sets (\(A\) and \(B^{c}\)). \\
+
+\textbf{3.2.8.c.} \((A^{c} \cup B)^{c}\) \\
+
+This is definitely open, as it is the intersection of two open sets: \((A^{c} \cup B)^{c} = A \cap B^{c}\). \\
+
+\textbf{3.2.8.d.} \((A \cap B) \cup (A^{c} \cap B)\) \\
+
+This set is the union of a closed set \((A^{c} \cap B)\) and the intersection of a closed and open set \((A \cap B)\), which is neither, so this set is neither closed nor open. \\
+
+\textbf{3.2.8.e.} \(\overline{A}^{c} \cap \overline{A^{c}}\) \\
+
+This is the complement of the closure of \(A\), so it is definitely open. \\
+
+\textbf{Exercise 3.2.10.} Only one of the following three descriptions can be realized. Provide an example that illustrates the viable description, and explain why the other two cannot exist. \\
+
+\textbf{(i)} A countable set contained in \([0,1]\) with no limit points. \\
+
+\textbf{(ii)} A countable set contained in \([0,1]\) with no isolated points. \\
+
+\textbf{(iii)} A set with an uncountable number of isolated points. \\
+
+The only one of these that is possible is \textbf{(ii)}. \textbf{(i)} is impossible, as Bolzano-Weierstrass demands that there be a convergent subsequence within any bounded set, and \textbf{(iii)} can't be true due to the density of the real numbers. An example of \textbf{(ii)} is given by the set \(S = \{ 1/n: n \in \mathbb{N}\}\). \\
+
+\textbf{Exercise 3.3.4.} Assume \(K\) is compact and \(F\) is closed. Decide if the following sets are definitely compact, definitely closed, both, or neither. \\ 
+
+\textbf{3.3.4.a.} \(K \cap F\) \\
+
+This is definitely compact, as it is bounded (as all elements in \(K\) are bounded) and closed (as it is a intersection of two closed sets). \\
+
+\textbf{3.3.4.b.} \(\overline{F^{c} \cup K^{c}}\) \\
+
+This is definitely closed, but not necessarily compact. \\
+
+\textbf{3.3.4.c.} \(K \setminus F = \{x \in K \text{ and } x \notin F\}\) \\
+
+This is not necessarily closed or compact. \\
+
+\textbf{3.3.4.d.} \(\overline{K \cap F^{c}}\) \\
+
+This is definitely closed, and definitely compact, as \(K\) is compact. \\
+
+\textbf{Exercise 3.3.5.} Decide whether the following propositions are true or false. If the claim is valid, supply a short proof, and if the claim is false, provide a counterexample. \\
+
+\textbf{3.3.5.a.} The arbitrary intersection of compact sets is compact. \\
+
+This is true, as this intersection is bounded by the lowest bound of all the sets, and an arbitrary intersection of closed sets is closed. \\
+
+\textbf{3.3.5.b.} The arbitrary union of compact sets is compact. \\
+
+This is not true. Consider the sets \(A_{n} = [0,n]\), which are all compact individually; the union of these sets \(\cup_{n=1}^{\infty} A_{n}\) is the set of all positive (and zero) real numbers, which is not compact. \\
+
+\textbf{3.3.5.c.} Let \(A\) be arbitrary, and let \(K\) be compact, then, the intersection \(A \cap K\) is compact. \\
+
+This is not true, as if \(A\) is open, then \(A \cap K\) is not necessarily closed, and as such not necessarily compact. Take the sets \(K = [0,1]\) and \(A = (1/2, 1)\), whose intersection is \((1/2, 1)\), which is open and as such, not compact. \\
+
+\textbf{3.3.5.d.} If \(... \subseteq F_{4} \subseteq F_{3} \subseteq F_{2} \subseteq F_{1}\) is a nested sequence of nonempty closed sets, then the intersection \(\cap_{n=1}^{\infty} F_{n} \neq \emptyset\). \\
+
+This is not necessarily true. Take the sets \(F_{n} = \{x \in \mathbb{R} : x \geq n\}\), which have an empty infinite intersection. \\
+
+\end{document}
