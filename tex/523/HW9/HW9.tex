@@ -1,0 +1,47 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lastpage}
+\usepackage[left=1.00in, right=1.00in, top=1.00in, bottom=1.00in]{geometry}
+\usepackage{fancyhdr}
+\title{Math 523 HW 9}
+\author{Morgan Gribbins}
+\date{}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Page \thepage\ of \pageref{LastPage}}
+\begin{document}
+	
+\maketitle
+
+Use the technique of Example 2 to determine the number of zeroes of \(f\) in the first quadrant. \\
+
+\textbf{1.} \(f(z) = z^{2} - z + 1\) \\
+
+We examine \(f(z)\) on the quarter circle of radius \(R >> 0\) in the first quadrant bounded by the real and imaginary axes. On the segment \(0 \leq x \leq R\), \(f(x) = x^{2} - x + 1\), which is real and positive. On the quarter circle \(z = Re^{it}, 0 \leq t \leq \pi/2\), \[f(Re^{it}) = R^{2}e^{2it}\left(1 - \frac{1}{Re^{it}} + \frac{1}{R^{2}e^{2it}}\right) = R^{2}e^{2it}(1+\gamma),\] where \(|\gamma| \leq 2/R < \epsilon\) for \(R\) large. Thus, \(\arg f(Re^{it})\) is approximately \(\arg  (e^{2it}) = 2t\) for large \(R\), so \(\arg f(Re^{it})\) increases from \(0\) to about \(\pi\) as \(t\) increases from \(0\) to \(\pi/2\). On the segment \(z=iy, R \geq y \geq 0\), \[f(iy) = -y^{2} - iy + 1.\] Thus, as \(y\) decreases from \(R\) to \(0\), \(f(iy)\) moves from the third quadrant to \(z = 1\), and \(\arg f(z)\) increases by \(\pi\), so as \(z\) traverses the contour, \(\arg f(z)\) increases by exactly \(2\pi\), and so \(f(z)\) has exactly one zero in the first quadrant. \\
+
+\textbf{2.} \(f(z) = z^{4} - 3z^{2} + 3\) \\
+
+We examine \(f(z)\) on the quarter circle of radius \(R >> 0\) in the first quadrant bounded by the real and imaginary axes. On the segment \(0 \leq x \leq R\), \(f(x) = x^{4} - 3x^{2} + 3\), which is real and positive. On the quarter circle \(z = Re^{it}, 0 \leq t \leq \pi/2\), \[f(Re^{it}) = R^{4}e^{4it}\left(1 - \frac{3}{R^{2}e^{2it}} + \frac{3}{R^{4}e^{4it}}\right) = R^{4}e^{4it}(1+\gamma),\] where \(|\gamma| \leq 6/R < \epsilon\) for \(R\) large. Thus, \(\arg f(Re^{it})\) is approximately \(\arg  (e^{4it}) = 4t\) for large \(R\), so \(\arg f(Re^{it})\) increases from \(0\) to about \(2\pi\) as \(t\) increases from \(0\) to \(\pi/2\). On the segment \(z=iy, R \geq y \geq 0\), \[f(iy) = y^{4} + 3iy^{2} + 3.\] Thus, as \(y\) decreases from \(R\) to \(0\), \(f(iy)\) moves from the first quadrant to \(z = 3\), and \(\arg f(z)\) increases by \(0\), so as \(z\) traverses the contour, \(\arg f(z)\) increases by exactly \(2\pi\), and so \(f(z)\) has exactly one zero in the first quadrant. \\
+
+\textbf{3.} \(f(z) = z^{3} - 3z + 6\) \\
+
+We examine \(f(z)\) on the quarter circle of radius \(R >> 0\) in the first quadrant bounded by the real and imaginary axes. On the segment \(0 \leq x \leq R\), \(f(x) = x^{3} - 3x + 6\), which is real and positive. On the quarter circle \(z = Re^{it}, 0 \leq t \leq \pi/2\), \[f(Re^{it}) = R^{3}e^{3it}\left(1 - \frac{3}{Re^{it}} + \frac{6}{R^{3}e^{3it}}\right) = R^{3}e^{3it}(1+\gamma),\] where \(|\gamma| \leq 7/R < \epsilon\) for \(R\) large. Thus, \(\arg f(Re^{it})\) is approximately \(\arg  (e^{3it}) = 3t\) for large \(R\), so \(\arg f(Re^{it})\) increases from \(0\) to about \(3\pi/2\) as \(t\) increases from \(0\) to \(\pi/2\). On the segment \(z=iy, R \geq y \geq 0\), \[f(iy) = -iy^{3} - 3iy + 6.\] Thus, as \(y\) decreases from \(R\) to \(0\), \(f(iy)\) moves from the fourth quadrant to \(z = 6\), and \(\arg f(z)\) increases by \(\pi/2\), so as \(z\) traverses the contour, \(\arg f(z)\) increases by exactly \(2\pi\), and so \(f(z)\) has exactly one zero in the first quadrant. \\
+
+\textbf{4.} \(f(z) = z^{2} + iz + 2 + i\) \\
+
+We examine \(f(z)\) on the quarter circle of radius \(R >> 0\) in the first quadrant bounded by the real and imaginary axes. On the segment \(0 \leq x \leq R\), \(f(x) = x^{2} + ix + 2 + i\), which traverses from \(2+i\) to \(R^{2} + 2 + i(R+1)\), so \(\arg f(x)\) changes by \(-\arg (2+i)\). On the quarter circle \(z = Re^{it}, 0 \leq t \leq \pi/2\), \[f(Re^{it}) = R^{2}e^{2it}\left(1 + \frac{i}{Re^{it}} + \frac{2+i}{R^{3}e^{3it}}\right) = R^{2}e^{2it}(1+\gamma),\] where \(|\gamma| \leq 4/R < \epsilon\) for \(R\) large. Thus, \(\arg f(Re^{it})\) is approximately \(\arg  (e^{2it}) = 2t\) for large \(R\), so \(\arg f(Re^{it})\) increases from \(0\) to about \(\pi\) as \(t\) increases from \(0\) to \(\pi/2\). On the segment \(z=iy, R \geq y \geq 0\), \[f(iy) = -y^{2} - y + 2 + i.\] Thus, as \(y\) decreases from \(R\) to \(0\), \(f(iy)\) moves from the third quadrant to \(z = 2+i\), and \(\arg f(z)\) increases by \(-\pi + \arg (2+i)\), so as \(z\) traverses the contour, \(\arg f(z)\) increases by exactly \(2\pi\), and so \(f(z)\) has no zeros in the first quadrant. \\
+
+\textbf{5.} \(f(z) = z^{9} + 5z^{2} + 3\) \\
+
+We examine \(f(z)\) on the quarter circle of radius \(R >> 0\) in the first quadrant bounded by the real and imaginary axes. On the segment \(0 \leq x \leq R\), \(f(x) = x^{9} + 5x^{2} + 3\), which is real and positive. On the quarter circle \(z = Re^{it}, 0 \leq t \leq \pi/2\), \[f(Re^{it}) = R^{9}e^{9it}\left(1 + \frac{5}{Re^{7it}} + \frac{3}{R^{9}e^{9it}}\right) = R^{9}e^{9it}(1+\gamma),\] where \(|\gamma| \leq 8/R < \epsilon\) for \(R\) large. Thus, \(\arg f(Re^{it})\) is approximately \(\arg  (e^{9it}) = 9t\) for large \(R\), so \(\arg f(Re^{it})\) increases from \(0\) to about \(9\pi/2\) as \(t\) increases from \(0\) to \(\pi/2\). On the segment \(z=iy, R \geq y \geq 0\), \[f(iy) = iy^{9} - 5y^{2} + 3.\] Thus, as \(y\) decreases from \(R\) to \(0\), \(f(iy)\) moves from the first quadrant to \(z = 3\), and \(\arg f(z)\) increases by \(-\pi/2\), so as \(z\) traverses the contour, \(\arg f(z)\) increases by exactly \(4\pi\), and so \(f(z)\) has exactly two zero in the first quadrant. \\
+
+\textbf{18.} Extend Formula 4 to prove the following. Let \(g\) be analytic on a domain containing \(\gamma\) and its inside. Then \[\frac{1}{2\pi i} \int_{\gamma} \frac{h'(z)}{h(z)}g(z) dz = \sum_{i = 1}^{N} g(z_{i}) - \sum_{j = 1}^{M} g(w_{j}),\] where \(z_{1}, ..., z_{N}\) are the zeroes of \(h\) and \(w_{1}, ..., w_{M}\) are the poles of \(h\) inside \(\gamma\), each listed according to its multiplicity. \\
+
+By the Residue Theorem, \[\frac{1}{2\pi i} \int_{\gamma} \frac{h'(z)}{h(z)} g(z) dz = \sum_{i = 1}^{N} \text{Res}\left(\frac{h'}{h}g ; z_{i}\right),\] where \(z_{i}\) are the poles of \(\frac{h'}{h}g\). Note that this set of poles is the union of the set of zeros of \(h(z)\) and poles of \(h(z)\) inside \(\gamma\). By theorem, a residue of \(\frac{h'(z)g(z)}{h(z)}\) at \(z_{i}\) is equal to \(\frac{h'(z_{i})g(z_{i})}{h'(z_{i}} = g(z_{i})\). Therefore, \[\frac{1}{2\pi i} \int_{\gamma} \frac{h'(z)}{h(z)}g(z) dz = \sum_{i = 1}^{N} g(z_{i}) - \sum_{j = 1}^{M} g(w_{j}),\] with the prior definition of \(z_{i}\) and \(w_{j}\).
+
+
+\end{document}
