@@ -23,7 +23,7 @@ Assume \(K\) satisfies (i) and (ii), and let \(\{O_{\lambda} : \lambda \in \Lamb
 
 \textbf{3.3.9.a.} Show that there exists a nested sequence of closed intervals \(... \subseteq I_{2} \subseteq I_{1} \subseteq I_{0}\) with the property that, for each \(n\), \(I_{n} \cap K\) cannot be finitely covered and \(\lim |I_{n}| = 0.\) \\
 
-
+As \(K\) cannot be finitely covered, \(I_{n} \cap K \subseteq K\) must not be able to be finitely covered, as this would imply that \(K\) itself can be finitely covered, so these intervals with such properties must exist. \\
 
 \textbf{3.3.9.b.} Argue that there exists an \(x \in K\) such that \(x \in I_{n}\) for all \(n\). \\
 
@@ -32,73 +32,73 @@ By the Nested Interval Property, there must exists one \(x \in K\) such that \(x
 \textbf{3.3.9.c.} Because \(x\in K\), there must exist an open set \(O_{\lambda_{0
 }}\) from the original collection that contains \(x\) as an element. Explain how this leads to the desired contradiction. \\
 
-
+This leads to the desired contradiction as this implies that \(K\) can be finitely covered, because this process may be replicated for each other element of \(K\), so all elements of \(K\) may be finitely covered. \\
 
 \textbf{Exercise 4.2.2.} For each stated limit, find the largest possible \(\delta\)-neighborhood that is a proper response to the given \(\epsilon\) challenge. \\
 
 \textbf{4.2.2.a.} \(\lim_{x \to 3} (5x - 6) = 9,\) where \(\epsilon = 1\). \\
 
-
+Given \(\epsilon = 1\), the desired \(\delta\) allows the implication \[|x-3| < \delta \implies |5x-6-9| = |5x-15| < 1.\] Multiplying \(|x-3| < \delta\) by 5 gives \[|5||x-3| = |5x-15| < 5\delta = 1 \implies \delta = 0.2.\]
 
 \textbf{4.2.2.b.} \(\lim_{x \to 4} \sqrt{x} = 2,\) where \(\epsilon = 1\). \\
 
-
+Given \(\epsilon = 1\), the desired \(\delta\) allows the implication \[|x-4| < \delta \implies |\sqrt{x} - 2| < 1.\] Factoring \(|x-4|\) provides the inequality \(|(\sqrt{x}-2)(\sqrt{x}+2)| < \delta\). This implies that \[|\sqrt{x} - 2| < \delta/|\sqrt{x}+2|  \leq \delta/5 = 1 \implies \delta = 5.\]
 
 \textbf{4.2.2.c.} \(\lim_{x \to \pi} [[x]] = 3,\) where \(\epsilon = 1\). \\
 
-
+Given \(\epsilon = 1\), the desired \(\delta\) allows the implication \[|x-\pi| < \delta \implies |[[x]] - 3| < 1.\] By definition of \(f(x) = [[x]]\), \(|[[x]] - 3| < 1\) occurs only when \(3 \leq x < 4\). Therefore, the greatest \(\delta\) that implies this result is \(\pi - 3\). \\ 
 
 \textbf{4.2.2.d.} \(\lim_{x \to \pi} [[x]] = 3,\) where \(\epsilon = .01\). \\
 
-
+Given \(\epsilon = .01\), the desired \(\delta\) allows the implication \[|x-\pi| < \delta \implies |[[x]] - 3| < .01.\] By definition of \(f(x) = [[x]]\), \(|[[x]] - 3| < .01\) when \(3 \leq x < 4\). Therefore, the requisite \(\delta = 3-\pi\). \\
 
 \textbf{Exercise 4.2.5.} Use Definition 4.2.1 to supply a proper proof for the following limit statements. \\
 
 \textbf{4.2.5.a.} \(\lim_{x \to 2} (3x + 4) = 10\). \\
 
-
+Given \(\epsilon > 0\), let \(\delta = \epsilon/3\). We then have \[|x - 2| < \delta = \epsilon/3 = |3||x-2| = |3x-6| = |3x+4-10| < \epsilon,\] so \(\lim_{x \to 2}(3x+4) = 10.\) \\ 
 
 \textbf{4.2.5.b.} \(\lim_{x \to 0} x^{3} = 0\). \\
 
-
+Given \(\epsilon > 0\), let \(\delta = \epsilon^{1/3}\). We then have \[|x - 0| < \delta = \epsilon^{1/3} \implies |x|^{3} = |x^{3}| = |x^{3} = 0| < \epsilon,\] so \(\lim_{x \to 0} x^{3} = 0\).\\
 
 \textbf{4.2.5.c.} \(\lim_{x \to 2}(x^{2} + x - 1) = 5\). \\
 
-
+Given \(\epsilon > 0\), let \(\delta = \epsilon/6\) or \(1\), whichever is lower. We then have \[|x-2| < \delta \implies |x-2||x+3| < 6\delta \implies |x^{2} + x -1 - 5| < 6\delta \leq \epsilon,\] so \(\lim_{x \to 2} (x^{2} + x - 1) = 5\). \\
 
 \textbf{4.2.5.d.} \(\lim_{x \to 3} 1/x = 1/3\). \\
 
-
+Given \(\epsilon > 0\), let \(\delta = 12\epsilon\), and examine the \(\delta\)-neighborhood \(V_{1} (4)\). We then have \[|x - 3| < 12\epsilon \implies |x-3|/|3x| < \epsilon \implies \left|\frac{1}{x} - \frac{1}{3}\right| < \epsilon,\] so \(\lim_{x\to 3} 1/x = 1/3.\) \\
 
 \textbf{Exercise 4.3.5.} Show using Definition 4.3.1 that if \(c\) is an isolated point of \(A \subseteq \mathbb{R}\), then \(f : A \to \mathbb{R}\) is continuous at \(c\). \\
 
-
+Let \(c\) be an isolated point of \(A \subseteq \mathbb{R}\). Given \(\epsilon > 0\), let \(\delta > 0\) such that the set \(V_{\delta}(c) = \{c\}\). We will now consider every point in this set. \(|c - c| = 0 < \delta\), and \(f(c)- f(c)| = 0 < \epsilon\), so this function is continuous at \(c\). \\
 
 \textbf{Exercise 4.3.6.} Provide an example of each or explain why the request is impossible. \\
 
 \textbf{4.3.6.a.} Two functions \(f\) and \(g\), neither of which is continuous at \(0\) but such that \(f(x)g(x)\) and \(f(x)+g(x)\) are continuous at \(0\). \\
 
-
+Let \(f(x) = -1\) if \(x > 0\) and \(f(x) = 1\) if \(x \leq 0\), and \(g(x) = -f(x)\). Neither of these are continuous at \(0\), but their product is uniformly \(-1\), and their sum is uniformly \(0\). \\
 
 \textbf{4.3.6.b.} A function \(f(x)\) continuous at \(0\) and \(g(x)\) not continuous at \(0\) such that \(f(x) + g(x)\) is continuous at \(0\). \\
 
-
+This is not possible by the Algebraic Continuity Theorem. If \(f\) and \(f  + g\) continuous, then \(f + g - f = g\) must be continuous. \\
 
 \textbf{4.3.6.c.} A function \(f(x)\) continuous at \(0\) and \(g(x)\) not continuous at \(0\) such that \(f(x)g(x)\) is continuous at \(0\). \\
 
-
+This is not possible by the Algebraic Continuity Theorem. If \(f\) and \(fg\) continuous, then \(fg/f = g\) must be continuous. \\
 
 \textbf{4.3.6.d.} A function \(f(x)\) not continuous at \(0\) such that \(f(x) + 1/f(x)\) is continuous at \(0\). \\
 
-
+Let \(f(x) = 2\) for \(x > 0\), \(f(x) = 1/2\) otherwise. \(f(x) + 1/f(x)\) is then uniformly \(3/2\) and continuous at \(0\). \\
 
 \textbf{4.3.6.e.} A function \(f(x)\) not continuous at \(0\) such that \([f(x)]^{3}\) is continuous at \(0\). \\
 
-
+Note that the function \(g(x) = x^{1/3}\) is continuous everywhere. By Continuity of Compositions of Functions, \(g(f(x)^{3}) = f(x)\) must be continuous, so this is not possible. \\
 
 \textbf{Exercise 4.3.9.} Assume \(h : \mathbb{R} \to \mathbb{R}\) is continuous on \(\mathbb{R}\) and let \(K = \{x : h(x) = 0\}\). Show that \(K\) is a closed set. \\
 
-
+Let \(c\) be a limit point of \(K\). This implies that \(\forall \epsilon > 0\), \(V_{\epsilon}(c)\) intersects \(K\) at some points other than \(c\). As \(h\) is continuous, for each \(\epsilon > 0\), there exists \(\delta > 0\) such that \(|x - a| < \delta\) implies \(|h(x) - h(a)| = |h(a)| < \epsilon\), if \(x \in K\). Therefore, if \(c\) is a limit point of \(K\), then for all \(\epsilon > 0\), there exists \(\delta > 0\) such that \(|x - c| < \delta \implies |h(x) - h(c)| = |h(c)| < \epsilon\), which is equivalent to \(h(c) = 0\) (by definition of equality), so \(c \in K\). \\
 
 
 

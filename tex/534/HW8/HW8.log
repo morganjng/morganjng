@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.11.12)  11 APR 2020 01:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500 64-bit) (preloaded format=pdflatex 2018.11.12)  11 APR 2020 16:58
 entering extended mode
 **./HW8.tex
 (HW8.tex
@@ -602,7 +602,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 22--23
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
@@ -612,7 +622,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 28--29
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 30--31
+
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 32--33
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
@@ -621,30 +641,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
-
-AED: lastpage setting LastPage
 [1
 
 {C:/Users/Jonathan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(HW8.aux) ) 
+Underfull \hbox (badness 10000) in paragraph at lines 38--39
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 40--41
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--43
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+
+ []
+
+
+AED: lastpage setting LastPage
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[2] (HW8.aux) ) 
 Here is how much of TeX's memory you used:
  3290 strings out of 493312
  42563 string characters out of 3138025
- 108513 words of memory out of 3000000
+ 113513 words of memory out of 3000000
  6780 multiletter control sequences out of 15000+200000
  11490 words of font info for 45 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,6n,43p,332b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
-<F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmbx12
-.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Prog
-ram Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr17.pfb><F:/Program Fil
-es (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/Program Files (x8
-6)/MiKTeK/fonts/type1/public/amsfonts/cm/cmsy8.pfb><F:/Program Files (x86)/MiKT
-eK/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on HW8.pdf (1 page, 66372 bytes).
+ 41i,11n,43p,732b,192s stack positions out of 5000i,500n,10000p,200000b,50000s
+<F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi12.p
+fb><F:/Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmmi8.pfb><F:/
+Program Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr12.pfb><F:/Program
+ Files (x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr17.pfb><F:/Program Files 
+(x86)/MiKTeK/fonts/type1/public/amsfonts/cm/cmr8.pfb><F:/Program Files (x86)/Mi
+KTeK/fonts/type1/public/amsfonts/cm/cmsy10.pfb><F:/Program Files (x86)/MiKTeK/f
+onts/type1/public/amsfonts/cm/cmsy8.pfb><F:/Program Files (x86)/MiKTeK/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on HW8.pdf (2 pages, 92798 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
+ 45 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
