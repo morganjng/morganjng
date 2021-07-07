@@ -5,23 +5,15 @@ body{
 .top {
 	background-color: #232323;
     text-align: center;
-    padding: 54px;
-    
-}
-
-h1.top {
+    height: 25%;
     color: #ffffff;
-}
-
-p.top {
-    color: #ffffff;
+    margin: -15px;
 }
 
 .header {
     font-size: 18px;
     background-color: #454545;
-    width: 60%;
-    margin: auto;
+    margin: -15px;
     padding: 18px;
     text-align: center;
 }
