@@ -1,12 +1,16 @@
 body{
-	background-image: url(/src/images/backgroundtileNOCOPYRIGHT.png);
-    background-repeat: repeat;
+    background-color: #efefef;
     font-family: verdana;
 }
 
 .center{
     margin: auto;
-    width: 60%;
+    width: 80%;
+}
+
+.top {
+	background-color: #232323;
+    text-align: center;
 }
 
 p.links{
