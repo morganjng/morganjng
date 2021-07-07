@@ -5,6 +5,16 @@ body{
 .top {
 	background-color: #232323;
     text-align: center;
+    padding: 54px;
+    
+}
+
+h1.top {
+    color: #ffffff;
+}
+
+p.top {
+    color: #ffffff;
 }
 
 .header {
