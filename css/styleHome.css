@@ -13,15 +13,13 @@ body{
     text-align: center;
 }
 
-p.links{
+.header {
     font-size: 18px;
-    background-color: lightgrey;
+    background-color: #454545;
     width: 60%;
     margin: auto;
     padding: 10px;
     text-align: center;
-
-    border: 3px solid lightseagreen;
 }
 
 p{
