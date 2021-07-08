@@ -19,13 +19,15 @@ var contact = document.getElementById("contact");
 jumplinks.onclick = function () {
     var str = jumplinks.getAttribute("href");
 
-    if(str == "#about") {
+    console.log(str);
+
+    if(str === "#about") {
         window.scrollTo(0, about.pageYOffset);
-    } else if (str == "#github") {
+    } else if (str === "#github") {
         window.scrollTo(0, github.pageYOffset);
-    } else if (str == "#projects") {
+    } else if (str === "#projects") {
         window.scrollTo(0, projects.pageYOffset);
-    } else if (str == "#contact") {
+    } else if (str === "#contact") {
         window.scrollTo(0, contact.pageYOffset);
     } else {
         window.location.href = str;
