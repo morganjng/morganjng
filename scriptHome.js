@@ -19,7 +19,7 @@ window.onscroll = function () {
     }
 };
 
-
+var gotop = document.getElementById("gototop");
 var aboutlink = document.getElementById("aboutlink");
 var githublink = document.getElementById("githublink");
 var projectslink = document.getElementById("projectslink");
@@ -30,9 +30,9 @@ function moveTo(e) {
     console.log(e);
     var rect = element.getBoundingClientRect();
 
-    if(e === "about") {
+    if(e === "top") {
         window.scrollTo({
-            top: height,
+            top: 0,
             left: window.pageYOffset,
             behavior: 'auto'
         });
@@ -45,6 +45,7 @@ function moveTo(e) {
     }
 }
 
+gotop.onclick = function() { moveTo("top") };
 aboutlink.onclick = function() { moveTo("about"); };
 githublink.onclick = function() { moveTo("github"); };
 projectslink.onclick = function() { moveTo("projects"); };
