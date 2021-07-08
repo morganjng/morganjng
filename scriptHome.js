@@ -32,7 +32,7 @@ function moveTo(e) {
 
     if(e === "about") {
         window.scrollTo({
-            top: height;
+            top: height,
             left: window.pageYOffset,
             behavior: 'auto'
         });
