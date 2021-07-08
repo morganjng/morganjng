@@ -2,6 +2,7 @@ body{
     background-color: #efefef;
     font-family: verdana;
 }
+
 .top {
 	background-color: #232323;
     text-align: center;
@@ -15,7 +16,7 @@ body{
 .header {
     font-size: 18px;
     background-color: #454545;
-    margin: -15px;
+    margin: -18px;
     padding: 18px;
     text-align: center;
     color: #232323;
@@ -29,7 +30,7 @@ body{
 
 .scroll {
     position: fixed;
-    top: 0;
+    top: 18px;
     padding: 18px; 
     width: 100%;
 }
