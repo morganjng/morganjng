@@ -41,23 +41,27 @@ body{
 
 .content-left {
     font-size: 18px;
-    padding-top: 12px;
     padding-right: 0.5%;
     padding-left: 9%;
     width: 40%;
-    text-align: right;
+    text-align: left;
+    vertical-align: top;
 }
 
 .content-right {
     font-size: 18px;
-    padding-top: 12px;
     padding-left: 0.5%;
     width: 40%;
     text-align: left;
+    vertical-align: top;
+}
+
+.content-right img {
+    width: 75%;
+    max-width: 75%;
 }
 
 .title {
     padding-left: 9%;
     color: #232323;
-    padding-top: 12px;
 }
