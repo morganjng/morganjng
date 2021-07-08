@@ -18,6 +18,15 @@ body{
     width: 100%;
 }
 
+.footer {
+    font-size: 18px;
+    background-color: #454545;
+    padding: 12px;
+    text-align: center;
+    bottom: 100%;
+    width: 100%;
+}
+
 .header {
     font-size: 18px;
     background-color: #454545;
@@ -44,7 +53,6 @@ body{
     padding-right: 0.5%;
     padding-left: 9%;
     width: 40%;
-    text-align: left;
     vertical-align: top;
 }
 
@@ -61,6 +69,7 @@ body{
     width: 75%;
     max-width: 75%;
     text-align: right;
+    padding-left: 20%;
 }
 
 .content-right img {
@@ -93,6 +102,6 @@ body{
 }
 
 .title2 {
-    left: 50%;
+    padding-left: 50%;
     color: #232323;
 }
