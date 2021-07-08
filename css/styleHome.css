@@ -40,13 +40,14 @@ body{
 }
 
 .content-left {
-    padding: 18px;
+    padding-right: 0.5%;
+    padding-left: 9%;
     width: 40%;
-    text-align: left;
+    text-align: right;
 }
 
 .content-right {
-    padding: 18px;
+    padding-left: 0.5%;
     width: 40%;
-    text-align: right;
+    text-align: left;
 }
