@@ -9,6 +9,10 @@ body{
     font-family: verdana;
 }
 
+a {
+    color: #232323;
+}
+
 .top {
 	background-color: #232323;
     text-align: center;
@@ -19,12 +23,16 @@ body{
 }
 
 .footer {
-    font-size: 18px;
+    font-size: 12px;
     background-color: #454545;
-    padding: 12px;
-    text-align: center;
+    padding: 18px;
+    color:#ffffff;
     bottom: 100%;
     width: 100%;
+}
+
+.footer a {
+    color: #ffffff;
 }
 
 .header {
