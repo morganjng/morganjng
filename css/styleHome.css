@@ -57,6 +57,12 @@ body{
     vertical-align: top;
 }
 
+.content-left img {
+    width: 75%;
+    max-width: 75%;
+    text-align: right;
+}
+
 .content-right img {
     width: 75%;
     max-width: 75%;
@@ -87,6 +93,6 @@ body{
 }
 
 .title2 {
-    padding-left: 50%;
+    left: 50%;
     color: #232323;
 }
