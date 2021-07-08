@@ -29,22 +29,17 @@ function moveTo(e) {
     var element = document.getElementById(e);
     console.log(e);
     var rect = element.getBoundingClientRect();
-    var d = 54;
 
-    if(!scrollheader.classLint.contains("scroll")) {
-        d += 54;
-    }
-    
     if(e === "about") {
         window.scrollTo({
-            top: 0,
+            top: height,
             left: window.pageYOffset,
             behavior: 'smooth'
         });
     } 
     else {
         window.scrollTo({ 
-            top: window.pageYOffset + rect.y - delta,
+            top: window.pageYOffset + rect.y - 54,
             left: window.pageXOffset,
             behavior: 'smooth'   } );
     }
