@@ -22,7 +22,7 @@ function moveTo(e) {
     window.scrollTo({ top: element.pageYOffset, left: 0, behavior: 'smooth' });
 }
 
-aboutlink.onclick = moveTo("about");
-githublink.onclick = moveTo("github");
-projectslink.onclick = moveTo("projects");
-contactlink.onclick = moveTo("contact");
+aboutlink.onclick = function() { moveTo("about"); };
+githublink.onclick = function() { moveTo("github"); };
+projectslink.onclick = function() { moveTo("projects"); };
+contactlink.onclick = function() { moveTo("contact"); };
