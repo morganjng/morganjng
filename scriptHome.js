@@ -10,27 +10,19 @@ window.onscroll = function () {
     }
 };
 
-var jumplinks = document.getElementById("jumplink");
-var about = document.getElementById("about");
-var github = document.getElementById("github");
-var projects = document.getElementById("projects");
-var contact = document.getElementById("contact");
 
-jumplinks.onclick = function () {
-    var str = jumplinks.getAttribute("href");
-
-    console.log(str);
-
-    if(str === "#about") {
-        window.scrollTo(0, about.pageYOffset);
-    } else if (str === "#github") {
-        window.scrollTo(0, github.pageYOffset);
-    } else if (str === "#projects") {
-        window.scrollTo(0, projects.pageYOffset);
-    } else if (str === "#contact") {
-        window.scrollTo(0, contact.pageYOffset);
-    } else {
-        window.location.href = str;
-    }
-
+var aboutlink = document.getElementById("aboutlink");
+var githublink = document.getElementById("githublink");
+var projectslink = document.getElementById("projectslink");
+var contactlink = document.getElementById("contact");
+function moveTo(e) {
+    var element = document.getElementById(e);
+    console.log(e);
+    
+    window.scrollTo({ top: element.pageYOffset, left: 0, behavior: 'smooth' });
 }
+
+aboutlink.onclick = moveTo("about");
+githublink.onclick = moveTo("github");
+projectslink.onclick = moveTo("projects");
+contactlink.onclick = moveTo("contact");
