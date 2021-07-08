@@ -55,3 +55,9 @@ body{
     width: 40%;
     text-align: left;
 }
+
+.title {
+    padding-left: 9%;
+    color: #232323;
+    padding-top: 12px;
+}
