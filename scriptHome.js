@@ -34,7 +34,7 @@ function moveTo(e) {
         window.scrollTo({
             top: height,
             left: window.pageYOffset,
-            behavior: 'smooth'
+            behavior: 'auto'
         });
     } 
     else {
