@@ -1,6 +1,6 @@
 window.onscroll = function () { scroll() };
 
-var top = document.getAttribute("top");
+var top = document.getElementById("top");
 var height = top.offsetTop;
 
 function scroll() {
