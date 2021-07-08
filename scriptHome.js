@@ -5,8 +5,6 @@ window.onload = function() {
     document.getElementById("githublink").removeAttribute("href");
     document.getElementById("projectslink").removeAttribute("href");
     document.getElementById("contactlink").removeAttribute("href");
-
-    console(document.getElementById("aboutlink").getAttribute("href"));
 }
 
 
