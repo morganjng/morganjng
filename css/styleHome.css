@@ -35,7 +35,6 @@ body{
 .scroll {
     position: fixed;
     top: 0;
-    padding: 18px; 
     width: 100%;
 }
 
@@ -84,5 +83,10 @@ body{
 
 .title {
     padding-left: 9%;
+    color: #232323;
+}
+
+.title2 {
+    padding-left: 50%;
     color: #232323;
 }
