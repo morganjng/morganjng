@@ -1,10 +1,10 @@
 window.onload = function() {
     console.log("Javascript is functioning.");
 
-    document.getElementById("aboutlink").getAttribute("href") = "";
-    document.getElementById("githublink").getAttribute("href") = "";
-    document.getElementById("projectslink").getAttribute("href") = "";
-    document.getElementById("contactlink").getAttribute("href") = "";
+    document.getElementById("aboutlink").removeAttribute("href");
+    document.getElementById("githublink").removeAttribute("href");
+    document.getElementById("projectslink").removeAttribute("href");
+    document.getElementById("contactlink").removeAttribute("href");
 
     console(document.getElementById("aboutlink").getAttribute("href"));
 }
