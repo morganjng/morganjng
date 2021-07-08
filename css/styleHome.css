@@ -34,12 +34,14 @@ body{
 
 .scroll {
     position: fixed;
-    top: 12px;
+    top: 0;
     padding: 18px; 
     width: 100%;
 }
 
 .content-left {
+    font-size: 18px;
+    padding-top: 12px;
     padding-right: 0.5%;
     padding-left: 9%;
     width: 40%;
@@ -47,6 +49,8 @@ body{
 }
 
 .content-right {
+    font-size: 18px;
+    padding-top: 12px;
     padding-left: 0.5%;
     width: 40%;
     text-align: left;
