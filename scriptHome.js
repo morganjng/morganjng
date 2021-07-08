@@ -30,9 +30,9 @@ function moveTo(e) {
     console.log(e);
     var rect = element.getBoundingClientRect();
 
-    if(!scrollheader.classList.contains("scroll")) {
+    if(e === "about") {
         window.scrollTo({
-            top: window.pageYOffset + rect.y - 54,
+            top: height;
             left: window.pageYOffset,
             behavior: 'auto'
         });
