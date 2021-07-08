@@ -14,16 +14,14 @@ body{
     text-align: center;
     height: 20%;
     color: #ffffff;
-    margin: -18px;
-    padding: 18px;
+    padding: 12px;
     width: 100%;
 }
 
 .header {
     font-size: 18px;
     background-color: #454545;
-    margin: -18px;
-    padding: 18px;
+    padding: 12px;
     text-align: center;
     color: #232323;
     width: 100%
@@ -36,7 +34,7 @@ body{
 
 .scroll {
     position: fixed;
-    top: 18px;
+    top: 12px;
     padding: 18px; 
     width: 100%;
 }
