@@ -34,3 +34,15 @@ body{
     padding: 18px; 
     width: 100%;
 }
+
+.content-left {
+    padding: 18px;
+    width: 40%;
+    text-align: left;
+}
+
+.content-right {
+    padding: 18px;
+    width: 40;
+    text-align: :right;
+}
