@@ -19,8 +19,7 @@ var contactlink = document.getElementById("contactlink");
 function moveTo(e) {
     var element = document.getElementById(e);
     console.log(e);
-    
-    window.scrollTo({ top: element.pageYOffset, left: 0, behavior: 'smooth' });
+    window.scrollTo(window.pageXOffset, window.pageYOffset - 54);    
 }
 
 aboutlink.onclick = function() { moveTo("about"); };
