@@ -14,7 +14,8 @@ window.onscroll = function () {
 var aboutlink = document.getElementById("aboutlink");
 var githublink = document.getElementById("githublink");
 var projectslink = document.getElementById("projectslink");
-var contactlink = document.getElementById("contact");
+var contactlink = document.getElementById("contactlink");
+
 function moveTo(e) {
     var element = document.getElementById(e);
     console.log(e);
