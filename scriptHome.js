@@ -3,12 +3,10 @@ var scrollheader = document.getElementById("scrollheader");
 var height = scrollheader.offsetTop;
     
 window.onscroll = function () {
-    function scroll() {
-        if(window.pageYOffset > height) {
-            scrollheader.classList.add("scroll");
-        } else {
-            scrollheader.classList.remove("scroll");
-        }
+    if(window.pageYOffset > height) {
+        scrollheader.classList.add("scroll");
+    } else {
+        scrollheader.classList.remove("scroll");
     }
 };
 
