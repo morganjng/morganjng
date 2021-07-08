@@ -1,3 +1,14 @@
+window.onload = function() {
+    console.log("Javascript is functioning.");
+
+    document.getElementById("aboutlink").getAttribute("href") = "";
+    document.getElementById("githublink").getAttribute("href") = "";
+    document.getElementById("projectslink").getAttribute("href") = "";
+    document.getElementById("contactlink").getAttribute("href") = "";
+
+    console(document.getElementById("aboutlink").getAttribute("href"));
+}
+
 
 var scrollheader = document.getElementById("scrollheader");
 var height = scrollheader.offsetTop;
