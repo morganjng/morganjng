@@ -12,7 +12,7 @@ var scrollheader = document.getElementById("scrollheader");
 var height = scrollheader.offsetTop;
     
 window.onscroll = function () {
-    if(window.pageYOffset > height) {
+    if(window.pageYOffset >= height) {
         scrollheader.classList.add("scroll");
     } else {
         scrollheader.classList.remove("scroll");
