@@ -116,5 +116,7 @@ a {
 }
 
 .jump {
-	padding-top: 36px;
+	padding: 18px;
+	color: #cdcdcd;
+	width: 100%;
 }
