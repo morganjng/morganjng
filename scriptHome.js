@@ -29,6 +29,11 @@ function moveTo(e) {
     var element = document.getElementById(e);
     console.log(e);
     var rect = element.getBoundingClientRect();
+    var d = 54;
+
+    if(!scrollheader.classLint.contains("scroll")) {
+        d += 54;
+    }
     
     if(e === "about") {
         window.scrollTo({
@@ -39,7 +44,7 @@ function moveTo(e) {
     } 
     else {
         window.scrollTo({ 
-            top: window.pageYOffset + rect.y - 54,
+            top: window.pageYOffset + rect.y - delta,
             left: window.pageXOffset,
             behavior: 'smooth'   } );
     }
