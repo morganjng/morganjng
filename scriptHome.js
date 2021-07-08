@@ -31,11 +31,20 @@ function moveTo(e) {
     var element = document.getElementById(e);
     console.log(e);
     var rect = element.getBoundingClientRect();
-
-    window.scrollTo({ 
-        top: window.pageYOffset + rect.y - 54,
-        left: window.pageXOffset,
-        behavior: 'smooth'   } );    
+    
+    if(e === "about") {
+        window.scrollTo({
+            top: 0,
+            left: window.pageYOffset,
+            behavior: 'smooth'
+        });
+    } 
+    else {
+        window.scrollTo({ 
+            top: window.pageYOffset + rect.y - 54,
+            left: window.pageXOffset,
+            behavior: 'smooth'   } );
+    }
 }
 
 aboutlink.onclick = function() { moveTo("about"); };
