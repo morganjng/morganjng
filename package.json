@@ -1,0 +1,22 @@
+{
+  "name": "morgan-computer-website",
+  "version": "0.1.0",
+  "description": "My Website :)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morganjng/morganjng.git"
+  },
+  "author": "Morgan Gribbins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/morganjng/morganjng/issues"
+  },
+  "homepage": "https://github.com/morganjng/morganjng#readme",
+  "dependencies": {
+    "react": "^18.2.0"
+  }
+}
