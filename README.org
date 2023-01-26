@@ -1,0 +1,24 @@
+#+title: Morgan's Github README!
+
+* About me
++ I am a software engineer with a BSc. in Mathematics and Computer Science
++ I am passionate about open source software and the open source philosophy
++ I use Doom Emacs, Arch Linux, and i3
+** Miscellanea
++ I prefer tabs over spaces, and I prefer 4-width tabs
++ I like high-contrast dark themes! Other themes don't work right with my eyes and make me nauseous
++ I like horror movies and I write about them in my off time
++ I use [[https:fishshell.com][fish]]
++ My favorite languages are Rust and C++
+* Current projects
++ Rust machine learning library in early development
++ My game engine, [[https:github.com/morganjng/mazengine][Mazengine]], is in early-mid sta8ges of development
++ [[https:github.com/morganjng/kitsch][Kitsch]], a home-management app in the story-boarding phase
++ And an indie game that I'm not at liberty to link here! But there will be a website for it soon enough
+* Projects I follow
++ [[https:github.com/doomemacs/doomemacs][Doom Emacs]]
++ [[https:github.com/kovidgoyal/kitty][kitty]] and [[https:github.com/alacritty/alacritty][alacritty]]
++ [[https:github.com/carbon-language/carbon-lang][Carbon]]
++ and many more that I can't remember right now!
+* Contact me
++ Email me at [[mailto:morganjng@gmail.com][morganjng@gmail.com]] and check out my website at [[https:www.morgan.computer][morgan.computer]]!
