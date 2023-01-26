@@ -12,7 +12,7 @@
 + My favorite languages are Rust and C++
 * Current projects
 + Rust machine learning library in early development
-+ My game engine, [[https://github.com/morganjng/mazengine][Mazengine]], is in early-mid sta8ges of development
++ My game engine, [[https://github.com/morganjng/mazengine][Mazengine]], is in early-mid stages of development
 + [[https://github.com/morganjng/kitsch][Kitsch]], a home-management app in the story-boarding phase
 + And an indie game that I'm not at liberty to link here! But there will be a website for it soon enough
 * Projects I follow
