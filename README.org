@@ -2,6 +2,7 @@
 
 * About me
 + I am a software engineer with a BSc. in Mathematics and Computer Science
++ I have three cats and I live in Durham, NC
 + I am passionate about open source software and the open source philosophy
 + I use Doom Emacs, Arch Linux, and i3
 ** Miscellanea
