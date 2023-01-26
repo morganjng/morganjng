@@ -1,0 +1,12 @@
+#+title: Morgan Gribbins
+#+subtitle: morganjng
+#+html_head: <link rel="stylesheet" href="css/styleHome.css">
+#+html_head_extra: <link rel="icon" href="src/images/icon.png">
+#+infojs_opt: path:scriptHome.js
+
+* About Me
+	I am a software engineer with a Bachelor of Science in Mathematics and Computer Science from UNC Chapel Hill. I work as a freelance developer, and I am involved in a number of personal projects both alone and with others. I have extensive experience in C++, C, Rust, Java, Lisp, Haskell, and many, many other languages. I am also very familiar with the Linux kernel and a few interesting libraries like SDL, TensorFlow, React, and Flutter to name a few.
+* Projects
+	I am currently working full time on an independent game development project with a partner, written in C and C++ with the SDL development library, and part time as a software developer for the Edible Campus UNC program at the [[https://ncbg.unc.edu/][North Carolina Botanical Garden]]. Aside from this, I have a few personal projects going on concurrently, including a machine learning library written in Rust, designed for Python integration, and my own game engine written in C++ which aims at reducing the sheer amount of lines necessary for developing games! Feel free to email and ask me about these projects or any of my other projects in the works, or check out my [[https://github.com/morganjng][GitHub]] to see what I've developed!
+* Contact Me
+	If you want to contact me, you can email me at [[mailto:morganjng@gmail.com][morganjng@gmail.com]], or call or text me at +1 (704) 307-7189.
