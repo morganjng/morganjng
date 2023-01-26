@@ -7,7 +7,7 @@
 ** Miscellanea
 + I prefer tabs over spaces, and I prefer 4-width tabs
 + I like high-contrast dark themes! Other themes don't work right with my eyes and make me nauseous
-+ I like horror movies and I write about them in my off time
++ I love horror movies and I write about them in my off time
 + I use [[https://fishshell.com][fish]]
 + My favorite languages are Rust and C++
 * Current projects
